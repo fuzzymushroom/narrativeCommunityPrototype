@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+            self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+            self.window?.makeKeyAndVisible()
+            let mc = MasterController()
+            mc.view = UIView()
+            self.window?.rootViewController = mc;
+            mc.viewDidLoad()
+            return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
