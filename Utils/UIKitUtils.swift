@@ -45,3 +45,26 @@ class UIViewFromNib:UIView{
     }
 }
 
+extension UIView {
+    func removeSubviews(){
+        for view in self.subviews {
+            view.removeFromSuperview()
+        }
+    }
+}
+
+extension UIViewController {
+    func spawnChildController(controller:UIViewController, view:UIView){
+        addChildViewController(controller)
+        view.addSubview(controller.view)
+        controller.didMoveToParentViewController(self)
+    }
+    func killChildControllers(){
+        for child in childViewControllers {
+            child.willMoveToParentViewController(nil)
+            child.view.removeFromSuperview()
+            child.removeFromParentViewController()
+        }
+    }
+}
+

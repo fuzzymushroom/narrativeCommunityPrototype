@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PortalView" customModule="Profile" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="6hJ-1u-fnK" id="2mG-kL-Eaf"/>
+                <outlet property="pageContainer" destination="hMd-m5-SVi" id="P8c-Ag-0kX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hJ-1u-fnK" customClass="HeaderView" customModule="Profile" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="pIf-mz-SlO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMd-m5-SVi">
+                    <rect key="frame" x="0.0" y="50" width="414" height="686"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hMd-m5-SVi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="86u-YI-jKh"/>
+                <constraint firstAttribute="trailing" secondItem="hMd-m5-SVi" secondAttribute="trailing" id="E9U-qN-VxU"/>
+                <constraint firstAttribute="trailing" secondItem="6hJ-1u-fnK" secondAttribute="trailing" id="SQr-DL-ZKu"/>
+                <constraint firstItem="6hJ-1u-fnK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vn8-62-024"/>
+                <constraint firstItem="hMd-m5-SVi" firstAttribute="top" secondItem="6hJ-1u-fnK" secondAttribute="bottom" id="W6x-xJ-tKU"/>
+                <constraint firstItem="6hJ-1u-fnK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bIO-h5-uhp"/>
+                <constraint firstAttribute="bottom" secondItem="hMd-m5-SVi" secondAttribute="bottom" id="hYb-mF-vIT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+</document>

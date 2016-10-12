@@ -3,34 +3,17 @@ import UIKit
 class MasterController: UIViewController {
 
     //MARK: Variables
-
     let gameModel = GameModel()
-    let masterView = MasterView()
-    let gameScene = GameScene(fileNamed: "ProfileLayout")!
-    //let gameHud = GameHud()
     
     //MARK: Setup
-    private func setupProfile(){
-        view.addSubview(masterView)
-        //gameScene.showBackground(imageNamed: "bgCollege")
-        //gameScene.showAvatar(imageNamed: "characterJSR")
+    func loadPortal(){
+        killChildControllers()
+        spawnChildController(PortalController(), view: view)
     }
-    
     
     //MARK: UIViewController overrides
     override func viewDidLoad() {
-//        let view = self.view
-        
-//        gameScene.scaleMode = .AspectFill
-//        skView.presentScene(gameScene)
-        
-        /*
-        gameHud.zPosition = GameScene.Z_HUD
-        gameHud.actionCounter.hudDelegate = self
-        gameScene.addChild(gameHud)
-        */
-        
-        setupProfile()
+        loadPortal()
     }
     override func shouldAutorotate() -> Bool {
         return true

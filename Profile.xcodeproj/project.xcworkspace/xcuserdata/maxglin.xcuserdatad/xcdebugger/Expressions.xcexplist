@@ -3,10 +3,42 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "AppDelegate.application(UIApplication, didFinishLaunchingWithOptions : [NSObject : AnyObject]?) -&gt; Bool:AppDelegate.swift">
+         contextName = "MasterController.viewDidLoad() -&gt; ():MasterController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "UIScreen.mainScreen().bounds">
+               value = "(childViewControllers[0] as! PortalController).portalView.navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalView.layoutSubviews() -&gt; ():PortalView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalController.updateViewConstraints() -&gt; ():PortalController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "portalView.navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NavMenu.addNavCell(NavCell) -&gt; ():NavMenu.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "stackView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UIViewFromNib.intrinsicContentSize() -&gt; CGSize:UIKitUtils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame.size">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -18,6 +50,30 @@
             </PersistentString>
             <PersistentString
                value = "label.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalController.viewDidLayoutSubviews() -&gt; ():PortalController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "portalView.navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.application(UIApplication, didFinishLaunchingWithOptions : [NSObject : AnyObject]?) -&gt; Bool:AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UIScreen.mainScreen().bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalController.viewWillLayoutSubviews() -&gt; ():PortalController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "portalView.navMenu.frame.origin">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -39,10 +95,67 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "PortalController.viewDidLoad() -&gt; ():PortalController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "portalView.navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalController.tapNavCell(NavCell) -&gt; ():PortalController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "UIViewController.spawnChildController(UIViewController) -&gt; ():UIKitUtils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(controller as! PortalController).portalView.navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UIGestureRecognizerWithClosure.init(view : UIView, nizer : UIGestureRecognizer, closure : () -&gt; ()) -&gt; UIGestureRecognizerWithClosure:UIKitUtils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "#selector(UIGestureRecognizerWithClosure.invokeTargetz(_:))">
+            </PersistentString>
+            <PersistentString
+               value = "nizer.targets">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalView.customSetup() -&gt; ():PortalView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "-navMenu.frame.width">
+            </PersistentString>
+            <PersistentString
+               value = "navMenu.superview">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "GameViewController.viewDidLoad() -&gt; ():GameViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "self.view.frame.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalView.toggleNavMenu() -&gt; ():PortalView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UIGestureRecognizerWithClosure.init(view : UIView, nizer : UIGestureRecognizer, closure : () -&gt; ()) -&gt; UIGestureRecognizerWithClosure:UIGestureRecognizerWithClosure.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "#selector(tester)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
