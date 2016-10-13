@@ -17,4 +17,8 @@ class NavCell:UIViewFromNib{
     func tap(){
         if let onTap = onTap { onTap() }
     }
+    func showBorder(){
+        layer.borderColor = UIColor.grayColor().CGColor
+        layer.borderWidth = 1
+    }
 }

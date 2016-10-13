@@ -7,14 +7,14 @@ class PortalController: UIViewController {
     
     //MARK: NAV MENU
     private func populateNavMenu(){
-        addPage(.HOME, name: "Home")
-        addPage(.FEATURED, name: "Featured")
-        addPage(.FEED, name: "Feed")
-        addPage(.PROFILE, name: "Profile")
+        addPage(.HOME)
+        addPage(.EXPLORE)
+        addPage(.FEED)
+        addPage(.PROFILE)
     }
-    func addPage(page:Page, name:String){
+    func addPage(page:Page){
         let navCell = NavCell()
-        navCell.setName(name)
+        navCell.setName(page.rawValue)
         navCell.onTap = { [unowned self] in self.navigateToPage(page) }
         portalView.navMenu.addNavCell(navCell)
         
@@ -48,8 +48,11 @@ class PortalController: UIViewController {
     }
     
     //MARK: OVERRIDES
-    override func viewDidLoad() {
+    override func loadView(){
+        super.loadView()
         self.view = portalView
+    }
+    override func viewDidLoad() {
         populateNavMenu()
         enableNavMenu()
         navigateToPage(.PROFILE)
@@ -58,7 +61,7 @@ class PortalController: UIViewController {
 
 enum Page:String {
     case HOME = "Home"
-    case FEATURED = "Featured"
+    case EXPLORE = "Explore"
     case FEED = "Feed"
     case PROFILE = "Profile"
 }

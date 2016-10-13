@@ -35,9 +35,26 @@
 		B04348961D99F2F500C8EE2B /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04348941D99F2F500C8EE2B /* GameModel.swift */; };
 		B043911A1D9EDC44000CC018 /* UIKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04391191D9EDC44000CC018 /* UIKitUtils.swift */; };
 		B043911C1D9EDC51000CC018 /* MasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B043911B1D9EDC51000CC018 /* MasterController.swift */; };
+		B05508201DAEBD7200BDD1F2 /* StylizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B055081F1DAEBD7200BDD1F2 /* StylizedButton.swift */; };
+		B05508221DAEC66C00BDD1F2 /* MyShelfLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05508211DAEC66C00BDD1F2 /* MyShelfLayout.xib */; };
+		B05508241DAEC67D00BDD1F2 /* MyShelfPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05508231DAEC67D00BDD1F2 /* MyShelfPage.swift */; };
+		B05508261DAEE07400BDD1F2 /* MyShelfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05508251DAEE07400BDD1F2 /* MyShelfController.swift */; };
+		B05508281DAEE0E200BDD1F2 /* ShortScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05508271DAEE0E200BDD1F2 /* ShortScene.swift */; };
+		B055082A1DAEE15400BDD1F2 /* ShortSceneLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05508291DAEE15400BDD1F2 /* ShortSceneLayout.xib */; };
+		B055082C1DAEE31F00BDD1F2 /* cass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B055082B1DAEE31F00BDD1F2 /* cass@2x.png */; };
+		B055082E1DAEE60400BDD1F2 /* iconCassName@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B055082D1DAEE60400BDD1F2 /* iconCassName@2x.png */; };
+		B05508301DAEE7A500BDD1F2 /* iconEdit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B055082F1DAEE7A500BDD1F2 /* iconEdit@2x.png */; };
+		B05508321DAEECFD00BDD1F2 /* CredBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05508311DAEECFD00BDD1F2 /* CredBar.swift */; };
+		B05508341DAEED4300BDD1F2 /* CredBarLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05508331DAEED4300BDD1F2 /* CredBarLayout.xib */; };
+		B05508361DAF025E00BDD1F2 /* AchievementLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05508351DAF025E00BDD1F2 /* AchievementLayout.xib */; };
+		B055083A1DAF034A00BDD1F2 /* iconLaurelGold@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B05508371DAF034A00BDD1F2 /* iconLaurelGold@2x.png */; };
+		B055083B1DAF034A00BDD1F2 /* iconLaurelGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B05508381DAF034A00BDD1F2 /* iconLaurelGray@2x.png */; };
+		B055083C1DAF034A00BDD1F2 /* iconLaurelPlatinum@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B05508391DAF034A00BDD1F2 /* iconLaurelPlatinum@2x.png */; };
+		B055083E1DAF040300BDD1F2 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B055083D1DAF040300BDD1F2 /* Achievement.swift */; };
+		B05508461DAF0A7100BDD1F2 /* buttonFollow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B05508441DAF0A7100BDD1F2 /* buttonFollow@2x.png */; };
+		B05508471DAF0A7100BDD1F2 /* buttonFollowing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B05508451DAF0A7100BDD1F2 /* buttonFollowing@2x.png */; };
 		B09AE6921D9B012B001E6EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09AE6911D9B012B001E6EAC /* LaunchScreen.storyboard */; };
 		B09AE6981D9B19A2001E6EAC /* bgCollege.png in Resources */ = {isa = PBXBuildFile; fileRef = B09AE6971D9B19A2001E6EAC /* bgCollege.png */; };
-		B09AE69B1D9B1B11001E6EAC /* characterJSR.png in Resources */ = {isa = PBXBuildFile; fileRef = B09AE69A1D9B1B11001E6EAC /* characterJSR.png */; };
 		B09AE69F1D9B4057001E6EAC /* bgSpeechBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09AE69E1D9B4057001E6EAC /* bgSpeechBubble@2x.png */; };
 		B09AE6A21D9B475F001E6EAC /* iconMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = B09AE6A11D9B475F001E6EAC /* iconMenu.png */; };
 /* End PBXBuildFile section */
@@ -73,9 +90,26 @@
 		B04348941D99F2F500C8EE2B /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		B04391191D9EDC44000CC018 /* UIKitUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitUtils.swift; sourceTree = "<group>"; };
 		B043911B1D9EDC51000CC018 /* MasterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterController.swift; sourceTree = "<group>"; };
+		B055081F1DAEBD7200BDD1F2 /* StylizedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylizedButton.swift; sourceTree = "<group>"; };
+		B05508211DAEC66C00BDD1F2 /* MyShelfLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyShelfLayout.xib; sourceTree = "<group>"; };
+		B05508231DAEC67D00BDD1F2 /* MyShelfPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShelfPage.swift; sourceTree = "<group>"; };
+		B05508251DAEE07400BDD1F2 /* MyShelfController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShelfController.swift; sourceTree = "<group>"; };
+		B05508271DAEE0E200BDD1F2 /* ShortScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortScene.swift; sourceTree = "<group>"; };
+		B05508291DAEE15400BDD1F2 /* ShortSceneLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortSceneLayout.xib; sourceTree = "<group>"; };
+		B055082B1DAEE31F00BDD1F2 /* cass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cass@2x.png"; sourceTree = "<group>"; };
+		B055082D1DAEE60400BDD1F2 /* iconCassName@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconCassName@2x.png"; sourceTree = "<group>"; };
+		B055082F1DAEE7A500BDD1F2 /* iconEdit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconEdit@2x.png"; sourceTree = "<group>"; };
+		B05508311DAEECFD00BDD1F2 /* CredBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredBar.swift; sourceTree = "<group>"; };
+		B05508331DAEED4300BDD1F2 /* CredBarLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CredBarLayout.xib; sourceTree = "<group>"; };
+		B05508351DAF025E00BDD1F2 /* AchievementLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AchievementLayout.xib; sourceTree = "<group>"; };
+		B05508371DAF034A00BDD1F2 /* iconLaurelGold@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconLaurelGold@2x.png"; sourceTree = "<group>"; };
+		B05508381DAF034A00BDD1F2 /* iconLaurelGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconLaurelGray@2x.png"; sourceTree = "<group>"; };
+		B05508391DAF034A00BDD1F2 /* iconLaurelPlatinum@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconLaurelPlatinum@2x.png"; sourceTree = "<group>"; };
+		B055083D1DAF040300BDD1F2 /* Achievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		B05508441DAF0A7100BDD1F2 /* buttonFollow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonFollow@2x.png"; sourceTree = "<group>"; };
+		B05508451DAF0A7100BDD1F2 /* buttonFollowing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonFollowing@2x.png"; sourceTree = "<group>"; };
 		B09AE6911D9B012B001E6EAC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B09AE6971D9B19A2001E6EAC /* bgCollege.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgCollege.png; sourceTree = "<group>"; };
-		B09AE69A1D9B1B11001E6EAC /* characterJSR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = characterJSR.png; sourceTree = "<group>"; };
 		B09AE69E1D9B4057001E6EAC /* bgSpeechBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgSpeechBubble@2x.png"; sourceTree = "<group>"; };
 		B09AE6A11D9B475F001E6EAC /* iconMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMenu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +170,7 @@
 				B04348941D99F2F500C8EE2B /* GameModel.swift */,
 				B04348841D99F0BF00C8EE2B /* GameScene.swift */,
 				B043911B1D9EDC51000CC018 /* MasterController.swift */,
+				B05508251DAEE07400BDD1F2 /* MyShelfController.swift */,
 				B03789891DAD501100DCCACC /* PortalController.swift */,
 				B0003DAD1DADB8BF00F710C8 /* ProfileController.swift */,
 				B037898A1DAD501100DCCACC /* StoryController.swift */,
@@ -151,6 +186,7 @@
 				B043488B1D99F18A00C8EE2B /* SKMultilineLabel.swift */,
 				B04348871D99F0E800C8EE2B /* SKScenePlus.swift */,
 				B043488C1D99F18A00C8EE2B /* SpriteKitUtils.swift */,
+				B055081F1DAEBD7200BDD1F2 /* StylizedButton.swift */,
 				B04391191D9EDC44000CC018 /* UIKitUtils.swift */,
 				B043488D1D99F18A00C8EE2B /* ViewControllerPlus.swift */,
 			);
@@ -160,12 +196,16 @@
 		B04348971D99F43C00C8EE2B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B05508351DAF025E00BDD1F2 /* AchievementLayout.xib */,
+				B05508331DAEED4300BDD1F2 /* CredBarLayout.xib */,
 				B03789931DAD554800DCCACC /* HeaderLayout.xib */,
 				B09AE6911D9B012B001E6EAC /* LaunchScreen.storyboard */,
+				B05508211DAEC66C00BDD1F2 /* MyShelfLayout.xib */,
 				B00F405A1DAD5C940020C2CE /* NavCellLayout.xib */,
 				B027E8641DAD8EDE00AF6742 /* NavMenuLayout.xib */,
 				B0003DA91DADB86B00F710C8 /* ProfilePageLayout.xib */,
 				B037898D1DAD54BF00DCCACC /* PortalLayout.xib */,
+				B05508291DAEE15400BDD1F2 /* ShortSceneLayout.xib */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -173,13 +213,26 @@
 		B043911F1D9EDF52000CC018 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B055083D1DAF040300BDD1F2 /* Achievement.swift */,
+				B05508311DAEECFD00BDD1F2 /* CredBar.swift */,
 				B03789911DAD553100DCCACC /* HeaderView.swift */,
 				B00F405E1DAD5D870020C2CE /* NavCell.swift */,
 				B00F40601DAD64580020C2CE /* NavMenu.swift */,
 				B037898F1DAD54D200DCCACC /* PortalView.swift */,
 				B0003DAB1DADB89100F710C8 /* ProfilePage.swift */,
+				B05508231DAEC67D00BDD1F2 /* MyShelfPage.swift */,
+				B05508271DAEE0E200BDD1F2 /* ShortScene.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B05508431DAF0A7100BDD1F2 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				B05508441DAF0A7100BDD1F2 /* buttonFollow@2x.png */,
+				B05508451DAF0A7100BDD1F2 /* buttonFollowing@2x.png */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 		B09AE6951D9B19A2001E6EAC /* Assets */ = {
@@ -187,6 +240,7 @@
 			children = (
 				B09AE6961D9B19A2001E6EAC /* Backgrounds */,
 				B09AE6991D9B1AEC001E6EAC /* Characters */,
+				B05508431DAF0A7100BDD1F2 /* Controls */,
 				B03789951DAD56F100DCCACC /* Fonts */,
 				B09AE6A01D9B475F001E6EAC /* Icons */,
 			);
@@ -206,7 +260,7 @@
 		B09AE6991D9B1AEC001E6EAC /* Characters */ = {
 			isa = PBXGroup;
 			children = (
-				B09AE69A1D9B1B11001E6EAC /* characterJSR.png */,
+				B055082B1DAEE31F00BDD1F2 /* cass@2x.png */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -214,6 +268,11 @@
 		B09AE6A01D9B475F001E6EAC /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				B055082D1DAEE60400BDD1F2 /* iconCassName@2x.png */,
+				B055082F1DAEE7A500BDD1F2 /* iconEdit@2x.png */,
+				B05508371DAF034A00BDD1F2 /* iconLaurelGold@2x.png */,
+				B05508381DAF034A00BDD1F2 /* iconLaurelGray@2x.png */,
+				B05508391DAF034A00BDD1F2 /* iconLaurelPlatinum@2x.png */,
 				B09AE6A11D9B475F001E6EAC /* iconMenu.png */,
 				B00F405C1DAD5D330020C2CE /* iconNav.png */,
 			);
@@ -279,19 +338,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				B09AE6981D9B19A2001E6EAC /* bgCollege.png in Resources */,
+				B05508361DAF025E00BDD1F2 /* AchievementLayout.xib in Resources */,
+				B055082A1DAEE15400BDD1F2 /* ShortSceneLayout.xib in Resources */,
+				B055082C1DAEE31F00BDD1F2 /* cass@2x.png in Resources */,
 				B00F405B1DAD5C940020C2CE /* NavCellLayout.xib in Resources */,
+				B05508341DAEED4300BDD1F2 /* CredBarLayout.xib in Resources */,
 				B03789991DAD571A00DCCACC /* DidactGothic.ttf in Resources */,
+				B055083B1DAF034A00BDD1F2 /* iconLaurelGray@2x.png in Resources */,
+				B05508461DAF0A7100BDD1F2 /* buttonFollow@2x.png in Resources */,
+				B055082E1DAEE60400BDD1F2 /* iconCassName@2x.png in Resources */,
 				B037898E1DAD54BF00DCCACC /* PortalLayout.xib in Resources */,
+				B05508301DAEE7A500BDD1F2 /* iconEdit@2x.png in Resources */,
+				B05508471DAF0A7100BDD1F2 /* buttonFollowing@2x.png in Resources */,
 				B09AE6921D9B012B001E6EAC /* LaunchScreen.storyboard in Resources */,
 				B00F40551DAD588D0020C2CE /* bgLoading.png in Resources */,
+				B055083A1DAF034A00BDD1F2 /* iconLaurelGold@2x.png in Resources */,
 				B04348771D99EEEF00C8EE2B /* Assets.xcassets in Resources */,
 				B00F405D1DAD5D330020C2CE /* iconNav.png in Resources */,
+				B055083C1DAF034A00BDD1F2 /* iconLaurelPlatinum@2x.png in Resources */,
 				B09AE6A21D9B475F001E6EAC /* iconMenu.png in Resources */,
 				B09AE69F1D9B4057001E6EAC /* bgSpeechBubble@2x.png in Resources */,
+				B05508221DAEC66C00BDD1F2 /* MyShelfLayout.xib in Resources */,
 				B0003DAA1DADB86B00F710C8 /* ProfilePageLayout.xib in Resources */,
 				B027E8651DAD8EDE00AF6742 /* NavMenuLayout.xib in Resources */,
 				B03789941DAD554800DCCACC /* HeaderLayout.xib in Resources */,
-				B09AE69B1D9B1B11001E6EAC /* characterJSR.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,19 +376,25 @@
 				B04348881D99F0E800C8EE2B /* SKScenePlus.swift in Sources */,
 				B0003DAE1DADB8BF00F710C8 /* ProfileController.swift in Sources */,
 				B043488F1D99F18A00C8EE2B /* DataUtils.swift in Sources */,
+				B05508261DAEE07400BDD1F2 /* MyShelfController.swift in Sources */,
 				B04348901D99F18A00C8EE2B /* SKMultilineLabel.swift in Sources */,
 				B00F40611DAD64580020C2CE /* NavMenu.swift in Sources */,
 				B04348921D99F18A00C8EE2B /* ViewControllerPlus.swift in Sources */,
+				B05508201DAEBD7200BDD1F2 /* StylizedButton.swift in Sources */,
 				B043488E1D99F18A00C8EE2B /* Atlasser.swift in Sources */,
 				B043911A1D9EDC44000CC018 /* UIKitUtils.swift in Sources */,
+				B05508321DAEECFD00BDD1F2 /* CredBar.swift in Sources */,
+				B05508281DAEE0E200BDD1F2 /* ShortScene.swift in Sources */,
 				B037898C1DAD501100DCCACC /* StoryController.swift in Sources */,
 				B03789901DAD54D200DCCACC /* PortalView.swift in Sources */,
 				B04348851D99F0BF00C8EE2B /* GameScene.swift in Sources */,
 				B043486C1D99EEEF00C8EE2B /* AppDelegate.swift in Sources */,
 				B043911C1D9EDC51000CC018 /* MasterController.swift in Sources */,
 				B04348911D99F18A00C8EE2B /* SpriteKitUtils.swift in Sources */,
+				B05508241DAEC67D00BDD1F2 /* MyShelfPage.swift in Sources */,
 				B00F405F1DAD5D870020C2CE /* NavCell.swift in Sources */,
 				B04348961D99F2F500C8EE2B /* GameModel.swift in Sources */,
+				B055083E1DAF040300BDD1F2 /* Achievement.swift in Sources */,
 				B037898B1DAD501100DCCACC /* PortalController.swift in Sources */,
 				B03789921DAD553100DCCACC /* HeaderView.swift in Sources */,
 			);

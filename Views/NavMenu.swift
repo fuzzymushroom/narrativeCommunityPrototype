@@ -14,5 +14,6 @@ class NavMenu:UIViewFromNib{
     
     func addNavCell(navCell:NavCell){
         stackView.addArrangedSubview(navCell)
+        navCell.showBorder()
     }
 }
