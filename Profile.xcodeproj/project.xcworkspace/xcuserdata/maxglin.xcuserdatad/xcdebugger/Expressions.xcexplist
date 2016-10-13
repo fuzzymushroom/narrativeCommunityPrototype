@@ -3,23 +3,7 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "MasterController.viewDidLoad() -&gt; ():MasterController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "(childViewControllers[0] as! PortalController).portalView.navMenu.frame.origin">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "PortalView.layoutSubviews() -&gt; ():PortalView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "navMenu.frame.origin">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "PortalController.updateViewConstraints() -&gt; ():PortalController.swift">
+         contextName = "PortalController.viewDidLayoutSubviews() -&gt; ():PortalController.swift">
          <PersistentStrings>
             <PersistentString
                value = "portalView.navMenu.frame.origin">
@@ -27,10 +11,22 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "NavMenu.addNavCell(NavCell) -&gt; ():NavMenu.swift">
+         contextName = "UIViewController.getParentWithClass() -&gt; ():UIKitUtils.swift">
          <PersistentStrings>
             <PersistentString
-               value = "stackView">
+               value = "PortalController">
+            </PersistentString>
+            <PersistentString
+               value = "">
+            </PersistentString>
+            <PersistentString
+               value = "PortalController.self is Type">
+            </PersistentString>
+            <PersistentString
+               value = "parentViewController is PortalController">
+            </PersistentString>
+            <PersistentString
+               value = "parentViewController.dynamicType">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -54,10 +50,32 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "PortalController.viewDidLayoutSubviews() -&gt; ():PortalController.swift">
+         contextName = "PortalController.tapNavCell(NavCell) -&gt; ():PortalController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "GameViewController.viewDidLoad() -&gt; ():GameViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.frame.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalController.updateViewConstraints() -&gt; ():PortalController.swift">
          <PersistentStrings>
             <PersistentString
                value = "portalView.navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyShelfPage.addShelf(Shelf) -&gt; ():MyShelfPage.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "shelfStack.frame">
+            </PersistentString>
+            <PersistentString
+               value = "shelf.intrinsicContentSize()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -70,27 +88,26 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "PortalController.viewWillLayoutSubviews() -&gt; ():PortalController.swift">
+         contextName = "PortalView.layoutSubviews() -&gt; ():PortalView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "portalView.navMenu.frame.origin">
+               value = "navMenu.frame.origin">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "UIViewFromNib.(xibSetup in _9B391FACDE57E9AD587165FE943FE8E3)() -&gt; ():UIKitUtils.swift">
+         contextName = "UIGestureRecognizerWithClosure.init(view : UIView, nizer : UIGestureRecognizer, closure : () -&gt; ()) -&gt; UIGestureRecognizerWithClosure:UIGestureRecognizerWithClosure.swift">
          <PersistentStrings>
             <PersistentString
-               value = "nib.instantiateWithOwner(self, options: nil)[0]">
+               value = "#selector(tester)">
             </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UIViewController.spawnChildController(UIViewController) -&gt; ():UIKitUtils.swift">
+         <PersistentStrings>
             <PersistentString
-               value = "nib.instantiateWithOwner(self, options: nil)">
-            </PersistentString>
-            <PersistentString
-               value = "getNibName()">
-            </PersistentString>
-            <PersistentString
-               value = "nib.instantiateWithOwner">
+               value = "(controller as! PortalController).portalView.navMenu.frame.origin">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -103,13 +120,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "PortalController.tapNavCell(NavCell) -&gt; ():PortalController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "UIViewController.spawnChildController(UIViewController) -&gt; ():UIKitUtils.swift">
+         contextName = "PortalController.viewWillLayoutSubviews() -&gt; ():PortalController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "(controller as! PortalController).portalView.navMenu.frame.origin">
+               value = "portalView.navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyShelfController.(populateShelves in _E2D24F2E3D665ABFB91ACC7A41E9357B)() -&gt; ():MyShelfController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pc is PortalController">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -136,14 +158,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "GameViewController.viewDidLoad() -&gt; ():GameViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.view.frame.width">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "PortalView.toggleNavMenu() -&gt; ():PortalView.swift">
          <PersistentStrings>
             <PersistentString
@@ -152,10 +166,49 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "UIGestureRecognizerWithClosure.init(view : UIView, nizer : UIGestureRecognizer, closure : () -&gt; ()) -&gt; UIGestureRecognizerWithClosure:UIGestureRecognizerWithClosure.swift">
+         contextName = "Shelf.addStory() -&gt; ():Shelf.swift">
          <PersistentStrings>
             <PersistentString
-               value = "#selector(tester)">
+               value = "stackView.intrinsicContentSize()">
+            </PersistentString>
+            <PersistentString
+               value = "story.intrinsicContentSize().width">
+            </PersistentString>
+            <PersistentString
+               value = "stackView.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MasterController.viewDidLoad() -&gt; ():MasterController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(childViewControllers[0] as! PortalController).portalView.navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UIViewFromNib.(xibSetup in _9B391FACDE57E9AD587165FE943FE8E3)() -&gt; ():UIKitUtils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nib.instantiateWithOwner(self, options: nil)[0]">
+            </PersistentString>
+            <PersistentString
+               value = "nib.instantiateWithOwner(self, options: nil)">
+            </PersistentString>
+            <PersistentString
+               value = "getNibName()">
+            </PersistentString>
+            <PersistentString
+               value = "nib.instantiateWithOwner">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NavMenu.addNavCell(NavCell) -&gt; ():NavMenu.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "stackView">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

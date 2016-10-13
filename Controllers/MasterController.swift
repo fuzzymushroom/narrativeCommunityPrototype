@@ -10,6 +10,10 @@ class MasterController: UIViewController {
         killChildControllers()
         spawnChildController(PortalController(), view: view)
     }
+    func loadStory(){
+        killChildControllers()
+        spawnChildController(StoryController(), view: view)
+    }
     
     //MARK: UIViewController overrides
     override func viewDidLoad() {

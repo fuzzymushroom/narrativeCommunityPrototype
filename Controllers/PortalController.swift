@@ -19,7 +19,6 @@ class PortalController: UIViewController {
         portalView.navMenu.addNavCell(navCell)
         
         navCell.userInteractionEnabled = true
-        //let gestureRecognizer = UITapGestureRecognizer(target: navCell, action: #selector(NavCell.tap))
         let gestureRecognizer = UITapGestureRecognizer(target: navCell, action: #selector(NavCell.tap))
         navCell.addGestureRecognizer(gestureRecognizer)
     }
@@ -45,6 +44,16 @@ class PortalController: UIViewController {
     }
     func launchFeed(){
         print("launch feed")
+    }
+    
+    //MARK: OVERLAYS
+    func openStoryCard(){
+        let storyCard = StoryCard()
+        portalView.addSubview(storyCard)
+        storyCard.imageView.image = UIImage(named: "campfire")
+        storyCard.enableTap(target: storyCard, action: #selector(StoryCard.removeFromSuperview))
+        let masterController = getParentOfType(MasterController)!
+        storyCard.launchButton.addTarget(masterController, action: #selector(MasterController.loadStory), forControlEvents: .TouchUpInside)
     }
     
     //MARK: OVERRIDES

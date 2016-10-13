@@ -51,6 +51,11 @@ extension UIView {
             view.removeFromSuperview()
         }
     }
+    func enableTap(target target: AnyObject, action: Selector){
+        userInteractionEnabled = true
+        let gestureRecognizer = UITapGestureRecognizer(target: target, action: action)
+        self.addGestureRecognizer(gestureRecognizer)
+    }
 }
 
 extension UIViewController {
@@ -66,5 +71,40 @@ extension UIViewController {
             child.removeFromParentViewController()
         }
     }
+    func getParentOfType<T>(type:T.Type) -> T?{
+        guard let parent = parentViewController else {
+            return nil
+        }
+        if let parent = parent as? T {
+            return parent
+        } else {
+            return parent.getParentOfType(T)
+        }
+    }
 }
 
+extension UIStackView {
+    func fitToContent(){
+        
+        let count = arrangedSubviews.count
+        var width = frame.width
+        var height = frame.height
+        
+        if axis == .Horizontal {
+            width = 0
+            for view in arrangedSubviews {
+                width += view.intrinsicContentSize().width
+            }
+            width += count > 1 ? (count - 1) * spacing : 0
+        } else {
+            height = 0
+            for view in arrangedSubviews {
+                height += view.intrinsicContentSize().height
+            }
+            height += count > 1 ? (count - 1) * spacing : 0
+        }
+        
+        let size = CGSize(width: width, height: height)
+        frame = CGRect(origin: frame.origin, size: size)
+    }
+}

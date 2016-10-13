@@ -1,56 +1,45 @@
 import UIKit
-import SpriteKit
 
-class StoryController: ViewControllerPlus {
-
-    //MARK: Variables
-
-    let gameModel = GameModel()
-    let gameScene = GameScene(fileNamed: "ProfileLayout")!
-    //let gameHud = GameHud()
+class StoryController: UIViewController {
     
-    //MARK: Setup
-    private func setupProfile(){
-        gameScene.showBackground(imageNamed: "bgCollege")
-        gameScene.showAvatar(imageNamed: "characterJSR")
+    //MARK: VARIABLES
+    let storyView = StoryView()
+    let frames = [
+        "story1",
+        "story2",
+        "story3",
+        "story4",
+        "story5"
+    ]
+    var frameIndex:Int!
+    
+    //MARK: OVERRIDES
+    override func loadView(){
+        super.loadView()
+        self.view = storyView
     }
-    
-    
-    //MARK: UIViewController overrides
     override func viewDidLoad() {
-        let skView = self.view as! SKView
-        //skView.showsFPS = true
-        //skView.showsNodeCount = true
-        //skView.ignoresSiblingOrder = false
-        
-        gameScene.scaleMode = .AspectFill
-        skView.presentScene(gameScene)
-        
-        /*
-        gameHud.zPosition = GameScene.Z_HUD
-        gameHud.actionCounter.hudDelegate = self
-        gameScene.addChild(gameHud)
-        */
-        
-        setupProfile()
+        goToFrame(0)
+        storyView.enableTap(target: self, action: #selector(advanceFrame))
+        let masterController = getParentOfType(MasterController)!
+        storyView.exitButton.addTarget(masterController, action: #selector(MasterController.loadPortal), forControlEvents: .TouchUpInside)
     }
-    override func shouldAutorotate() -> Bool {
-        return true
+    
+    //MARK: FUNCTIONS
+    func goToFrame(index:Int){
+        assert(index < frames.count, "frame index=\(index) out of bounds")
+        frameIndex = index
+        storyView.showFrame(named: frames[index])
     }
-
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        //if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-        return .Portrait
+    func advanceFrame(){
+        if frameIndex == frames.count - 1 {
+            endStory()
+        } else {
+            goToFrame(frameIndex + 1)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
-    }
-
-    override func prefersStatusBarHidden() -> Bool {
-        return true
+    func endStory(){
+        let masterController = getParentOfType(MasterController)!
+        masterController.loadPortal()
     }
 }
-
-//TODO:
