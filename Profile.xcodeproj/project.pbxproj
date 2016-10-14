@@ -40,7 +40,6 @@
 		B043488F1D99F18A00C8EE2B /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B043488A1D99F18A00C8EE2B /* DataUtils.swift */; };
 		B04348901D99F18A00C8EE2B /* SKMultilineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B043488B1D99F18A00C8EE2B /* SKMultilineLabel.swift */; };
 		B04348911D99F18A00C8EE2B /* SpriteKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B043488C1D99F18A00C8EE2B /* SpriteKitUtils.swift */; };
-		B04348921D99F18A00C8EE2B /* ViewControllerPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B043488D1D99F18A00C8EE2B /* ViewControllerPlus.swift */; };
 		B04348961D99F2F500C8EE2B /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04348941D99F2F500C8EE2B /* GameModel.swift */; };
 		B043911A1D9EDC44000CC018 /* UIKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04391191D9EDC44000CC018 /* UIKitUtils.swift */; };
 		B043911C1D9EDC51000CC018 /* MasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B043911B1D9EDC51000CC018 /* MasterController.swift */; };
@@ -110,7 +109,6 @@
 		B043488A1D99F18A00C8EE2B /* DataUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUtils.swift; sourceTree = "<group>"; };
 		B043488B1D99F18A00C8EE2B /* SKMultilineLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKMultilineLabel.swift; sourceTree = "<group>"; };
 		B043488C1D99F18A00C8EE2B /* SpriteKitUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteKitUtils.swift; sourceTree = "<group>"; };
-		B043488D1D99F18A00C8EE2B /* ViewControllerPlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPlus.swift; sourceTree = "<group>"; };
 		B04348941D99F2F500C8EE2B /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		B04391191D9EDC44000CC018 /* UIKitUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitUtils.swift; sourceTree = "<group>"; };
 		B043911B1D9EDC51000CC018 /* MasterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterController.swift; sourceTree = "<group>"; };
@@ -230,7 +228,6 @@
 				B043488C1D99F18A00C8EE2B /* SpriteKitUtils.swift */,
 				B055081F1DAEBD7200BDD1F2 /* StylizedButton.swift */,
 				B04391191D9EDC44000CC018 /* UIKitUtils.swift */,
-				B043488D1D99F18A00C8EE2B /* ViewControllerPlus.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -367,11 +364,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Mushroom Studio";
 				TargetAttributes = {
 					B04348671D99EEEF00C8EE2B = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 298F5G8964;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -455,7 +454,6 @@
 				B0041D661DB03D320013C56A /* StoryView.swift in Sources */,
 				B04348901D99F18A00C8EE2B /* SKMultilineLabel.swift in Sources */,
 				B00F40611DAD64580020C2CE /* NavMenu.swift in Sources */,
-				B04348921D99F18A00C8EE2B /* ViewControllerPlus.swift in Sources */,
 				B05508201DAEBD7200BDD1F2 /* StylizedButton.swift in Sources */,
 				B043488E1D99F18A00C8EE2B /* Atlasser.swift in Sources */,
 				B043911A1D9EDC44000CC018 /* UIKitUtils.swift in Sources */,
@@ -493,8 +491,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -538,8 +538,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -558,6 +560,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -566,10 +569,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 298F5G8964;
 				INFOPLIST_FILE = Profile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mushroomStudio.Profile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -577,10 +582,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 298F5G8964;
 				INFOPLIST_FILE = Profile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mushroomStudio.Profile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

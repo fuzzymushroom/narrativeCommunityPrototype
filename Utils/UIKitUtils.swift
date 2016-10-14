@@ -1,18 +1,6 @@
 import Foundation
 import UIKit
 
-class UIKitUtils{
-    
-    static func getDesaturatedImage(image: UIImage) -> UIImage {
-        let imageRect = CGRectMake(0, 0, image.size.width, image.size.height);
-        let colorSpace = CGColorSpaceCreateDeviceGray();
-        let context = CGBitmapContextCreate(nil, Int(image.size.width), Int(image.size.height), 8, 0, colorSpace, CGImageAlphaInfo.None.rawValue)
-        CGContextDrawImage(context, imageRect, image.CGImage);
-        let imageRef = CGBitmapContextCreateImage(context);
-        return UIImage(CGImage: imageRef!)
-    }
-}
-
 class UIViewFromNib:UIView{
     
     //subclasses of this must override getBundleName
@@ -28,16 +16,18 @@ class UIViewFromNib:UIView{
         customSetup()
     }
     private func xibSetup(){
-        let bundle = NSBundle(forClass: self.dynamicType)
+        let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: getNibName(), bundle: bundle)
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         frame = view.bounds
         //view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         addSubview(view)
     }
+    /*
     override func intrinsicContentSize() -> CGSize {
         return frame.size
     }
+ */
     func getNibName() -> String{
         fatalError("You must override the getBundleName method in subclasses of UIViewFromNib")
     }
@@ -51,8 +41,8 @@ extension UIView {
             view.removeFromSuperview()
         }
     }
-    func enableTap(target target: AnyObject, action: Selector){
-        userInteractionEnabled = true
+    func enableTap(target: AnyObject, action: Selector){
+        isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: target, action: action)
         self.addGestureRecognizer(gestureRecognizer)
     }
@@ -62,23 +52,23 @@ extension UIViewController {
     func spawnChildController(controller:UIViewController, view:UIView){
         addChildViewController(controller)
         view.addSubview(controller.view)
-        controller.didMoveToParentViewController(self)
+        controller.didMove(toParentViewController: self)
     }
     func killChildControllers(){
         for child in childViewControllers {
-            child.willMoveToParentViewController(nil)
+            child.willMove(toParentViewController: nil)
             child.view.removeFromSuperview()
             child.removeFromParentViewController()
         }
     }
     func getParentOfType<T>(type:T.Type) -> T?{
-        guard let parent = parentViewController else {
+        guard let parent = parent else {
             return nil
         }
         if let parent = parent as? T {
             return parent
         } else {
-            return parent.getParentOfType(T)
+            return parent.getParentOfType(type: T.self)
         }
     }
 }
@@ -90,16 +80,16 @@ extension UIStackView {
         var width = frame.width
         var height = frame.height
         
-        if axis == .Horizontal {
+        if axis == .horizontal {
             width = 0
             for view in arrangedSubviews {
-                width += view.intrinsicContentSize().width
+                width += view.intrinsicContentSize.width
             }
             width += count > 1 ? (count - 1) * spacing : 0
         } else {
             height = 0
             for view in arrangedSubviews {
-                height += view.intrinsicContentSize().height
+                height += view.intrinsicContentSize.height
             }
             height += count > 1 ? (count - 1) * spacing : 0
         }

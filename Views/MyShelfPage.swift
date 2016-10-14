@@ -13,13 +13,13 @@ class MyShelfPage:UIViewFromNib {
         return "MyShelfLayout"
     }
     override func customSetup(){
-        shelfStack.axis = .Vertical
+        shelfStack.axis = .vertical
         shelfContainer.addSubview(shelfStack)
     }
     
     //MARK: FUNCTIONS
     func addShelf(shelf:Shelf){
         shelfStack.addArrangedSubview(shelf)
-        shelfStack.frame = CGRect(x: 0, y: 0, width: shelfContainer.frame.width, height: shelfStack.frame.height + shelf.intrinsicContentSize().height) /* hack, could not find any way to avoid this */
+        shelfStack.frame = CGRect(x: 0, y: 0, width: shelfContainer.frame.width, height: shelfStack.frame.height + shelf.intrinsicContentSize.height) /* hack, could not find any way to avoid this */
     }
 }

@@ -5,7 +5,7 @@ class Atlasser{
     static var atlases = [String:[SKTexture]]()
     
     static func preloadAtlasNamed(atlasName: String){
-        preloadAtlasNamed(atlasName, getTextureNameByIndex: intTo3Chars)
+        preloadAtlasNamed(atlasName: atlasName, getTextureNameByIndex: intTo3Chars)
     }
     static func preloadAtlasNamed(atlasName: String, getTextureNameByIndex: (String, Int) -> String){
         let atlas = SKTextureAtlas(named: atlasName)

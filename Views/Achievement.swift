@@ -14,7 +14,7 @@ class Achievement:UIViewFromNib{
     }
     override func customSetup() {
     }
-    func populate(laurel laurel:Laurel, name:String, value:String){
+    func populate(laurel:Laurel, name:String, value:String){
         self.laurel.image = UIImage(named: laurel.rawValue)
         achievementLabel.text = name
         quantityLabel.text = value

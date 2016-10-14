@@ -8,26 +8,31 @@ class MasterController: UIViewController {
     //MARK: Setup
     func loadPortal(){
         killChildControllers()
-        spawnChildController(PortalController(), view: view)
+        spawnChildController(controller: PortalController(), view: view)
     }
     func loadStory(){
         killChildControllers()
-        spawnChildController(StoryController(), view: view)
+        spawnChildController(controller: StoryController(), view: view)
     }
     
     //MARK: UIViewController overrides
     override func viewDidLoad() {
         loadPortal()
     }
-    override func shouldAutorotate() -> Bool {
+    override var shouldAutorotate: Bool {
         return true
     }
 
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        //if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-        return .Portrait
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
     }
-    override func prefersStatusBarHidden() -> Bool {
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Release any cached data, images, etc that aren't in use.
+    }
+    
+    override var prefersStatusBarHidden: Bool {
         return true
     }
 }

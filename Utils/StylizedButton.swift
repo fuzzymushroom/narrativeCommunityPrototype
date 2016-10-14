@@ -6,7 +6,7 @@ class StylizedButton:UIButton {
     var deselectedColor:UIColor?
     
     func showBorder(){
-        layer.borderColor = UIColor.blackColor().CGColor
+        layer.borderColor = UIColor.black.cgColor
         layer.borderWidth = 1
     }
     func colorSelected(){

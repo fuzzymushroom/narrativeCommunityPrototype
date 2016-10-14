@@ -42,8 +42,8 @@ class SKMultilineLabel: SKNode {
             }
             labels = []
         }
-        let separators = NSCharacterSet.whitespaceAndNewlineCharacterSet()
-        let words = text.componentsSeparatedByCharactersInSet(separators)
+        let separators = NSCharacterSet.whitespacesAndNewlines
+        let words = text.components(separatedBy: separators)
         
         var finalLine = false
         var wordIndex = -1
@@ -86,9 +86,9 @@ class SKMultilineLabel: SKNode {
                 }
                 label.text = lineString
                 var linePosition = CGPoint.zero
-                if (textStyle.alignment == .Left) {
+                if (textStyle.alignment == .left) {
                     linePosition.x -= CGFloat(labelWidth / 2.0)
-                } else if (textStyle.alignment == .Right) {
+                } else if (textStyle.alignment == .right) {
                     linePosition.x += CGFloat(labelWidth / 2.0)
                 }
                 linePosition.y += -padding + CGFloat(-textStyle.leading * lineCount)
@@ -102,13 +102,13 @@ class SKMultilineLabel: SKNode {
         }
 
         let rectHeight = CGFloat(lineCount * textStyle.leading) + padding * 2.0
-        showFrame(rectHeight)
+        showFrame(rectHeight: rectHeight)
     }
     
     private func showFrame(rectHeight:CGFloat) {
         if let shapeStyle = self.shapeStyle {
             self.rect?.removeFromParent()
-            let rect = SKShapeNode(rectOfSize: CGSize(width: labelWidth + padding*2.0, height: rectHeight))
+            let rect = SKShapeNode(rectOf: CGSize(width: labelWidth + padding*2.0, height: rectHeight))
             rect.fillColor = shapeStyle.fillColor
             rect.strokeColor = shapeStyle.strokeColor
             rect.lineWidth = shapeStyle.strokeWidth

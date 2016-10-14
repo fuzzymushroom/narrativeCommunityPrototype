@@ -7,31 +7,31 @@ class PortalController: UIViewController {
     
     //MARK: NAV MENU
     private func populateNavMenu(){
-        addPage(.HOME)
-        addPage(.EXPLORE)
-        addPage(.FEED)
-        addPage(.PROFILE)
+        addPage(page: .HOME)
+        addPage(page: .EXPLORE)
+        addPage(page: .FEED)
+        addPage(page: .PROFILE)
     }
     func addPage(page:Page){
         let navCell = NavCell()
-        navCell.setName(page.rawValue)
-        navCell.onTap = { [unowned self] in self.navigateToPage(page) }
-        portalView.navMenu.addNavCell(navCell)
+        navCell.setName(name: page.rawValue)
+        navCell.onTap = { [unowned self] in self.navigateToPage(page: page) }
+        portalView.navMenu.addNavCell(navCell: navCell)
         
-        navCell.userInteractionEnabled = true
+        navCell.isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: navCell, action: #selector(NavCell.tap))
         navCell.addGestureRecognizer(gestureRecognizer)
     }
     private func enableNavMenu(){
         let tapGestureRecognizer = UITapGestureRecognizer(target: portalView, action: #selector(PortalView.toggleNavMenu))
         let navMenuToggle = portalView.getNavMenuToggle()
-        navMenuToggle.userInteractionEnabled = true
+        navMenuToggle.isUserInteractionEnabled = true
         navMenuToggle.addGestureRecognizer(tapGestureRecognizer)
     }
     func navigateToPage(page:Page){
         portalView.collapseNavMenu()
         portalView.pageContainer.removeSubviews()
-        portalView.headerView.setPageName(page.rawValue)
+        portalView.headerView.setPageName(name: page.rawValue)
         switch page {
             case .PROFILE: launchProfile()
             case .FEED: launchFeed()
@@ -40,7 +40,7 @@ class PortalController: UIViewController {
     }
     func launchProfile(){
         killChildControllers()
-        spawnChildController(ProfileController(), view: portalView.pageContainer)
+        spawnChildController(controller: ProfileController(), view: portalView.pageContainer)
     }
     func launchFeed(){
         print("launch feed")
@@ -52,8 +52,8 @@ class PortalController: UIViewController {
         portalView.addSubview(storyCard)
         storyCard.imageView.image = UIImage(named: "campfire")
         storyCard.enableTap(target: storyCard, action: #selector(StoryCard.removeFromSuperview))
-        let masterController = getParentOfType(MasterController)!
-        storyCard.launchButton.addTarget(masterController, action: #selector(MasterController.loadStory), forControlEvents: .TouchUpInside)
+        let masterController = getParentOfType(type: MasterController.self)!
+        storyCard.launchButton.addTarget(masterController, action: #selector(MasterController.loadStory), for: .touchUpInside)
     }
     
     //MARK: OVERRIDES
@@ -64,7 +64,7 @@ class PortalController: UIViewController {
     override func viewDidLoad() {
         populateNavMenu()
         enableNavMenu()
-        navigateToPage(.PROFILE)
+        navigateToPage(page: .PROFILE)
     }
 }
 

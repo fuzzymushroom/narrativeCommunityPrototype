@@ -4,7 +4,7 @@ import CoreGraphics
 class DataUtils {
     
     static func getDictionaryFromResource(resourceName:String, ofType type: String) -> NSDictionary? {
-        guard let path = NSBundle.mainBundle().pathForResource(resourceName, ofType: type) else{
+        guard let path = Bundle.main.path(forResource: resourceName, ofType: type) else{
             print ("no resource named " + resourceName + "." + type)
             return nil
         }
@@ -16,24 +16,10 @@ class DataUtils {
     }
 }
 
-extension MutableCollectionType where Index == Int {
-    /// Shuffle the elements of `self` in-place.
-    mutating func shuffleInPlace() {
-        // empty and single-element collections don't shuffle
-        if count < 2 { return }
-        
-        for i in 0..<count - 1 {
-            let j = Int(arc4random_uniform(UInt32(count - i))) + i
-            guard i != j else { continue }
-            swap(&self[i], &self[j])
-        }
-    }
-}
-
-public typealias VoidClosure = Void -> Void
+public typealias VoidClosure = (Void) -> Void
 
 extension CGPoint {
-    func offset(x x:CGFloat, y:CGFloat) -> CGPoint{
+    func offset(x:CGFloat, y:CGFloat) -> CGPoint{
         return CGPoint(x: self.x + x, y: self.y + y)
     }
 }

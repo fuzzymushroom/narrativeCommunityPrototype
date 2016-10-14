@@ -19,10 +19,10 @@ class StoryController: UIViewController {
         self.view = storyView
     }
     override func viewDidLoad() {
-        goToFrame(0)
+        goToFrame(index: 0)
         storyView.enableTap(target: self, action: #selector(advanceFrame))
-        let masterController = getParentOfType(MasterController)!
-        storyView.exitButton.addTarget(masterController, action: #selector(MasterController.loadPortal), forControlEvents: .TouchUpInside)
+        let masterController = getParentOfType(type: MasterController.self)!
+        storyView.exitButton.addTarget(masterController, action: #selector(MasterController.loadPortal), for: .touchUpInside)
     }
     
     //MARK: FUNCTIONS
@@ -35,11 +35,11 @@ class StoryController: UIViewController {
         if frameIndex == frames.count - 1 {
             endStory()
         } else {
-            goToFrame(frameIndex + 1)
+            goToFrame(index: frameIndex + 1)
         }
     }
     func endStory(){
-        let masterController = getParentOfType(MasterController)!
+        let masterController = getParentOfType(type: MasterController.self)!
         masterController.loadPortal()
     }
 }
