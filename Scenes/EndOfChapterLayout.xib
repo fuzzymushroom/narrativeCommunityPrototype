@@ -1,18 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="DidactGothic.ttf">
+            <string>DidactGothic</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EndOfChapterController" customModule="Profile" customModuleProvider="target">
+            <connections>
+                <outlet property="author" destination="QcM-RH-Lah" id="aqY-3S-G4F"/>
+                <outlet property="favoriteButton" destination="EOj-AL-N3I" id="b9j-aG-9ES"/>
+                <outlet property="followButton" destination="qEX-Ka-2Hw" id="yL3-nd-vxX"/>
+                <outlet property="homeButton" destination="VKZ-Yc-aPx" id="bVr-Ju-rWQ"/>
+                <outlet property="recommendButton" destination="v3D-XT-lN8" id="hrR-n7-rPv"/>
+                <outlet property="roseButton" destination="6tN-Gt-8qK" id="doj-6W-rEq"/>
+                <outlet property="view" destination="iN0-l3-epB" id="xnn-pL-Bxu"/>
+                <outlet property="visitAuthorButton" destination="VMT-av-tGI" id="raZ-qN-vUC"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1d-fd-XQF">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="cSw-zI-O8G"/>
+                        <constraint firstAttribute="height" constant="50" id="gwn-7u-caP"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="buttonReadNext.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMT-av-tGI">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="14E-Rx-fok"/>
+                        <constraint firstAttribute="width" constant="97" id="qIP-nu-U2v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="14"/>
+                    <state key="normal" title="Visit Author" backgroundImage="buttonLight.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKZ-Yc-aPx">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="5n2-Jf-ERq"/>
+                        <constraint firstAttribute="width" constant="97" id="vAf-fB-vdK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="14"/>
+                    <state key="normal" title="Home" backgroundImage="buttonLight.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cass.png" translatesAutoresizingMaskIntoConstraints="NO" id="QcM-RH-Lah">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="KNS-gH-QKw" userLabel="width = 150"/>
+                        <constraint firstAttribute="height" constant="535" id="gnF-z0-8UZ" userLabel="height = 535"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campfire" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KD-eC-zhH">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="zCa-eE-QBk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="24"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Pink-Haired Cass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGd-RG-lRb">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="MPy-lv-stL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tN-Gt-8qK">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="oir-3Y-kZg"/>
+                        <constraint firstAttribute="height" constant="30" id="pDd-27-41V"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="buttonLovedIt.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEX-Ka-2Hw">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="oTH-k6-C3m"/>
+                        <constraint firstAttribute="height" constant="30" id="r2b-GW-i98"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" backgroundImage="buttonFollow.png"/>
+                    <state key="selected" backgroundImage="buttonFollowing.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOj-AL-N3I">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Jy0-G9-5ID"/>
+                        <constraint firstAttribute="width" constant="100" id="Wb2-87-LZU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="14"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="contentEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Favorite" backgroundImage="buttonWhite.png">
+                        <color key="titleColor" red="0.41568627450980389" green="0.56862745098039214" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" backgroundImage="buttonWhiteSelected.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3D-XT-lN8">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="OXP-Ge-ymT"/>
+                        <constraint firstAttribute="height" constant="30" id="naX-eq-dEA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="10"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="contentEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Recommended" backgroundImage="buttonWhite.png">
+                        <color key="titleColor" red="0.41568627450980389" green="0.56862745098039214" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="Recommend" backgroundImage="buttonWhiteSelected.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="L1d-fd-XQF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1rD-dF-7Xi"/>
+                <constraint firstItem="qEX-Ka-2Hw" firstAttribute="leading" secondItem="6tN-Gt-8qK" secondAttribute="leading" id="3On-zg-BEB"/>
+                <constraint firstItem="v3D-XT-lN8" firstAttribute="top" secondItem="EOj-AL-N3I" secondAttribute="bottom" constant="8" id="6KK-he-3l9"/>
+                <constraint firstItem="uGd-RG-lRb" firstAttribute="leading" secondItem="6KD-eC-zhH" secondAttribute="leading" id="8NI-9U-V5K"/>
+                <constraint firstItem="EOj-AL-N3I" firstAttribute="leading" secondItem="qEX-Ka-2Hw" secondAttribute="leading" id="8oW-Ar-Xlh"/>
+                <constraint firstItem="EOj-AL-N3I" firstAttribute="top" secondItem="qEX-Ka-2Hw" secondAttribute="bottom" constant="8" id="Bwa-Wf-bXr"/>
+                <constraint firstItem="6KD-eC-zhH" firstAttribute="top" secondItem="QcM-RH-Lah" secondAttribute="top" id="DNA-wJ-nqg"/>
+                <constraint firstItem="QcM-RH-Lah" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="G4y-ZB-pAp"/>
+                <constraint firstItem="QcM-RH-Lah" firstAttribute="top" secondItem="VMT-av-tGI" secondAttribute="bottom" constant="40" id="IIN-OU-DLJ"/>
+                <constraint firstItem="uGd-RG-lRb" firstAttribute="trailing" secondItem="6KD-eC-zhH" secondAttribute="trailing" id="Uva-yy-U6w"/>
+                <constraint firstItem="v3D-XT-lN8" firstAttribute="leading" secondItem="EOj-AL-N3I" secondAttribute="leading" id="Wdl-G3-eEq"/>
+                <constraint firstItem="VKZ-Yc-aPx" firstAttribute="trailing" secondItem="L1d-fd-XQF" secondAttribute="trailing" id="XWT-er-nZz"/>
+                <constraint firstItem="6tN-Gt-8qK" firstAttribute="centerX" secondItem="uGd-RG-lRb" secondAttribute="centerX" id="YHx-7T-VYa"/>
+                <constraint firstItem="L1d-fd-XQF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="azc-bq-yYj"/>
+                <constraint firstItem="qEX-Ka-2Hw" firstAttribute="top" secondItem="6tN-Gt-8qK" secondAttribute="top" id="emM-6g-byI"/>
+                <constraint firstAttribute="trailing" secondItem="6KD-eC-zhH" secondAttribute="trailing" constant="20" id="fw1-8b-iSR"/>
+                <constraint firstItem="VKZ-Yc-aPx" firstAttribute="top" secondItem="L1d-fd-XQF" secondAttribute="bottom" constant="8" id="gUn-dc-t0Q"/>
+                <constraint firstItem="6KD-eC-zhH" firstAttribute="leading" secondItem="QcM-RH-Lah" secondAttribute="trailing" constant="10" id="lxz-Dc-9MN"/>
+                <constraint firstItem="uGd-RG-lRb" firstAttribute="top" secondItem="6KD-eC-zhH" secondAttribute="bottom" id="pdd-7r-Ajs"/>
+                <constraint firstItem="6tN-Gt-8qK" firstAttribute="top" secondItem="uGd-RG-lRb" secondAttribute="bottom" constant="30" id="qXY-EL-Sir"/>
+                <constraint firstItem="VMT-av-tGI" firstAttribute="top" secondItem="L1d-fd-XQF" secondAttribute="bottom" constant="8" id="vhT-hR-Geo"/>
+                <constraint firstItem="VMT-av-tGI" firstAttribute="leading" secondItem="L1d-fd-XQF" secondAttribute="leading" id="zFM-SD-NPt"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
+    <resources>
+        <image name="buttonFollow.png" width="100" height="30"/>
+        <image name="buttonFollowing.png" width="100" height="30"/>
+        <image name="buttonLight.png" width="97" height="25"/>
+        <image name="buttonLovedIt.png" width="100" height="30"/>
+        <image name="buttonReadNext.png" width="200" height="50"/>
+        <image name="buttonWhite.png" width="100" height="30"/>
+        <image name="buttonWhiteSelected.png" width="100" height="30"/>
+        <image name="cass.png" width="110" height="535"/>
+    </resources>
 </document>

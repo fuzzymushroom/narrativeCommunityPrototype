@@ -6,9 +6,11 @@ class MasterController: UIViewController {
     let gameModel = GameModel()
     
     //MARK: Setup
-    func loadPortal(){
+    func loadPortal(page: Page){
         killChildControllers()
-        spawnChildController(controller: PortalController(), view: view)
+        let portalController = PortalController()
+        spawnChildController(controller: portalController, view: view)
+        portalController.navigateToPage(page: page)
     }
     func loadStory(){
         killChildControllers()
@@ -17,7 +19,9 @@ class MasterController: UIViewController {
     
     //MARK: UIViewController overrides
     override func viewDidLoad() {
-        loadPortal()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        loadPortal(page: .PROFILE)
     }
     override var shouldAutorotate: Bool {
         return true

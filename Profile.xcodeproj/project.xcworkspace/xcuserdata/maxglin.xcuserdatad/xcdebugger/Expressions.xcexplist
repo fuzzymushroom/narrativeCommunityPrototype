@@ -3,6 +3,226 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "MyShelfController.viewDidLoad() -&gt; ():MyShelfController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "shelf1.frame.width">
+            </PersistentString>
+            <PersistentString
+               value = "shelfContainer.frame">
+            </PersistentString>
+            <PersistentString
+               value = "shelfContainer.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "credBar.frame">
+            </PersistentString>
+            <PersistentString
+               value = "shelf1.stackView.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalController.viewDidAppear(Bool) -&gt; ():PortalController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pageContainer.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "navMenu.constraints">
+            </PersistentString>
+            <PersistentString
+               value = "pageContainer.constraints">
+            </PersistentString>
+            <PersistentString
+               value = "pageContainer.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyShelfController.(populateShelves in _E2D24F2E3D665ABFB91ACC7A41E9357B)() -&gt; ():MyShelfController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pc is PortalController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalController.viewDidLoad() -&gt; ():PortalController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "window">
+            </PersistentString>
+            <PersistentString
+               value = "pageContainer.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "parent.view.autoresizesSubviews">
+            </PersistentString>
+            <PersistentString
+               value = "pageContainer.frame">
+            </PersistentString>
+            <PersistentString
+               value = "view.frame">
+            </PersistentString>
+            <PersistentString
+               value = "parentViewController.view.frame">
+            </PersistentString>
+            <PersistentString
+               value = "parent.view.frame">
+            </PersistentString>
+            <PersistentString
+               value = "portalView.navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalView.customSetup() -&gt; ():PortalView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "-navMenu.frame.width">
+            </PersistentString>
+            <PersistentString
+               value = "navMenu.superview">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MasterLayout.customSetup() -&gt; ():MasterLayout.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "label">
+            </PersistentString>
+            <PersistentString
+               value = "label.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyShelfController.populateShelves() -&gt; ():MyShelfController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "shelf.view.bounds.height">
+            </PersistentString>
+            <PersistentString
+               value = "shelfContainer.bounds.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalController.openStoryCard() -&gt; ():PortalController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.frame">
+            </PersistentString>
+            <PersistentString
+               value = "UIView(frame: view.frame).frame">
+            </PersistentString>
+            <PersistentString
+               value = "storyCard.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalController.updateViewConstraints() -&gt; ():PortalController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "portalView.navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Shelf.customSetup() -&gt; ():Shelf.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "scrollView">
+            </PersistentString>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+            <PersistentString
+               value = "stackView.frame">
+            </PersistentString>
+            <PersistentString
+               value = "scrollView.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Shelf.addStory() -&gt; ():Shelf.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "story.intrinsicContentSize().width">
+            </PersistentString>
+            <PersistentString
+               value = "stackView.frame">
+            </PersistentString>
+            <PersistentString
+               value = "stackView.intrinsicContentSize()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UIViewFromNib.init(frame : CGRect) -&gt; UIViewFromNib:UIKitUtils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+            <PersistentString
+               value = "nibView.frame">
+            </PersistentString>
+            <PersistentString
+               value = "layoutIfNeeded()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalView.layoutSubviews() -&gt; ():PortalView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Shelf.init() -&gt; Shelf:Shelf.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalView.toggleNavMenu() -&gt; ():PortalView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NavMenu.addNavCell(named : String, onTap : () -&gt; ()) -&gt; ():NavMenu.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nibView.frame">
+            </PersistentString>
+            <PersistentString
+               value = "navCell.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Shelf.didMoveToWindow() -&gt; ():Shelf.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "stackView.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "stackView.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "PortalController.viewDidLayoutSubviews() -&gt; ():PortalController.swift">
          <PersistentStrings>
             <PersistentString
@@ -31,28 +251,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "UIViewFromNib.intrinsicContentSize() -&gt; CGSize:UIKitUtils.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "frame.size">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "MasterLayout.customSetup() -&gt; ():MasterLayout.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "label">
-            </PersistentString>
-            <PersistentString
-               value = "label.text">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "PortalController.tapNavCell(NavCell) -&gt; ():PortalController.swift">
-      </ContextState>
-      <ContextState
          contextName = "GameViewController.viewDidLoad() -&gt; ():GameViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -61,129 +259,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "PortalController.updateViewConstraints() -&gt; ():PortalController.swift">
+         contextName = "MyShelfController.addShelf(shelf : Shelf) -&gt; ():MyShelfController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "portalView.navMenu.frame.origin">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "MyShelfPage.addShelf(Shelf) -&gt; ():MyShelfPage.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "shelfStack.frame">
+               value = "shelfStack.frame.height">
             </PersistentString>
             <PersistentString
-               value = "shelf.intrinsicContentSize()">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "AppDelegate.application(UIApplication, didFinishLaunchingWithOptions : [NSObject : AnyObject]?) -&gt; Bool:AppDelegate.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "UIScreen.mainScreen().bounds">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "PortalView.layoutSubviews() -&gt; ():PortalView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "navMenu.frame.origin">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "UIGestureRecognizerWithClosure.init(view : UIView, nizer : UIGestureRecognizer, closure : () -&gt; ()) -&gt; UIGestureRecognizerWithClosure:UIGestureRecognizerWithClosure.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "#selector(tester)">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "UIViewController.spawnChildController(UIViewController) -&gt; ():UIKitUtils.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "(controller as! PortalController).portalView.navMenu.frame.origin">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "PortalController.viewDidLoad() -&gt; ():PortalController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "portalView.navMenu.frame.origin">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "PortalController.viewWillLayoutSubviews() -&gt; ():PortalController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "portalView.navMenu.frame.origin">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "MyShelfController.(populateShelves in _E2D24F2E3D665ABFB91ACC7A41E9357B)() -&gt; ():MyShelfController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "pc is PortalController">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "UIGestureRecognizerWithClosure.init(view : UIView, nizer : UIGestureRecognizer, closure : () -&gt; ()) -&gt; UIGestureRecognizerWithClosure:UIKitUtils.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "#selector(UIGestureRecognizerWithClosure.invokeTargetz(_:))">
-            </PersistentString>
-            <PersistentString
-               value = "nizer.targets">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "PortalView.customSetup() -&gt; ():PortalView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "-navMenu.frame.width">
-            </PersistentString>
-            <PersistentString
-               value = "navMenu.superview">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "PortalView.toggleNavMenu() -&gt; ():PortalView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "navMenu.frame.origin">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "Shelf.addStory() -&gt; ():Shelf.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "stackView.intrinsicContentSize()">
-            </PersistentString>
-            <PersistentString
-               value = "story.intrinsicContentSize().width">
-            </PersistentString>
-            <PersistentString
-               value = "stackView.frame">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "MasterController.viewDidLoad() -&gt; ():MasterController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "(childViewControllers[0] as! PortalController).portalView.navMenu.frame.origin">
+               value = "shelf.intrinsicContentSize.height">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -205,10 +287,182 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "UIViewController.spawnChildController(UIViewController) -&gt; ():UIKitUtils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(controller as! PortalController).portalView.navMenu.frame.origin">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalController.launchProfile() -&gt; ():PortalController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pageContainer.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyShelfController.viewDidAppear(Bool) -&gt; ():MyShelfController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "shelfContainer.frame">
+            </PersistentString>
+            <PersistentString
+               value = "credBar.layoutIfNeeded()">
+            </PersistentString>
+            <PersistentString
+               value = "view.layoutIfNeeded()">
+            </PersistentString>
+            <PersistentString
+               value = "credBar.frame">
+            </PersistentString>
+            <PersistentString
+               value = "shelfContainer.layoutIfNeeded()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UIViewFromNib.intrinsicContentSize() -&gt; CGSize:UIKitUtils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MasterController.viewDidLoad() -&gt; ():MasterController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(childViewControllers[0] as! PortalController).portalView.navMenu.frame.origin">
+            </PersistentString>
+            <PersistentString
+               value = "view.frame.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.application(UIApplication, didFinishLaunchingWithOptions : [UIApplicationLaunchOptionsKey : Any]?) -&gt; Bool:AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mc.view.frame">
+            </PersistentString>
+            <PersistentString
+               value = "UIScreen.main.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "mc.childViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UIViewController.spawnChildController(controller : UIViewController, view : UIView) -&gt; ():UIKitUtils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.frame.size">
+            </PersistentString>
+            <PersistentString
+               value = "view.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyShelfPage.addShelf(Shelf) -&gt; ():MyShelfPage.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "shelfStack.frame">
+            </PersistentString>
+            <PersistentString
+               value = "shelf.intrinsicContentSize()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UIGestureRecognizerWithClosure.init(view : UIView, nizer : UIGestureRecognizer, closure : () -&gt; ()) -&gt; UIGestureRecognizerWithClosure:UIGestureRecognizerWithClosure.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "#selector(tester)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalController.tapNavCell(NavCell) -&gt; ():PortalController.swift">
+      </ContextState>
+      <ContextState
          contextName = "NavMenu.addNavCell(NavCell) -&gt; ():NavMenu.swift">
          <PersistentStrings>
             <PersistentString
                value = "stackView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.application(UIApplication, didFinishLaunchingWithOptions : [NSObject : AnyObject]?) -&gt; Bool:AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UIScreen.mainScreen().bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UIGestureRecognizerWithClosure.init(view : UIView, nizer : UIGestureRecognizer, closure : () -&gt; ()) -&gt; UIGestureRecognizerWithClosure:UIKitUtils.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "#selector(UIGestureRecognizerWithClosure.invokeTargetz(_:))">
+            </PersistentString>
+            <PersistentString
+               value = "nizer.targets">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Shelf.addStory() -&gt; UIImageView:Shelf.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "thumb.frame">
+            </PersistentString>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+            <PersistentString
+               value = "stackView.frame">
+            </PersistentString>
+            <PersistentString
+               value = "scrollView.contentSize">
+            </PersistentString>
+            <PersistentString
+               value = "story.frame">
+            </PersistentString>
+            <PersistentString
+               value = "stackView.getAxisLength()">
+            </PersistentString>
+            <PersistentString
+               value = "layoutIfNeeded()">
+            </PersistentString>
+            <PersistentString
+               value = "scrollView.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyShelfController.toggleFollow() -&gt; ():MyShelfController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "parent.parent.view.frame.size">
+            </PersistentString>
+            <PersistentString
+               value = "view.frame.size">
+            </PersistentString>
+            <PersistentString
+               value = "parent.view.frame.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PortalController.viewWillLayoutSubviews() -&gt; ():PortalController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "portalView.navMenu.frame.origin">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

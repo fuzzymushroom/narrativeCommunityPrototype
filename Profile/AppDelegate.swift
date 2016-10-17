@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.makeKeyAndVisible()
         let mc = MasterController()
-        mc.view = UIView()
         self.window?.rootViewController = mc;
         mc.viewDidLoad()
         return true

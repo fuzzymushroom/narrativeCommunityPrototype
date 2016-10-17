@@ -21,11 +21,10 @@ class StoryController: UIViewController {
     override func viewDidLoad() {
         goToFrame(index: 0)
         storyView.enableTap(target: self, action: #selector(advanceFrame))
-        let masterController = getParentOfType(type: MasterController.self)!
-        storyView.exitButton.addTarget(masterController, action: #selector(MasterController.loadPortal), for: .touchUpInside)
+        storyView.exitButton.addTarget(self, action: #selector(goProfile), for: .touchUpInside)
     }
     
-    //MARK: FUNCTIONS
+    //MARK: STORY NAVIGATION
     func goToFrame(index:Int){
         assert(index < frames.count, "frame index=\(index) out of bounds")
         frameIndex = index
@@ -33,13 +32,27 @@ class StoryController: UIViewController {
     }
     func advanceFrame(){
         if frameIndex == frames.count - 1 {
-            endStory()
+            openEndOfChapter()
         } else {
             goToFrame(index: frameIndex + 1)
         }
     }
-    func endStory(){
-        let masterController = getParentOfType(type: MasterController.self)!
-        masterController.loadPortal()
+    
+    //MARK: END OF CHAPTER
+    func openEndOfChapter(){
+        killChildControllers()
+        let eocc = EndOfChapterController()
+        spawnChildController(controller: eocc, view: view)
     }
+    
+    //MARK: EXIT
+    func goHome(){
+        let masterController = getParentOfType(type: MasterController.self)!
+        masterController.loadPortal(page: .HOME)
+    }
+    func goProfile(){
+        let masterController = getParentOfType(type: MasterController.self)!
+        masterController.loadPortal(page: .PROFILE)
+    }
+
 }

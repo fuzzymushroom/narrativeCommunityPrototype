@@ -1,48 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10116"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="DidactGothic.ttf">
+            <string>DidactGothic</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PortalView" customModule="Profile" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PortalController" customModule="Profile" customModuleProvider="target">
             <connections>
-                <outlet property="headerView" destination="6hJ-1u-fnK" id="2mG-kL-Eaf"/>
+                <outlet property="navMenu" destination="egc-HD-PNy" id="9SB-e2-bHi"/>
+                <outlet property="navToggle" destination="vgb-rx-1NQ" id="3MF-4k-dXz"/>
                 <outlet property="pageContainer" destination="hMd-m5-SVi" id="P8c-Ag-0kX"/>
+                <outlet property="pageLabel" destination="zjw-aU-nCI" id="mG7-Dc-jD4"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YW7-MV-rog"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleAspectFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMd-m5-SVi">
-                    <rect key="frame" x="0.0" y="50" width="414" height="686"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hJ-1u-fnK" customClass="HeaderView" customModule="Profile" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hJ-1u-fnK">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconMenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-rx-1NQ">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="qXF-DB-jGl"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hanna Montana Montana Montana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjw-aU-nCI">
+                            <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="24"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99215686274509807" green="0.65490196078431373" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="vgb-rx-1NQ" firstAttribute="top" secondItem="6hJ-1u-fnK" secondAttribute="top" constant="5" id="3X7-Do-2MB"/>
+                        <constraint firstItem="vgb-rx-1NQ" firstAttribute="leading" secondItem="6hJ-1u-fnK" secondAttribute="leading" constant="5" id="6VE-i0-A00"/>
+                        <constraint firstAttribute="bottom" secondItem="zjw-aU-nCI" secondAttribute="bottom" constant="5" id="8ae-VS-vGF"/>
+                        <constraint firstItem="zjw-aU-nCI" firstAttribute="leading" secondItem="vgb-rx-1NQ" secondAttribute="trailing" constant="5" id="KVy-9L-bAd"/>
+                        <constraint firstAttribute="bottom" secondItem="vgb-rx-1NQ" secondAttribute="bottom" constant="5" id="UZj-eO-keC"/>
+                        <constraint firstItem="zjw-aU-nCI" firstAttribute="top" secondItem="6hJ-1u-fnK" secondAttribute="top" constant="5" id="X5m-n5-qh7"/>
+                        <constraint firstAttribute="height" constant="50" id="pIf-mz-SlO"/>
+                        <constraint firstAttribute="trailing" secondItem="zjw-aU-nCI" secondAttribute="trailing" constant="5" id="ytN-Ag-W3O"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egc-HD-PNy" customClass="NavMenu" customModule="Profile" customModuleProvider="target">
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="pIf-mz-SlO"/>
+                        <constraint firstAttribute="width" constant="180" id="4uO-V8-44F"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="hMd-m5-SVi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="86u-YI-jKh"/>
                 <constraint firstAttribute="trailing" secondItem="hMd-m5-SVi" secondAttribute="trailing" id="E9U-qN-VxU"/>
+                <constraint firstItem="egc-HD-PNy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F0G-B0-ja3"/>
+                <constraint firstItem="egc-HD-PNy" firstAttribute="top" secondItem="6hJ-1u-fnK" secondAttribute="bottom" id="MWE-lq-9jS"/>
                 <constraint firstAttribute="trailing" secondItem="6hJ-1u-fnK" secondAttribute="trailing" id="SQr-DL-ZKu"/>
                 <constraint firstItem="6hJ-1u-fnK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vn8-62-024"/>
-                <constraint firstItem="hMd-m5-SVi" firstAttribute="top" secondItem="6hJ-1u-fnK" secondAttribute="bottom" id="W6x-xJ-tKU"/>
+                <constraint firstAttribute="bottom" secondItem="egc-HD-PNy" secondAttribute="bottom" id="ZJN-Mm-kEn"/>
                 <constraint firstItem="6hJ-1u-fnK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bIO-h5-uhp"/>
                 <constraint firstAttribute="bottom" secondItem="hMd-m5-SVi" secondAttribute="bottom" id="hYb-mF-vIT"/>
+                <constraint firstItem="hMd-m5-SVi" firstAttribute="top" secondItem="6hJ-1u-fnK" secondAttribute="bottom" id="ygW-tJ-ivJ"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
-            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
         </view>
     </objects>
+    <resources>
+        <image name="iconMenu.png" width="40" height="40"/>
+    </resources>
 </document>

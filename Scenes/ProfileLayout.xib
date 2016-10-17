@@ -1,47 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="DidactGothic.ttf">
+        <array key="DidactGothic.ttf">
             <string>DidactGothic</string>
-            <string>DidactGothic</string>
-        </mutableArray>
+        </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfilePage" customModule="Profile" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileController" customModule="Profile" customModuleProvider="target">
             <connections>
                 <outlet property="postTab" destination="L3v-fG-oyv" id="MhK-ex-FVf"/>
                 <outlet property="shelfTab" destination="tPC-VO-Bgm" id="I0R-Qs-REp"/>
+                <outlet property="view" destination="iN0-l3-epB" id="m7s-bM-9Al"/>
                 <outlet property="viewport" destination="tCQ-X6-3hY" id="HEI-48-iuH"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="686"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tCQ-X6-3hY">
-                    <rect key="frame" x="0.0" y="30" width="414" height="656"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QJG-6b-n9F">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPC-VO-Bgm" customClass="StylizedButton" customModule="Profile" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="207" height="30"/>
-                            <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.89248216152191162" green="0.89245545864105225" blue="0.8924705982208252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="20"/>
-                            <color key="tintColor" red="0.86666666670000003" green="0.61960784310000006" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.82941257953643799" green="0.55364590883255005" blue="0.14276765286922455" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Shelf">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3v-fG-oyv" customClass="StylizedButton" customModule="Profile" customModuleProvider="target">
-                            <rect key="frame" x="207" y="0.0" width="207" height="30"/>
-                            <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.89248216152191162" green="0.89245545864105225" blue="0.8924705982208252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="20"/>
                             <state key="normal" title="Posts">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,24 +51,17 @@
                     </constraints>
                 </stackView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="tCQ-X6-3hY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Jv-ck-Dpi"/>
-                <constraint firstItem="tCQ-X6-3hY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="29" id="9J1-0o-kVg"/>
                 <constraint firstAttribute="trailing" secondItem="tCQ-X6-3hY" secondAttribute="trailing" id="KCQ-O1-G39"/>
                 <constraint firstAttribute="trailing" secondItem="QJG-6b-n9F" secondAttribute="trailing" id="O4v-UD-ZDf"/>
+                <constraint firstItem="tCQ-X6-3hY" firstAttribute="top" secondItem="QJG-6b-n9F" secondAttribute="bottom" id="Rux-5S-j0z"/>
                 <constraint firstItem="QJG-6b-n9F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vfv-fx-UOl"/>
                 <constraint firstItem="QJG-6b-n9F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jW4-Ef-JjP"/>
-                <constraint firstItem="tCQ-X6-3hY" firstAttribute="top" secondItem="QJG-6b-n9F" secondAttribute="bottom" id="s2a-kS-jhj"/>
                 <constraint firstAttribute="bottom" secondItem="tCQ-X6-3hY" secondAttribute="bottom" id="zab-WO-suR"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="9J1-0o-kVg"/>
-                </mask>
-            </variation>
         </view>
     </objects>
 </document>

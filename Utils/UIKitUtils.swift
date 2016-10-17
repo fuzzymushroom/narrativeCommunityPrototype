@@ -5,29 +5,33 @@ class UIViewFromNib:UIView{
     
     //subclasses of this must override getBundleName
     
+    init(){
+        super.init(frame: .zero)
+        let nibView = getViewFromXib()
+        frame = nibView.frame
+        addSubview(nibView)
+        customSetup()
+    }
     override init(frame: CGRect){
         super.init(frame: frame)
-        xibSetup()
+        let nibView = getViewFromXib()
+        nibView.frame = frame
+        addSubview(nibView)
         customSetup()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        xibSetup()
+        let nibView = getViewFromXib()
+        nibView.frame = bounds
+        addSubview(nibView)
         customSetup()
     }
-    private func xibSetup(){
+    private func getViewFromXib() -> UIView {
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: getNibName(), bundle: bundle)
-        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
-        frame = view.bounds
+        return nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         //view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-        addSubview(view)
     }
-    /*
-    override func intrinsicContentSize() -> CGSize {
-        return frame.size
-    }
- */
     func getNibName() -> String{
         fatalError("You must override the getBundleName method in subclasses of UIViewFromNib")
     }
@@ -51,6 +55,8 @@ extension UIView {
 extension UIViewController {
     func spawnChildController(controller:UIViewController, view:UIView){
         addChildViewController(controller)
+        view.layoutIfNeeded()
+        controller.view.frame = CGRect(origin: .zero, size: view.bounds.size)
         view.addSubview(controller.view)
         controller.didMove(toParentViewController: self)
     }
@@ -74,27 +80,23 @@ extension UIViewController {
 }
 
 extension UIStackView {
-    func fitToContent(){
-        
+    func getAxisLength() -> CGFloat {
+
         let count = arrangedSubviews.count
-        var width = frame.width
-        var height = frame.height
-        
-        if axis == .horizontal {
-            width = 0
-            for view in arrangedSubviews {
-                width += view.intrinsicContentSize.width
-            }
-            width += count > 1 ? (count - 1) * spacing : 0
-        } else {
-            height = 0
-            for view in arrangedSubviews {
-                height += view.intrinsicContentSize.height
-            }
-            height += count > 1 ? (count - 1) * spacing : 0
+        var length = CGFloat(0)
+
+        for view in arrangedSubviews {
+            length += axis == .horizontal ? view.intrinsicContentSize.width : view.intrinsicContentSize.height
         }
-        
-        let size = CGSize(width: width, height: height)
-        frame = CGRect(origin: frame.origin, size: size)
+        length += count > 1 ? (count - 1) * spacing : 0
+        return length
     }
 }
+
+extension UIButton {
+    func toggleSelected() -> Bool {
+        isSelected = !isSelected
+        return isSelected
+    }
+}
+

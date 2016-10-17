@@ -1,19 +1,22 @@
 import UIKit
 
-class NavMenu:UIViewFromNib{
-    
-    //MARK: VARIABLES
-    @IBOutlet var stackView: UIStackView!
-    var isExpanded = false
+class NavMenu:UIView{
 
-    override func getNibName() -> String{
-        return "NavMenuLayout"
-    }
-    override func customSetup() {
+    //MARK: VARIABLES
+    let navCells = [NavCell]()
+    var height = CGFloat(0)
+    
+    //MARK: METHODS
+    func addNavCell(named name:String, onTap:@escaping VoidClosure){
+        let navCell = NavCell()
+        navCell.setName(name: name)
+        navCell.setOnTap(onTap: onTap)
+        
+        navCell.frame.origin = CGPoint(x: 0, y: height)
+        addSubview(navCell)
+        height += navCell.frame.height
     }
     
-    func addNavCell(navCell:NavCell){
-        stackView.addArrangedSubview(navCell)
-        navCell.showBorder()
-    }
+    
+
 }

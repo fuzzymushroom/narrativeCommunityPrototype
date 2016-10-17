@@ -1,37 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11201"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyShelfPage" customModule="Profile" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyShelfController" customModule="Profile" customModuleProvider="target">
             <connections>
                 <outlet property="credBar" destination="qHa-DN-Mm7" id="Ee3-po-hGV"/>
-                <outlet property="shelfContainer" destination="fnI-to-C2h" id="r8B-pK-HCy"/>
+                <outlet property="shelf1" destination="fuw-md-3Nf" id="apu-C7-Quq"/>
+                <outlet property="shelf2" destination="lPb-mP-gte" id="1KT-sa-0If"/>
                 <outlet property="shortScene" destination="STg-m9-qdB" id="Gja-aN-lPm"/>
+                <outlet property="view" destination="iN0-l3-epB" id="CZu-xO-qWo"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="STg-m9-qdB" customClass="ShortScene" customModule="Profile" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STg-m9-qdB" customClass="ShortScene" customModule="Profile" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qHa-DN-Mm7" customClass="CredBar" customModule="Profile" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="290" width="414" height="50"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qHa-DN-Mm7" customClass="CredBar" customModule="Profile" customModuleProvider="target">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="clK-iA-Vyl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuw-md-3Nf" customClass="Shelf" customModule="Profile" customModuleProvider="target">
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="158" id="ilz-jt-buL"/>
+                    </constraints>
                 </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnI-to-C2h">
-                    <rect key="frame" x="0.0" y="340" width="414" height="316"/>
-                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPb-mP-gte" customClass="Shelf" customModule="Profile" customModuleProvider="target">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="158" id="yN0-cK-hW7"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qHa-DN-Mm7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6pM-O7-f5G"/>
+                <constraint firstItem="lPb-mP-gte" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BHY-ub-ZhE"/>
+                <constraint firstAttribute="trailing" secondItem="fuw-md-3Nf" secondAttribute="trailing" id="P97-sK-THZ"/>
+                <constraint firstAttribute="trailing" secondItem="STg-m9-qdB" secondAttribute="trailing" id="Qhs-gc-KH5"/>
+                <constraint firstItem="STg-m9-qdB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-80" id="UgF-CV-5eW"/>
+                <constraint firstAttribute="trailing" secondItem="qHa-DN-Mm7" secondAttribute="trailing" id="Wwl-SM-36s"/>
+                <constraint firstItem="fuw-md-3Nf" firstAttribute="top" secondItem="qHa-DN-Mm7" secondAttribute="bottom" id="aLw-s1-GlA"/>
+                <constraint firstAttribute="bottom" secondItem="STg-m9-qdB" secondAttribute="bottom" id="aT7-nx-AKn"/>
+                <constraint firstItem="STg-m9-qdB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aeu-cc-Xmt"/>
+                <constraint firstItem="lPb-mP-gte" firstAttribute="top" secondItem="fuw-md-3Nf" secondAttribute="bottom" id="gPY-Po-Bj8"/>
+                <constraint firstItem="fuw-md-3Nf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hs7-en-UfP"/>
+                <constraint firstAttribute="trailing" secondItem="lPb-mP-gte" secondAttribute="trailing" id="rBO-rm-PSZ"/>
+                <constraint firstAttribute="bottom" secondItem="lPb-mP-gte" secondAttribute="bottom" id="uOp-tl-JnH"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="114" y="98"/>
         </view>
     </objects>
 </document>
