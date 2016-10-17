@@ -25,7 +25,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1d-fd-XQF">
@@ -104,7 +104,7 @@
                     <state key="normal" title="Favorite" backgroundImage="buttonWhite.png">
                         <color key="titleColor" red="0.41568627450980389" green="0.56862745098039214" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
-                    <state key="selected" backgroundImage="buttonWhiteSelected.png">
+                    <state key="selected" title="Favorited" backgroundImage="buttonWhiteSelected.png">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
@@ -116,10 +116,10 @@
                     <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="10"/>
                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <inset key="contentEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="Recommended" backgroundImage="buttonWhite.png">
+                    <state key="normal" title="Recommend" backgroundImage="buttonWhite.png">
                         <color key="titleColor" red="0.41568627450980389" green="0.56862745098039214" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
-                    <state key="selected" title="Recommend" backgroundImage="buttonWhiteSelected.png">
+                    <state key="selected" title="Recommended" backgroundImage="buttonWhiteSelected.png">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>

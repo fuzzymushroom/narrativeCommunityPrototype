@@ -10,8 +10,7 @@
 		B0003DAA1DADB86B00F710C8 /* ProfileLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0003DA91DADB86B00F710C8 /* ProfileLayout.xib */; };
 		B0003DAE1DADB8BF00F710C8 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0003DAD1DADB8BF00F710C8 /* ProfileController.swift */; };
 		B0041D621DB03B750013C56A /* campfire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0041D611DB03B750013C56A /* campfire@2x.png */; };
-		B0041D641DB03D070013C56A /* StoryViewLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0041D631DB03D070013C56A /* StoryViewLayout.xib */; };
-		B0041D661DB03D320013C56A /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0041D651DB03D320013C56A /* StoryView.swift */; };
+		B0041D641DB03D070013C56A /* StoryLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0041D631DB03D070013C56A /* StoryLayout.xib */; };
 		B0041D6D1DB041230013C56A /* story1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0041D681DB041230013C56A /* story1.png */; };
 		B0041D6E1DB041230013C56A /* story2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0041D691DB041230013C56A /* story2.png */; };
 		B0041D6F1DB041230013C56A /* story3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0041D6A1DB041230013C56A /* story3.png */; };
@@ -72,14 +71,14 @@
 		B0B124271DB5662100A2BEA1 /* EndOfChapterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B124261DB5662100A2BEA1 /* EndOfChapterController.swift */; };
 		B0B1242B1DB579F600A2BEA1 /* buttonWhite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B1242A1DB579F600A2BEA1 /* buttonWhite@2x.png */; };
 		B0B1242D1DB57AA600A2BEA1 /* buttonWhiteSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B1242C1DB57AA600A2BEA1 /* buttonWhiteSelected@2x.png */; };
+		B0B1242F1DB5825700A2BEA1 /* iconRose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B1242E1DB5825700A2BEA1 /* iconRose@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B0003DA91DADB86B00F710C8 /* ProfileLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileLayout.xib; sourceTree = "<group>"; };
 		B0003DAD1DADB8BF00F710C8 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		B0041D611DB03B750013C56A /* campfire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "campfire@2x.png"; sourceTree = "<group>"; };
-		B0041D631DB03D070013C56A /* StoryViewLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryViewLayout.xib; sourceTree = "<group>"; };
-		B0041D651DB03D320013C56A /* StoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		B0041D631DB03D070013C56A /* StoryLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryLayout.xib; sourceTree = "<group>"; };
 		B0041D681DB041230013C56A /* story1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = story1.png; sourceTree = "<group>"; };
 		B0041D691DB041230013C56A /* story2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = story2.png; sourceTree = "<group>"; };
 		B0041D6A1DB041230013C56A /* story3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = story3.png; sourceTree = "<group>"; };
@@ -142,6 +141,7 @@
 		B0B124261DB5662100A2BEA1 /* EndOfChapterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndOfChapterController.swift; sourceTree = "<group>"; };
 		B0B1242A1DB579F600A2BEA1 /* buttonWhite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonWhite@2x.png"; sourceTree = "<group>"; };
 		B0B1242C1DB57AA600A2BEA1 /* buttonWhiteSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonWhiteSelected@2x.png"; sourceTree = "<group>"; };
+		B0B1242E1DB5825700A2BEA1 /* iconRose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconRose@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,7 +250,7 @@
 				B05508481DAF117B00BDD1F2 /* ShelfLayout.xib */,
 				B05508291DAEE15400BDD1F2 /* ShortSceneLayout.xib */,
 				B05508531DB02DEE00BDD1F2 /* StoryCardLayout.xib */,
-				B0041D631DB03D070013C56A /* StoryViewLayout.xib */,
+				B0041D631DB03D070013C56A /* StoryLayout.xib */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -264,7 +264,6 @@
 				B00F40601DAD64580020C2CE /* NavMenu.swift */,
 				B055084A1DAF118500BDD1F2 /* Shelf.swift */,
 				B05508271DAEE0E200BDD1F2 /* ShortScene.swift */,
-				B0041D651DB03D320013C56A /* StoryView.swift */,
 				B05508551DB02EA300BDD1F2 /* StoryCard.swift */,
 			);
 			path = Views;
@@ -337,6 +336,7 @@
 				B05508391DAF034A00BDD1F2 /* iconLaurelPlatinum@2x.png */,
 				B09AE6A11D9B475F001E6EAC /* iconMenu.png */,
 				B00F405C1DAD5D330020C2CE /* iconNav.png */,
+				B0B1242E1DB5825700A2BEA1 /* iconRose@2x.png */,
 			);
 			path = Icons;
 			sourceTree = "<group>";
@@ -419,7 +419,7 @@
 				B00F405B1DAD5C940020C2CE /* NavCellLayout.xib in Resources */,
 				B05508341DAEED4300BDD1F2 /* CredBarLayout.xib in Resources */,
 				B0041D711DB041230013C56A /* story5.png in Resources */,
-				B0041D641DB03D070013C56A /* StoryViewLayout.xib in Resources */,
+				B0041D641DB03D070013C56A /* StoryLayout.xib in Resources */,
 				B0041D621DB03B750013C56A /* campfire@2x.png in Resources */,
 				B03789991DAD571A00DCCACC /* DidactGothic.ttf in Resources */,
 				B055086B1DB038D400BDD1F2 /* thumbnailCampfire@2x.png in Resources */,
@@ -430,6 +430,7 @@
 				B055082E1DAEE60400BDD1F2 /* iconCassName@2x.png in Resources */,
 				B0B1241F1DB55FC500A2BEA1 /* buttonReadNext@2x.png in Resources */,
 				B0041D6D1DB041230013C56A /* story1.png in Resources */,
+				B0B1242F1DB5825700A2BEA1 /* iconRose@2x.png in Resources */,
 				B037898E1DAD54BF00DCCACC /* PortalLayout.xib in Resources */,
 				B05508301DAEE7A500BDD1F2 /* iconEdit@2x.png in Resources */,
 				B0B124251DB5649600A2BEA1 /* buttonLovedIt@2x.png in Resources */,
@@ -466,7 +467,6 @@
 				B043488F1D99F18A00C8EE2B /* DataUtils.swift in Sources */,
 				B05508261DAEE07400BDD1F2 /* MyShelfController.swift in Sources */,
 				B0B124271DB5662100A2BEA1 /* EndOfChapterController.swift in Sources */,
-				B0041D661DB03D320013C56A /* StoryView.swift in Sources */,
 				B04348901D99F18A00C8EE2B /* SKMultilineLabel.swift in Sources */,
 				B00F40611DAD64580020C2CE /* NavMenu.swift in Sources */,
 				B05508201DAEBD7200BDD1F2 /* StylizedButton.swift in Sources */,

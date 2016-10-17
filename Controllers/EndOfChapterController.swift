@@ -11,6 +11,11 @@ class EndOfChapterController:UIViewController{
     @IBOutlet var favoriteButton: UIButton!
     @IBOutlet var recommendButton: UIButton!
     
+    var animator:UIDynamicAnimator!
+    var gravity:UIGravityBehavior!
+    var collision:UICollisionBehavior!
+    var push:UIPushBehavior!
+    
     //MARK: INITIALIZATION
     init(){
         let nibName = "EndOfChapterLayout"
@@ -40,5 +45,19 @@ class EndOfChapterController:UIViewController{
         followButton.isHidden = false
         favoriteButton.isHidden = false
         recommendButton.isHidden = false
+        
+        let rose = UIImageView(image: UIImage(named: "iconRose"))
+        rose.frame.origin = roseButton.frame.origin
+        view.addSubview(rose)
+        
+        animator = UIDynamicAnimator(referenceView: view)
+        collision = UICollisionBehavior(items: [rose])
+        collision.translatesReferenceBoundsIntoBoundary = true
+        push = UIPushBehavior(items: [rose], mode: .instantaneous)
+        push.setAngle(-CGFloat.pi*9/16, magnitude: 2)
+        gravity = UIGravityBehavior(items: [rose])
+        animator.addBehavior(collision)
+        animator.addBehavior(push)
+        animator.addBehavior(gravity)
     }
 }

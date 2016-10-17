@@ -3,7 +3,9 @@ import UIKit
 class StoryController: UIViewController {
     
     //MARK: VARIABLES
-    let storyView = StoryView()
+    
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var exitButton: UIButton!
     let frames = [
         "story1",
         "story2",
@@ -13,25 +15,30 @@ class StoryController: UIViewController {
     ]
     var frameIndex:Int!
     
+    
     //MARK: OVERRIDES
-    override func loadView(){
-        super.loadView()
-        self.view = storyView
+    init(){
+        let nibName = "StoryLayout"
+        super.init(nibName: nibName, bundle: nil)
+    }
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     override func viewDidLoad() {
         goToFrame(index: 0)
-        storyView.enableTap(target: self, action: #selector(advanceFrame))
-        storyView.exitButton.addTarget(self, action: #selector(goProfile), for: .touchUpInside)
+        view.enableTap(target: self, action: #selector(advanceFrame))
+        exitButton.addTarget(self, action: #selector(goProfile), for: .touchUpInside)
     }
     
     //MARK: STORY NAVIGATION
     func goToFrame(index:Int){
         assert(index < frames.count, "frame index=\(index) out of bounds")
         frameIndex = index
-        storyView.showFrame(named: frames[index])
+        imageView.image = UIImage(named: frames[index])
     }
     func advanceFrame(){
         if frameIndex == frames.count - 1 {
+            view.gestureRecognizers?.forEach(view.removeGestureRecognizer)
             openEndOfChapter()
         } else {
             goToFrame(index: frameIndex + 1)
