@@ -12,6 +12,9 @@
                value = "shelfContainer.frame">
             </PersistentString>
             <PersistentString
+               value = "view.frame">
+            </PersistentString>
+            <PersistentString
                value = "shelfContainer.bounds">
             </PersistentString>
             <PersistentString
@@ -259,6 +262,20 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "ShortController.walkTo(location : Location) -&gt; ():ShortController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.frame">
+            </PersistentString>
+            <PersistentString
+               value = "parent.view.frame">
+            </PersistentString>
+            <PersistentString
+               value = "view.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "MyShelfController.addShelf(shelf : Shelf) -&gt; ():MyShelfController.swift">
          <PersistentStrings>
             <PersistentString
@@ -306,19 +323,22 @@
          contextName = "MyShelfController.viewDidAppear(Bool) -&gt; ():MyShelfController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "shelfContainer.frame">
+               value = "shortScene.frame">
             </PersistentString>
             <PersistentString
-               value = "credBar.layoutIfNeeded()">
+               value = "shelfContainer.layoutIfNeeded()">
             </PersistentString>
             <PersistentString
-               value = "view.layoutIfNeeded()">
+               value = "shortController.view.frame">
             </PersistentString>
             <PersistentString
                value = "credBar.frame">
             </PersistentString>
             <PersistentString
-               value = "shelfContainer.layoutIfNeeded()">
+               value = "view.frame">
+            </PersistentString>
+            <PersistentString
+               value = "shelfContainer.frame">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

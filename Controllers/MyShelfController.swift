@@ -3,10 +3,11 @@ import UIKit
 class MyShelfController:UIViewController{
     
     //MARK: VARIABLES
-    @IBOutlet var shortScene: ShortScene!
+    @IBOutlet var shortScene: UIView!
     @IBOutlet var credBar: CredBar!
     @IBOutlet var shelf1: Shelf!
     @IBOutlet var shelf2: Shelf!
+    var shortController:ShortController!
     
     //MARK: INITIALIZATION
     init(){
@@ -17,8 +18,13 @@ class MyShelfController:UIViewController{
         fatalError("init(coder:) has not been implemented")
     }
     override func viewDidLoad() {
+        shortController = ShortController()
+        spawnChildController(controller: shortController, view: shortScene)
         populateCredBar()
         populateShelves()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        runShort()
     }
     private func populateCredBar(){
         credBar.vipAchievement.populate(laurel: .GRAY, name: "VIP", value: "LVL 1")
@@ -48,4 +54,12 @@ class MyShelfController:UIViewController{
     }
     
     //MARK: FUNCTIONS
+    private func runShort(){
+        shortController.spawnCharacter(fileName: "cass", atLocation: .STAGE_RIGHT)
+        shortController.walkToThenSpeak(
+            location: .RIGHT_ISH,
+            name: "Pink-Haired Cass",
+            quote: "Allow myself to introduce my... shelf"
+        )
+    }
 }
