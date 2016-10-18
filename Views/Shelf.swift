@@ -21,8 +21,8 @@ class Shelf:UIViewFromNib{
     func setTitle(name:String, qty:Int){
         headerLabel.text = name + " (\(qty))"
     }
-    func addStory() -> UIImageView {
-        let thumb = UIImage(named: "thumbnailCampfire")
+    func addStory(storyId:String) -> UIImageView {
+        let thumb = UIImage(named: "\(storyId)_thumbnail")
         let story = UIImageView(image: thumb)
         stackView.addArrangedSubview(story)
         stackViewWidth.constant = stackView.getAxisLength()

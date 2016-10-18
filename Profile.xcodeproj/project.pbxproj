@@ -58,7 +58,6 @@
 		B055084D1DAF125200BDD1F2 /* bgShelfHeader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B055084C1DAF125200BDD1F2 /* bgShelfHeader@2x.png */; };
 		B05508541DB02DEE00BDD1F2 /* StoryCardLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05508531DB02DEE00BDD1F2 /* StoryCardLayout.xib */; };
 		B05508561DB02EA300BDD1F2 /* StoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05508551DB02EA300BDD1F2 /* StoryCard.swift */; };
-		B055086B1DB038D400BDD1F2 /* thumbnailCampfire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B05508691DB038D400BDD1F2 /* thumbnailCampfire@2x.png */; };
 		B09AE6921D9B012B001E6EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09AE6911D9B012B001E6EAC /* LaunchScreen.storyboard */; };
 		B09AE6981D9B19A2001E6EAC /* bgCollege.png in Resources */ = {isa = PBXBuildFile; fileRef = B09AE6971D9B19A2001E6EAC /* bgCollege.png */; };
 		B09AE69F1D9B4057001E6EAC /* bgSpeechBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09AE69E1D9B4057001E6EAC /* bgSpeechBubble@2x.png */; };
@@ -74,6 +73,14 @@
 		B0B124311DB58DC200A2BEA1 /* ShortController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B124301DB58DC200A2BEA1 /* ShortController.swift */; };
 		B0B124331DB59A5C00A2BEA1 /* BubbleLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B124321DB59A5C00A2BEA1 /* BubbleLayout.xib */; };
 		B0B124351DB59B6B00A2BEA1 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B124341DB59B6B00A2BEA1 /* Bubble.swift */; };
+		B0B1243E1DB5A59D00A2BEA1 /* bff_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B124361DB5A59D00A2BEA1 /* bff_thumbnail@2x.png */; };
+		B0B1243F1DB5A59D00A2BEA1 /* campfire_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B124371DB5A59D00A2BEA1 /* campfire_thumbnail@2x.png */; };
+		B0B124401DB5A59D00A2BEA1 /* demi_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B124381DB5A59D00A2BEA1 /* demi_thumbnail@2x.png */; };
+		B0B124411DB5A59D00A2BEA1 /* guy_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B124391DB5A59D00A2BEA1 /* guy_thumbnail@2x.png */; };
+		B0B124421DB5A59D00A2BEA1 /* kawataki_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B1243A1DB5A59D00A2BEA1 /* kawataki_thumbnail@2x.png */; };
+		B0B124431DB5A59D00A2BEA1 /* meanGirls_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B1243B1DB5A59D00A2BEA1 /* meanGirls_thumbnail@2x.png */; };
+		B0B124441DB5A59D00A2BEA1 /* sorority_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B1243C1DB5A59D00A2BEA1 /* sorority_thumbnail@2x.png */; };
+		B0B124451DB5A59D00A2BEA1 /* sundosia_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B1243D1DB5A59D00A2BEA1 /* sundosia_thumbnail@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,7 +137,6 @@
 		B055084C1DAF125200BDD1F2 /* bgShelfHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgShelfHeader@2x.png"; sourceTree = "<group>"; };
 		B05508531DB02DEE00BDD1F2 /* StoryCardLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryCardLayout.xib; sourceTree = "<group>"; };
 		B05508551DB02EA300BDD1F2 /* StoryCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCard.swift; sourceTree = "<group>"; };
-		B05508691DB038D400BDD1F2 /* thumbnailCampfire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnailCampfire@2x.png"; sourceTree = "<group>"; };
 		B09AE6911D9B012B001E6EAC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B09AE6971D9B19A2001E6EAC /* bgCollege.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgCollege.png; sourceTree = "<group>"; };
 		B09AE69E1D9B4057001E6EAC /* bgSpeechBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgSpeechBubble@2x.png"; sourceTree = "<group>"; };
@@ -146,6 +152,14 @@
 		B0B124301DB58DC200A2BEA1 /* ShortController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortController.swift; sourceTree = "<group>"; };
 		B0B124321DB59A5C00A2BEA1 /* BubbleLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BubbleLayout.xib; sourceTree = "<group>"; };
 		B0B124341DB59B6B00A2BEA1 /* Bubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
+		B0B124361DB5A59D00A2BEA1 /* bff_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bff_thumbnail@2x.png"; sourceTree = "<group>"; };
+		B0B124371DB5A59D00A2BEA1 /* campfire_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "campfire_thumbnail@2x.png"; sourceTree = "<group>"; };
+		B0B124381DB5A59D00A2BEA1 /* demi_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demi_thumbnail@2x.png"; sourceTree = "<group>"; };
+		B0B124391DB5A59D00A2BEA1 /* guy_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guy_thumbnail@2x.png"; sourceTree = "<group>"; };
+		B0B1243A1DB5A59D00A2BEA1 /* kawataki_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kawataki_thumbnail@2x.png"; sourceTree = "<group>"; };
+		B0B1243B1DB5A59D00A2BEA1 /* meanGirls_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meanGirls_thumbnail@2x.png"; sourceTree = "<group>"; };
+		B0B1243C1DB5A59D00A2BEA1 /* sorority_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sorority_thumbnail@2x.png"; sourceTree = "<group>"; };
+		B0B1243D1DB5A59D00A2BEA1 /* sundosia_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sundosia_thumbnail@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,8 +306,15 @@
 		B05508671DB038D400BDD1F2 /* StoryCards */ = {
 			isa = PBXGroup;
 			children = (
+				B0B124361DB5A59D00A2BEA1 /* bff_thumbnail@2x.png */,
 				B0041D611DB03B750013C56A /* campfire@2x.png */,
-				B05508691DB038D400BDD1F2 /* thumbnailCampfire@2x.png */,
+				B0B124371DB5A59D00A2BEA1 /* campfire_thumbnail@2x.png */,
+				B0B124381DB5A59D00A2BEA1 /* demi_thumbnail@2x.png */,
+				B0B124391DB5A59D00A2BEA1 /* guy_thumbnail@2x.png */,
+				B0B1243A1DB5A59D00A2BEA1 /* kawataki_thumbnail@2x.png */,
+				B0B1243B1DB5A59D00A2BEA1 /* meanGirls_thumbnail@2x.png */,
+				B0B1243C1DB5A59D00A2BEA1 /* sorority_thumbnail@2x.png */,
+				B0B1243D1DB5A59D00A2BEA1 /* sundosia_thumbnail@2x.png */,
 			);
 			path = StoryCards;
 			sourceTree = "<group>";
@@ -418,6 +439,7 @@
 				B055084D1DAF125200BDD1F2 /* bgShelfHeader@2x.png in Resources */,
 				B0B1242D1DB57AA600A2BEA1 /* buttonWhiteSelected@2x.png in Resources */,
 				B0B124231DB561DD00A2BEA1 /* colonelSanders@2x.png in Resources */,
+				B0B1243F1DB5A59D00A2BEA1 /* campfire_thumbnail@2x.png in Resources */,
 				B0B124211DB560C200A2BEA1 /* buttonLight@2x.png in Resources */,
 				B05508361DAF025E00BDD1F2 /* AchievementLayout.xib in Resources */,
 				B055082A1DAEE15400BDD1F2 /* ShortSceneLayout.xib in Resources */,
@@ -425,11 +447,14 @@
 				B00F405B1DAD5C940020C2CE /* NavCellLayout.xib in Resources */,
 				B05508341DAEED4300BDD1F2 /* CredBarLayout.xib in Resources */,
 				B0041D711DB041230013C56A /* story5.png in Resources */,
+				B0B124431DB5A59D00A2BEA1 /* meanGirls_thumbnail@2x.png in Resources */,
+				B0B1243E1DB5A59D00A2BEA1 /* bff_thumbnail@2x.png in Resources */,
 				B0041D641DB03D070013C56A /* StoryLayout.xib in Resources */,
 				B0041D621DB03B750013C56A /* campfire@2x.png in Resources */,
+				B0B124411DB5A59D00A2BEA1 /* guy_thumbnail@2x.png in Resources */,
 				B0B124331DB59A5C00A2BEA1 /* BubbleLayout.xib in Resources */,
 				B03789991DAD571A00DCCACC /* DidactGothic.ttf in Resources */,
-				B055086B1DB038D400BDD1F2 /* thumbnailCampfire@2x.png in Resources */,
+				B0B124421DB5A59D00A2BEA1 /* kawataki_thumbnail@2x.png in Resources */,
 				B05508541DB02DEE00BDD1F2 /* StoryCardLayout.xib in Resources */,
 				B055083B1DAF034A00BDD1F2 /* iconLaurelGray@2x.png in Resources */,
 				B0041D701DB041230013C56A /* story4.png in Resources */,
@@ -445,12 +470,15 @@
 				B09AE6921D9B012B001E6EAC /* LaunchScreen.storyboard in Resources */,
 				B05508491DAF117B00BDD1F2 /* ShelfLayout.xib in Resources */,
 				B0041D6F1DB041230013C56A /* story3.png in Resources */,
+				B0B124451DB5A59D00A2BEA1 /* sundosia_thumbnail@2x.png in Resources */,
 				B00F40551DAD588D0020C2CE /* bgLoading.png in Resources */,
 				B055083A1DAF034A00BDD1F2 /* iconLaurelGold@2x.png in Resources */,
+				B0B124441DB5A59D00A2BEA1 /* sorority_thumbnail@2x.png in Resources */,
 				B04348771D99EEEF00C8EE2B /* Assets.xcassets in Resources */,
 				B00F405D1DAD5D330020C2CE /* iconNav.png in Resources */,
 				B055083C1DAF034A00BDD1F2 /* iconLaurelPlatinum@2x.png in Resources */,
 				B09AE6A21D9B475F001E6EAC /* iconMenu.png in Resources */,
+				B0B124401DB5A59D00A2BEA1 /* demi_thumbnail@2x.png in Resources */,
 				B09AE69F1D9B4057001E6EAC /* bgSpeechBubble@2x.png in Resources */,
 				B05508221DAEC66C00BDD1F2 /* MyShelfLayout.xib in Resources */,
 				B0B1242B1DB579F600A2BEA1 /* buttonWhite@2x.png in Resources */,

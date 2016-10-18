@@ -35,18 +35,18 @@ class MyShelfController:UIViewController{
         credBar.followButton.addTarget(credBar.followButton, action: #selector(UIButton.toggleSelected), for: .touchUpInside)
     }
     private func populateShelves(){
-        shelf1.setTitle(name: "Created by Pink-Haired Cass", qty: 13)
+        shelf1.setTitle(name: "Created by Pink-Haired Cass", qty: 2)
         let portalController = getParentOfType(type: PortalController.self)
-        for _ in 1...6{
-            let story = shelf1.addStory()
+        for storyId in ["guy", "kawataki"]{
+            let story = shelf1.addStory(storyId: storyId)
             if let pc = portalController {
                 story.enableTap(target: pc, action: #selector(PortalController.openStoryCard))
             }
         }
         
-        shelf2.setTitle(name: "Adored by Pink-Haired Cass", qty: 35)
-        for _ in 1...6{
-            let story = shelf2.addStory()
+        shelf2.setTitle(name: "Adored by Pink-Haired Cass", qty: 6)
+        for storyId in ["campfire","demi","meanGirls","sundosia","bff","sorority"]{
+            let story = shelf2.addStory(storyId: storyId)
             if let pc = portalController {
                 story.enableTap(target: pc, action: #selector(PortalController.openStoryCard))
             }
