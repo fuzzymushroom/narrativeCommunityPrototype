@@ -18,53 +18,24 @@ class FeedController:UIViewController{
     override func viewDidLoad() {
     }
     override func viewDidAppear(_ animated: Bool) {
-        let recommendation = addFeedItem()
-        recommendation.setImage(image: UIImage(named: "feedRecommendation")!)
-        
-        let capture = addFeedItem()
-        capture.setImage(image: UIImage(named: "feedCapture")!)
-        
-        let survey = addFeedItem()
-        survey.setImage(image:UIImage(named: "feedSurvey")!)
-        
-        let movie = addFeedItem()
-        movie.setImage(image:UIImage(named: "feedMovie")!)
     }
     
     //MARK: FUNCTIONS
     
-    func addFeedItem() -> FeedItem {
+    func addFeedItem(imageName:String) -> FeedItem {
         let feedItem = FeedItem()
         feedItem.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: feedItem.intrinsicContentSize.height * view.bounds.width / feedItem.intrinsicContentSize.width)
         stackView.addArrangedSubview(feedItem)
         let axisLength = stackView.getAxisLength()
         stackViewHeight.constant = axisLength
         scrollView.contentSize = CGSize(width: view.bounds.width, height: axisLength)
+        feedItem.setImage(image:UIImage(named: imageName)!)
+        feedItem.commentButton.addTarget(self, action: #selector(openComments), for: .touchUpInside)
         return feedItem
     }
-/*
-    func addFeedItem() -> FeedItem {
-        let feedItem = FeedItem(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: CGFloat(190)))
-        stackView.addArrangedSubview(feedItem)
-        let axisLength = stackView.getAxisLength()
-        stackViewHeight.constant = axisLength
-        scrollView.contentSize = CGSize(width: view.bounds.width, height: axisLength)
-        view.layoutIfNeeded()
-        return feedItem
+    func openComments(){
+        let commentsController = CommentsController()
+        commentsController.isModalInPopover = true
+        present(commentsController, animated: false, completion: nil)
     }
- */
-
-    /*
-    func addFeedItem() -> UIImageView {
-        let storyId = "sundosia"
-        let thumb = UIImage(named: "\(storyId)_thumbnail")
-        let story = UIImageView(image: thumb)
-        stackView.addArrangedSubview(story)
-        let axisLength = stackView.getAxisLength()
-        stackViewHeight.constant = axisLength
-        scrollView.contentSize = CGSize(width: view.bounds.width, height: axisLength)
-        return story
-    }
- */
-    
 }

@@ -33,18 +33,27 @@ class PortalController:UIViewController {
     //MARK: NAVIGATION
     func navigateToPage(page:Page){
         collapseNavMenu()
-        killChildControllers()
         pageLabel.text = page.rawValue
         switch page {
             case .PROFILE: launchProfile()
             case .FEED: launchFeed()
-            default: break
+            default: killChildControllers()
         }
     }
     private func launchProfile(){
+        killChildControllers()
         spawnChildController(controller: ProfileController(), view: pageContainer)
     }
     private func launchFeed(){
+        killChildControllers()
+        let feedController = FeedController()
+        spawnChildController(controller: feedController, view: pageContainer)
+        
+        let recommendation = feedController.addFeedItem(imageName: "feedRecommendation")
+        recommendation.enableTap(target: self, action: #selector(openStoryCard))
+        _ = feedController.addFeedItem(imageName: "feedCapture")
+        _ = feedController.addFeedItem(imageName: "feedShort")
+        _ = feedController.addFeedItem(imageName: "feedRecommendation")
     }
     
     //MARK: OVERLAYS

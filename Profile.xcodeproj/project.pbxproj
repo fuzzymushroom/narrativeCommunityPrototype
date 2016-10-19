@@ -90,6 +90,18 @@
 		B0F739631DB6F7EB00AA2DF9 /* feedCapture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739621DB6F7EB00AA2DF9 /* feedCapture@2x.png */; };
 		B0F739651DB6F9C200AA2DF9 /* feedSurvey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739641DB6F9C200AA2DF9 /* feedSurvey@2x.png */; };
 		B0F739671DB6FEDA00AA2DF9 /* feedMovie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739661DB6FEDA00AA2DF9 /* feedMovie@2x.png */; };
+		B0F7396C1DB7E2CF00AA2DF9 /* iconComment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739681DB7E2CF00AA2DF9 /* iconComment@2x.png */; };
+		B0F7396D1DB7E2CF00AA2DF9 /* iconHeart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739691DB7E2CF00AA2DF9 /* iconHeart@2x.png */; };
+		B0F7396E1DB7E2CF00AA2DF9 /* iconHeartSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7396A1DB7E2CF00AA2DF9 /* iconHeartSelected@2x.png */; };
+		B0F7396F1DB7E2CF00AA2DF9 /* iconReport@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7396B1DB7E2CF00AA2DF9 /* iconReport@2x.png */; };
+		B0F739711DB7E70B00AA2DF9 /* CommentThreadLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F739701DB7E70B00AA2DF9 /* CommentThreadLayout.xib */; };
+		B0F739731DB7E7C200AA2DF9 /* iconX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739721DB7E7C200AA2DF9 /* iconX@2x.png */; };
+		B0F739751DB7EBB900AA2DF9 /* CommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F739741DB7EBB900AA2DF9 /* CommentsController.swift */; };
+		B0F739781DB7F2DB00AA2DF9 /* mugshotCass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739771DB7F2DB00AA2DF9 /* mugshotCass@2x.png */; };
+		B0F7397A1DB7F2F600AA2DF9 /* CommentLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F739791DB7F2F600AA2DF9 /* CommentLayout.xib */; };
+		B0F7397C1DB7F4C600AA2DF9 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7397B1DB7F4C600AA2DF9 /* Comment.swift */; };
+		B0F7397E1DB7FA5600AA2DF9 /* mugshotColonelSanders@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7397D1DB7FA5600AA2DF9 /* mugshotColonelSanders@2x.png */; };
+		B0F739801DB806E300AA2DF9 /* feedShort@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7397F1DB806E300AA2DF9 /* feedShort@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +190,18 @@
 		B0F739621DB6F7EB00AA2DF9 /* feedCapture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedCapture@2x.png"; sourceTree = "<group>"; };
 		B0F739641DB6F9C200AA2DF9 /* feedSurvey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedSurvey@2x.png"; sourceTree = "<group>"; };
 		B0F739661DB6FEDA00AA2DF9 /* feedMovie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedMovie@2x.png"; sourceTree = "<group>"; };
+		B0F739681DB7E2CF00AA2DF9 /* iconComment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconComment@2x.png"; sourceTree = "<group>"; };
+		B0F739691DB7E2CF00AA2DF9 /* iconHeart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconHeart@2x.png"; sourceTree = "<group>"; };
+		B0F7396A1DB7E2CF00AA2DF9 /* iconHeartSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconHeartSelected@2x.png"; sourceTree = "<group>"; };
+		B0F7396B1DB7E2CF00AA2DF9 /* iconReport@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconReport@2x.png"; sourceTree = "<group>"; };
+		B0F739701DB7E70B00AA2DF9 /* CommentThreadLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentThreadLayout.xib; sourceTree = "<group>"; };
+		B0F739721DB7E7C200AA2DF9 /* iconX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconX@2x.png"; sourceTree = "<group>"; };
+		B0F739741DB7EBB900AA2DF9 /* CommentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsController.swift; sourceTree = "<group>"; };
+		B0F739771DB7F2DB00AA2DF9 /* mugshotCass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mugshotCass@2x.png"; sourceTree = "<group>"; };
+		B0F739791DB7F2F600AA2DF9 /* CommentLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentLayout.xib; sourceTree = "<group>"; };
+		B0F7397B1DB7F4C600AA2DF9 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		B0F7397D1DB7FA5600AA2DF9 /* mugshotColonelSanders@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mugshotColonelSanders@2x.png"; sourceTree = "<group>"; };
+		B0F7397F1DB806E300AA2DF9 /* feedShort@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedShort@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				B0B124261DB5662100A2BEA1 /* EndOfChapterController.swift */,
+				B0F739741DB7EBB900AA2DF9 /* CommentsController.swift */,
 				B0F7395D1DB6DD4600AA2DF9 /* FeedController.swift */,
 				B04348941D99F2F500C8EE2B /* GameModel.swift */,
 				B04348841D99F0BF00C8EE2B /* GameScene.swift */,
@@ -279,6 +304,8 @@
 			children = (
 				B05508351DAF025E00BDD1F2 /* AchievementLayout.xib */,
 				B0B124321DB59A5C00A2BEA1 /* BubbleLayout.xib */,
+				B0F739791DB7F2F600AA2DF9 /* CommentLayout.xib */,
+				B0F739701DB7E70B00AA2DF9 /* CommentThreadLayout.xib */,
 				B05508331DAEED4300BDD1F2 /* CredBarLayout.xib */,
 				B0041D721DB043910013C56A /* EndOfChapterLayout.xib */,
 				B0B124481DB5AE6A00A2BEA1 /* FeedItemLayout.xib */,
@@ -301,6 +328,7 @@
 			children = (
 				B055083D1DAF040300BDD1F2 /* Achievement.swift */,
 				B0B124341DB59B6B00A2BEA1 /* Bubble.swift */,
+				B0F7397B1DB7F4C600AA2DF9 /* Comment.swift */,
 				B05508311DAEECFD00BDD1F2 /* CredBar.swift */,
 				B0B1244C1DB5AFEA00A2BEA1 /* FeedItem.swift */,
 				B00F405E1DAD5D870020C2CE /* NavCell.swift */,
@@ -350,6 +378,7 @@
 				B0F7395F1DB6F49D00AA2DF9 /* Feeds */,
 				B03789951DAD56F100DCCACC /* Fonts */,
 				B09AE6A01D9B475F001E6EAC /* Icons */,
+				B0F739761DB7F2DB00AA2DF9 /* Mugshots */,
 				B05508671DB038D400BDD1F2 /* StoryCards */,
 				B0041D671DB041230013C56A /* StoryFrames */,
 			);
@@ -380,14 +409,19 @@
 			isa = PBXGroup;
 			children = (
 				B055082D1DAEE60400BDD1F2 /* iconCassName@2x.png */,
+				B0F739681DB7E2CF00AA2DF9 /* iconComment@2x.png */,
 				B055082F1DAEE7A500BDD1F2 /* iconEdit@2x.png */,
 				B0B1244A1DB5AF7A00A2BEA1 /* iconFeedActions@2x.png */,
+				B0F739691DB7E2CF00AA2DF9 /* iconHeart@2x.png */,
+				B0F7396A1DB7E2CF00AA2DF9 /* iconHeartSelected@2x.png */,
 				B05508371DAF034A00BDD1F2 /* iconLaurelGold@2x.png */,
 				B05508381DAF034A00BDD1F2 /* iconLaurelGray@2x.png */,
 				B05508391DAF034A00BDD1F2 /* iconLaurelPlatinum@2x.png */,
 				B09AE6A11D9B475F001E6EAC /* iconMenu.png */,
 				B00F405C1DAD5D330020C2CE /* iconNav.png */,
+				B0F7396B1DB7E2CF00AA2DF9 /* iconReport@2x.png */,
 				B0B1242E1DB5825700A2BEA1 /* iconRose@2x.png */,
+				B0F739721DB7E7C200AA2DF9 /* iconX@2x.png */,
 			);
 			path = Icons;
 			sourceTree = "<group>";
@@ -405,9 +439,19 @@
 				B0F739621DB6F7EB00AA2DF9 /* feedCapture@2x.png */,
 				B0F739661DB6FEDA00AA2DF9 /* feedMovie@2x.png */,
 				B0F739601DB6F49D00AA2DF9 /* feedRecommendation@2x.png */,
+				B0F7397F1DB806E300AA2DF9 /* feedShort@2x.png */,
 				B0F739641DB6F9C200AA2DF9 /* feedSurvey@2x.png */,
 			);
 			path = Feeds;
+			sourceTree = "<group>";
+		};
+		B0F739761DB7F2DB00AA2DF9 /* Mugshots */ = {
+			isa = PBXGroup;
+			children = (
+				B0F739771DB7F2DB00AA2DF9 /* mugshotCass@2x.png */,
+				B0F7397D1DB7FA5600AA2DF9 /* mugshotColonelSanders@2x.png */,
+			);
+			path = Mugshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,10 +514,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F739781DB7F2DB00AA2DF9 /* mugshotCass@2x.png in Resources */,
 				B0B124491DB5AE6A00A2BEA1 /* FeedItemLayout.xib in Resources */,
 				B09AE6981D9B19A2001E6EAC /* bgCollege.png in Resources */,
 				B055084D1DAF125200BDD1F2 /* bgShelfHeader@2x.png in Resources */,
 				B0B1242D1DB57AA600A2BEA1 /* buttonWhiteSelected@2x.png in Resources */,
+				B0F7397A1DB7F2F600AA2DF9 /* CommentLayout.xib in Resources */,
 				B0B124231DB561DD00A2BEA1 /* colonelSanders@2x.png in Resources */,
 				B0B1243F1DB5A59D00A2BEA1 /* campfire_thumbnail@2x.png in Resources */,
 				B0B124211DB560C200A2BEA1 /* buttonLight@2x.png in Resources */,
@@ -484,24 +530,31 @@
 				B00F405B1DAD5C940020C2CE /* NavCellLayout.xib in Resources */,
 				B05508341DAEED4300BDD1F2 /* CredBarLayout.xib in Resources */,
 				B0041D711DB041230013C56A /* story5.png in Resources */,
+				B0F7396F1DB7E2CF00AA2DF9 /* iconReport@2x.png in Resources */,
+				B0F739731DB7E7C200AA2DF9 /* iconX@2x.png in Resources */,
 				B0B124431DB5A59D00A2BEA1 /* meanGirls_thumbnail@2x.png in Resources */,
 				B0B1243E1DB5A59D00A2BEA1 /* bff_thumbnail@2x.png in Resources */,
 				B0F739631DB6F7EB00AA2DF9 /* feedCapture@2x.png in Resources */,
 				B0041D641DB03D070013C56A /* StoryLayout.xib in Resources */,
 				B0041D621DB03B750013C56A /* campfire@2x.png in Resources */,
+				B0F7396C1DB7E2CF00AA2DF9 /* iconComment@2x.png in Resources */,
 				B0B124411DB5A59D00A2BEA1 /* guy_thumbnail@2x.png in Resources */,
+				B0F739801DB806E300AA2DF9 /* feedShort@2x.png in Resources */,
 				B0B124331DB59A5C00A2BEA1 /* BubbleLayout.xib in Resources */,
 				B03789991DAD571A00DCCACC /* DidactGothic.ttf in Resources */,
+				B0F7396D1DB7E2CF00AA2DF9 /* iconHeart@2x.png in Resources */,
 				B0B124421DB5A59D00A2BEA1 /* kawataki_thumbnail@2x.png in Resources */,
 				B05508541DB02DEE00BDD1F2 /* StoryCardLayout.xib in Resources */,
 				B055083B1DAF034A00BDD1F2 /* iconLaurelGray@2x.png in Resources */,
 				B0041D701DB041230013C56A /* story4.png in Resources */,
+				B0F7397E1DB7FA5600AA2DF9 /* mugshotColonelSanders@2x.png in Resources */,
 				B05508461DAF0A7100BDD1F2 /* buttonFollow@2x.png in Resources */,
 				B055082E1DAEE60400BDD1F2 /* iconCassName@2x.png in Resources */,
 				B0B1241F1DB55FC500A2BEA1 /* buttonReadNext@2x.png in Resources */,
 				B0041D6D1DB041230013C56A /* story1.png in Resources */,
 				B0B1242F1DB5825700A2BEA1 /* iconRose@2x.png in Resources */,
 				B037898E1DAD54BF00DCCACC /* PortalLayout.xib in Resources */,
+				B0F739711DB7E70B00AA2DF9 /* CommentThreadLayout.xib in Resources */,
 				B05508301DAEE7A500BDD1F2 /* iconEdit@2x.png in Resources */,
 				B0F739611DB6F49D00AA2DF9 /* feedRecommendation@2x.png in Resources */,
 				B0B124251DB5649600A2BEA1 /* buttonLovedIt@2x.png in Resources */,
@@ -511,6 +564,7 @@
 				B05508491DAF117B00BDD1F2 /* ShelfLayout.xib in Resources */,
 				B0041D6F1DB041230013C56A /* story3.png in Resources */,
 				B0B124451DB5A59D00A2BEA1 /* sundosia_thumbnail@2x.png in Resources */,
+				B0F7396E1DB7E2CF00AA2DF9 /* iconHeartSelected@2x.png in Resources */,
 				B00F40551DAD588D0020C2CE /* bgLoading.png in Resources */,
 				B0F739671DB6FEDA00AA2DF9 /* feedMovie@2x.png in Resources */,
 				B055083A1DAF034A00BDD1F2 /* iconLaurelGold@2x.png in Resources */,
@@ -540,6 +594,7 @@
 				B055084B1DAF118500BDD1F2 /* Shelf.swift in Sources */,
 				B04348881D99F0E800C8EE2B /* SKScenePlus.swift in Sources */,
 				B0003DAE1DADB8BF00F710C8 /* ProfileController.swift in Sources */,
+				B0F7397C1DB7F4C600AA2DF9 /* Comment.swift in Sources */,
 				B05508561DB02EA300BDD1F2 /* StoryCard.swift in Sources */,
 				B0B124311DB58DC200A2BEA1 /* ShortController.swift in Sources */,
 				B043488F1D99F18A00C8EE2B /* DataUtils.swift in Sources */,
@@ -548,6 +603,7 @@
 				B04348901D99F18A00C8EE2B /* SKMultilineLabel.swift in Sources */,
 				B0F7395E1DB6DD4600AA2DF9 /* FeedController.swift in Sources */,
 				B00F40611DAD64580020C2CE /* NavMenu.swift in Sources */,
+				B0F739751DB7EBB900AA2DF9 /* CommentsController.swift in Sources */,
 				B05508201DAEBD7200BDD1F2 /* StylizedButton.swift in Sources */,
 				B043488E1D99F18A00C8EE2B /* Atlasser.swift in Sources */,
 				B043911A1D9EDC44000CC018 /* UIKitUtils.swift in Sources */,

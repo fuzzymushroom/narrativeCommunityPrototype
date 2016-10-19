@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DidactGothic.ttf">
+            <string>DidactGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Comment" customModule="Profile" customModuleProvider="target">
+            <connections>
+                <outlet property="commentLabel" destination="W7N-FJ-A1e" id="7mB-TO-zit"/>
+                <outlet property="mugshot" destination="0XJ-Hz-lp0" id="Vj5-F2-Xxy"/>
+                <outlet property="usernameLabel" destination="JNu-B0-ofj" id="nxV-WP-w3j"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mugshotCass.png" translatesAutoresizingMaskIntoConstraints="NO" id="0XJ-Hz-lp0">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Q1B-ki-29p"/>
+                        <constraint firstAttribute="height" constant="60" id="fGV-5R-Zjk"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pink-Haired Cass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNu-B0-ofj" userLabel="username">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="eMq-8m-xDd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.84619140625" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconHeart.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dlw-GF-ABU">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="TDR-jv-eQM"/>
+                        <constraint firstAttribute="width" constant="22" id="vhV-Y7-egj"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconReport.png" translatesAutoresizingMaskIntoConstraints="NO" id="tWD-vn-MnI">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="UmU-d2-yfG"/>
+                        <constraint firstAttribute="width" constant="20" id="x23-Nq-ppf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would that really be doing my mom any favors?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7N-FJ-A1e" userLabel="comment">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JNu-B0-ofj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="6Le-ay-AD1"/>
+                <constraint firstAttribute="trailing" secondItem="Dlw-GF-ABU" secondAttribute="trailing" constant="5" id="897-gH-2DC"/>
+                <constraint firstItem="W7N-FJ-A1e" firstAttribute="trailing" secondItem="JNu-B0-ofj" secondAttribute="trailing" id="C4J-ug-Y5y"/>
+                <constraint firstItem="JNu-B0-ofj" firstAttribute="leading" secondItem="0XJ-Hz-lp0" secondAttribute="trailing" constant="5" id="CfJ-GD-Oxb"/>
+                <constraint firstItem="W7N-FJ-A1e" firstAttribute="top" secondItem="JNu-B0-ofj" secondAttribute="bottom" id="GKI-Eh-sDk"/>
+                <constraint firstItem="W7N-FJ-A1e" firstAttribute="leading" secondItem="0XJ-Hz-lp0" secondAttribute="trailing" constant="5" id="Glm-NK-tGY"/>
+                <constraint firstItem="0XJ-Hz-lp0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="JPd-hw-t7G"/>
+                <constraint firstAttribute="trailing" secondItem="tWD-vn-MnI" secondAttribute="trailing" constant="5" id="Sqb-rk-b5H"/>
+                <constraint firstItem="tWD-vn-MnI" firstAttribute="top" secondItem="Dlw-GF-ABU" secondAttribute="bottom" constant="5" id="TFI-IT-jPJ"/>
+                <constraint firstItem="Dlw-GF-ABU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="aPy-RY-R2T"/>
+                <constraint firstItem="Dlw-GF-ABU" firstAttribute="leading" secondItem="JNu-B0-ofj" secondAttribute="trailing" constant="5" id="roZ-t5-LCp"/>
+                <constraint firstItem="0XJ-Hz-lp0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="sqa-LL-UIs"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconHeart.png" width="22" height="20"/>
+        <image name="iconReport.png" width="20" height="20"/>
+        <image name="mugshotCass.png" width="60" height="60"/>
+    </resources>
+</document>

@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="DidactGothic.ttf">
+            <string>DidactGothic</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoryCard" customModule="Profile" customModuleProvider="target">
             <connections>
@@ -18,27 +23,80 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dci-Xn-auT">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRe-Wc-cJc">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dci-Xn-auT">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="340" id="Agb-hF-vwC"/>
+                                <constraint firstAttribute="height" constant="450" id="XtK-6b-FJo"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bp-qc-Uik"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRx-Ph-iE8" userLabel="Social Footer">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended by:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdN-XC-yrJ">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="HQJ-KV-WKA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See posts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fy-rw-2VD">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="IKb-oy-eqZ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="14"/>
+                                    <color key="textColor" red="0.15695494822401379" green="0.23853859212242423" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gbV-tt-cEY">
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mugshotCass.png" translatesAutoresizingMaskIntoConstraints="NO" id="AKf-PL-PXe"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mugshotColonelSanders.png" translatesAutoresizingMaskIntoConstraints="NO" id="1dm-sr-WWc"/>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="pdN-XC-yrJ" firstAttribute="top" secondItem="lRx-Ph-iE8" secondAttribute="top" constant="5" id="2Qa-aH-Zj3"/>
+                                <constraint firstAttribute="trailing" secondItem="pdN-XC-yrJ" secondAttribute="trailing" constant="5" id="2xh-6L-Vs5"/>
+                                <constraint firstItem="pdN-XC-yrJ" firstAttribute="leading" secondItem="lRx-Ph-iE8" secondAttribute="leading" constant="5" id="Dqx-OX-gTJ"/>
+                                <constraint firstItem="0Fy-rw-2VD" firstAttribute="leading" secondItem="lRx-Ph-iE8" secondAttribute="leading" constant="5" id="J7R-1r-kUj"/>
+                                <constraint firstAttribute="bottom" secondItem="0Fy-rw-2VD" secondAttribute="bottom" constant="5" id="TAy-AA-efW"/>
+                                <constraint firstItem="gbV-tt-cEY" firstAttribute="centerX" secondItem="lRx-Ph-iE8" secondAttribute="centerX" id="cyd-jc-EMf"/>
+                                <constraint firstAttribute="trailing" secondItem="0Fy-rw-2VD" secondAttribute="trailing" constant="5" id="rXa-0O-gEQ"/>
+                                <constraint firstItem="gbV-tt-cEY" firstAttribute="centerY" secondItem="lRx-Ph-iE8" secondAttribute="centerY" id="w1e-1w-XiU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="340" id="Agb-hF-vwC"/>
-                        <constraint firstAttribute="height" constant="450" id="XtK-6b-FJo"/>
+                        <constraint firstItem="lRx-Ph-iE8" firstAttribute="top" secondItem="2bp-qc-Uik" secondAttribute="bottom" id="2Vw-Sd-JXm"/>
+                        <constraint firstItem="2bp-qc-Uik" firstAttribute="top" secondItem="Dci-Xn-auT" secondAttribute="top" id="2eM-KZ-gtm"/>
+                        <constraint firstItem="lRx-Ph-iE8" firstAttribute="leading" secondItem="vRe-Wc-cJc" secondAttribute="leading" id="4Jq-Gp-n90"/>
+                        <constraint firstAttribute="height" constant="580" id="536-uZ-9PR"/>
+                        <constraint firstItem="2bp-qc-Uik" firstAttribute="trailing" secondItem="Dci-Xn-auT" secondAttribute="trailing" id="BKY-B0-Ylu"/>
+                        <constraint firstItem="Dci-Xn-auT" firstAttribute="top" secondItem="vRe-Wc-cJc" secondAttribute="top" id="XDU-JH-CDy"/>
+                        <constraint firstItem="Dci-Xn-auT" firstAttribute="leading" secondItem="vRe-Wc-cJc" secondAttribute="leading" id="ZfU-Cv-BWD"/>
+                        <constraint firstItem="2bp-qc-Uik" firstAttribute="leading" secondItem="Dci-Xn-auT" secondAttribute="leading" id="cPL-dB-wp1"/>
+                        <constraint firstAttribute="bottom" secondItem="lRx-Ph-iE8" secondAttribute="bottom" id="jrn-Mn-rMd"/>
+                        <constraint firstAttribute="width" constant="340" id="oq0-3M-buh"/>
+                        <constraint firstItem="2bp-qc-Uik" firstAttribute="bottom" secondItem="Dci-Xn-auT" secondAttribute="bottom" id="q23-4a-Bso"/>
+                        <constraint firstAttribute="trailing" secondItem="lRx-Ph-iE8" secondAttribute="trailing" id="yd1-r0-yh7"/>
                     </constraints>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bp-qc-Uik">
-                    <constraints>
-                        <constraint firstAttribute="height" constant="230" id="Mtn-h2-LhZ"/>
-                        <constraint firstAttribute="width" constant="340" id="S7S-mf-MrY"/>
-                    </constraints>
-                </button>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="2bp-qc-Uik" firstAttribute="leading" secondItem="Dci-Xn-auT" secondAttribute="leading" id="5UE-CG-ir3"/>
-                <constraint firstItem="Dci-Xn-auT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LMv-t6-Qvt"/>
-                <constraint firstItem="Dci-Xn-auT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PhK-eF-iKT"/>
-                <constraint firstItem="2bp-qc-Uik" firstAttribute="top" secondItem="Dci-Xn-auT" secondAttribute="top" id="qow-6g-Zdk"/>
+                <constraint firstItem="vRe-Wc-cJc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pKq-Pv-AVy"/>
+                <constraint firstItem="vRe-Wc-cJc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xLM-y1-KVP"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
         </view>
     </objects>
+    <resources>
+        <image name="mugshotCass.png" width="60" height="60"/>
+        <image name="mugshotColonelSanders.png" width="60" height="60"/>
+    </resources>
 </document>

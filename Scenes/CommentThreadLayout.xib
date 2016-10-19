@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DidactGothic.ttf">
+            <string>DidactGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentsController" customModule="Profile" customModuleProvider="target">
+            <connections>
+                <outlet property="scrollView" destination="PYj-t6-GVd" id="WJn-l2-r0y"/>
+                <outlet property="stackView" destination="M7l-ZX-1dr" id="bhZ-3e-W9h"/>
+                <outlet property="stackViewHeight" destination="RFe-YY-6aH" id="5YT-yt-p0S"/>
+                <outlet property="view" destination="iN0-l3-epB" id="fAG-RA-rTU"/>
+                <outlet property="xButton" destination="wNn-nu-4ve" id="uRg-k2-1w0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F3S-0I-8ij" userLabel="Header">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNn-nu-4ve">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="5bF-NY-xDv"/>
+                                <constraint firstAttribute="width" constant="40" id="GAX-XG-y5X"/>
+                            </constraints>
+                            <state key="normal" image="iconX.png"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uh-VR-oE2">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="212" id="2S8-ya-13g"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="wNn-nu-4ve" firstAttribute="leading" secondItem="F3S-0I-8ij" secondAttribute="leading" constant="5" id="Le9-se-9xU"/>
+                        <constraint firstAttribute="bottom" secondItem="0uh-VR-oE2" secondAttribute="bottom" id="MfV-cH-kzW"/>
+                        <constraint firstItem="wNn-nu-4ve" firstAttribute="top" secondItem="F3S-0I-8ij" secondAttribute="top" constant="5" id="SLf-Nu-ym5"/>
+                        <constraint firstAttribute="height" constant="50" id="UrV-EB-AlF"/>
+                        <constraint firstItem="0uh-VR-oE2" firstAttribute="centerX" secondItem="F3S-0I-8ij" secondAttribute="centerX" id="sFo-bM-G5F"/>
+                        <constraint firstItem="0uh-VR-oE2" firstAttribute="top" secondItem="F3S-0I-8ij" secondAttribute="top" id="xv1-BA-x6n"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYj-t6-GVd">
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="M7l-ZX-1dr">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="636" id="RFe-YY-6aH"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="M7l-ZX-1dr" firstAttribute="leading" secondItem="PYj-t6-GVd" secondAttribute="leading" id="3Dw-wX-Rwl"/>
+                        <constraint firstAttribute="trailing" secondItem="M7l-ZX-1dr" secondAttribute="trailing" id="3YN-Lo-aJj"/>
+                        <constraint firstAttribute="bottom" secondItem="M7l-ZX-1dr" secondAttribute="bottom" id="CMq-rf-B5b"/>
+                        <constraint firstItem="M7l-ZX-1dr" firstAttribute="top" secondItem="PYj-t6-GVd" secondAttribute="top" id="dBH-aj-J4o"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loG-3a-GAE" userLabel="Footer">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVv-rh-2Tv">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="Jx1-i1-qcx"/>
+                            </constraints>
+                            <state key="normal" title="Post a Comment"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="TVv-rh-2Tv" firstAttribute="top" secondItem="loG-3a-GAE" secondAttribute="top" id="9Ap-II-Fmm"/>
+                        <constraint firstAttribute="height" constant="50" id="Dpd-BJ-0or"/>
+                        <constraint firstAttribute="bottom" secondItem="TVv-rh-2Tv" secondAttribute="bottom" id="nF7-wD-9m1"/>
+                        <constraint firstItem="TVv-rh-2Tv" firstAttribute="centerX" secondItem="loG-3a-GAE" secondAttribute="centerX" id="q7c-uw-Obe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PYj-t6-GVd" secondAttribute="trailing" id="22W-iI-QCM"/>
+                <constraint firstItem="M7l-ZX-1dr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Cw2-NH-fRU"/>
+                <constraint firstItem="PYj-t6-GVd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jz7-Cc-Q0i"/>
+                <constraint firstAttribute="trailing" secondItem="loG-3a-GAE" secondAttribute="trailing" id="KgD-bB-xRe"/>
+                <constraint firstItem="PYj-t6-GVd" firstAttribute="bottom" secondItem="loG-3a-GAE" secondAttribute="top" id="MkH-Y1-G8i"/>
+                <constraint firstItem="loG-3a-GAE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PC8-Dt-Ggw"/>
+                <constraint firstItem="PYj-t6-GVd" firstAttribute="top" secondItem="F3S-0I-8ij" secondAttribute="bottom" id="WNZ-g0-ruS"/>
+                <constraint firstAttribute="trailing" secondItem="M7l-ZX-1dr" secondAttribute="trailing" id="a0w-Gi-4NN"/>
+                <constraint firstItem="F3S-0I-8ij" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bLi-7c-vTt"/>
+                <constraint firstItem="F3S-0I-8ij" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bzb-33-Yz4"/>
+                <constraint firstAttribute="bottom" secondItem="loG-3a-GAE" secondAttribute="bottom" id="f92-3b-zZQ"/>
+                <constraint firstAttribute="trailing" secondItem="F3S-0I-8ij" secondAttribute="trailing" id="w4x-Jx-J7P"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconX.png" width="40" height="40"/>
+    </resources>
+</document>

@@ -44,7 +44,12 @@ class ProfileController:UIViewController{
     }
     func openPosts(){
         killChildControllers()
-        spawnChildController(controller: FeedController(), view: viewport)
+        let feedController = FeedController()
+        spawnChildController(controller: feedController, view: viewport)
+        _ = feedController.addFeedItem(imageName: "feedMovie")
+        _ = feedController.addFeedItem(imageName: "feedSurvey")
+        _ = feedController.addFeedItem(imageName: "feedRecommendation")
+        _ = feedController.addFeedItem(imageName: "feedCapture")
         selectTab(tab: postTab)
     }
     private func selectTab(tab:StylizedButton){
