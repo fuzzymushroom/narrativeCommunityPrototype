@@ -16,6 +16,12 @@ class MasterController: UIViewController {
         killChildControllers()
         spawnChildController(controller: StoryController(), view: view)
     }
+    func loadProfile(userId:String){
+        killChildControllers()
+        let portalController = PortalController()
+        spawnChildController(controller: portalController, view: view)
+        portalController.launchProfile(userId: userId)
+    }
     
     //MARK: UIViewController overrides
     override func viewDidLoad() {

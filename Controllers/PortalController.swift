@@ -35,14 +35,19 @@ class PortalController:UIViewController {
         collapseNavMenu()
         pageLabel.text = page.rawValue
         switch page {
-            case .PROFILE: launchProfile()
+            case .PROFILE: launchProfile(userId: "max")
             case .FEED: launchFeed()
             default: killChildControllers()
         }
     }
-    private func launchProfile(){
+    func launchProfile(userId:String){
         killChildControllers()
-        spawnChildController(controller: ProfileController(), view: pageContainer)
+        let masterController = getParentOfType(type: MasterController.self)!
+        let gameModel = masterController.gameModel
+        let profile = gameModel.getProfile(userId: userId)
+        pageLabel.text = profile.username
+        let profileController = ProfileController(profile: profile)
+        spawnChildController(controller: profileController, view: pageContainer)
     }
     private func launchFeed(){
         killChildControllers()

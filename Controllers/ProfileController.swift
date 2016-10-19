@@ -4,15 +4,20 @@ class ProfileController:UIViewController{
     
     //MARK: VARIABLES
     var activeTab:StylizedButton?
+    let profile:Profile!
+
+    
     @IBOutlet var shelfTab: StylizedButton!
     @IBOutlet var postTab: StylizedButton!
     @IBOutlet var viewport: UIView!
+
     
     static let COLOR_TAB_DESELECTED = UIColor(red: 0.914, green: 0.914, blue: 0.914, alpha: 1)
     static let COLOR_TAB_SELECTED = UIColor(red: 0.867, green: 0.620, blue: 0.184, alpha: 1)
     
     //MARK: INITIALIZATION
-    init(){
+    init(profile:Profile){
+        self.profile = profile
         let nibName = "ProfileLayout"
         super.init(nibName: nibName, bundle: nil)
     }
@@ -38,18 +43,18 @@ class ProfileController:UIViewController{
     
     //MARK: TAB NAVIGATION
     func openShelf(){
-        killChildControllers()
-        spawnChildController(controller: MyShelfController(), view: viewport)
         selectTab(tab: shelfTab)
+        killChildControllers()
+        let myShelfController = MyShelfController(profile: profile)
+        spawnChildController(controller: myShelfController, view: viewport)
     }
     func openPosts(){
         killChildControllers()
         let feedController = FeedController()
         spawnChildController(controller: feedController, view: viewport)
-        _ = feedController.addFeedItem(imageName: "feedMovie")
-        _ = feedController.addFeedItem(imageName: "feedSurvey")
-        _ = feedController.addFeedItem(imageName: "feedRecommendation")
-        _ = feedController.addFeedItem(imageName: "feedCapture")
+        for imageName in profile.postImageNames {
+            _  = feedController.addFeedItem(imageName: imageName)
+        }
         selectTab(tab: postTab)
     }
     private func selectTab(tab:StylizedButton){

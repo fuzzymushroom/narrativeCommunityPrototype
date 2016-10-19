@@ -11,7 +11,11 @@ class StoryController: UIViewController {
         "story2",
         "story3",
         "story4",
-        "story5"
+        "story5",
+        "story6",
+        "story7",
+        "story8",
+        "story9"
     ]
     var frameIndex:Int!
     
@@ -59,7 +63,7 @@ class StoryController: UIViewController {
     }
     func goProfile(){
         let masterController = getParentOfType(type: MasterController.self)!
-        masterController.loadPortal(page: .PROFILE)
+        masterController.loadProfile(userId: "cass")
     }
 
 }

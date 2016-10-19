@@ -35,7 +35,8 @@ class FeedController:UIViewController{
     }
     func openComments(){
         let commentsController = CommentsController()
-        commentsController.isModalInPopover = true
+        commentsController.modalPresentationStyle = .overFullScreen
+        //commentsController.isModalInPopover = true
         present(commentsController, animated: false, completion: nil)
     }
 }
