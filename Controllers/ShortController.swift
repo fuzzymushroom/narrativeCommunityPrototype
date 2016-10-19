@@ -28,7 +28,6 @@ class ShortController:UIViewController {
             animations: { self.character.frame.origin = self.getPoint(location: location) },
             completion: { finished in self.say(name: name, quote: quote) }
         )
-        print(getPoint(location: location))
     }
     private func getPoint(location:Location) -> CGPoint {
         let Y_CEILING = CGFloat(140.0)

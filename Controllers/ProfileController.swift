@@ -43,7 +43,8 @@ class ProfileController:UIViewController{
         selectTab(tab: shelfTab)
     }
     func openPosts(){
-        viewport.removeSubviews()
+        killChildControllers()
+        spawnChildController(controller: FeedController(), view: viewport)
         selectTab(tab: postTab)
     }
     private func selectTab(tab:StylizedButton){

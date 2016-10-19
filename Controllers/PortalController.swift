@@ -45,7 +45,6 @@ class PortalController:UIViewController {
         spawnChildController(controller: ProfileController(), view: pageContainer)
     }
     private func launchFeed(){
-        print("launch feed")
     }
     
     //MARK: OVERLAYS

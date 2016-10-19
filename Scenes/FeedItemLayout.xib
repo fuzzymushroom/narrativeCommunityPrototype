@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DidactGothic.ttf">
+            <string>DidactGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedItem" customModule="Profile" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="h12-hx-Y97" id="IU0-NK-CPL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h12-hx-Y97"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconFeedActions.png" translatesAutoresizingMaskIntoConstraints="NO" id="KKG-uT-THr">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="162" id="Pq6-qb-8I0"/>
+                        <constraint firstAttribute="height" constant="25" id="TBc-eN-BrW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6a8-Tr-ncU">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="BSl-Kh-FKu"/>
+                        <constraint firstAttribute="width" constant="20" id="tOy-2E-Ywm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ8-Sq-sQS">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="HAB-36-LdO"/>
+                        <constraint firstAttribute="width" constant="20" id="HAa-3v-G0v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="h12-hx-Y97" secondAttribute="trailing" id="Bk9-cU-yVO"/>
+                <constraint firstAttribute="trailing" secondItem="6a8-Tr-ncU" secondAttribute="trailing" constant="40" id="IIv-aJ-7Xo"/>
+                <constraint firstItem="h12-hx-Y97" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PIE-4E-jbS"/>
+                <constraint firstItem="h12-hx-Y97" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TvE-WY-dZy"/>
+                <constraint firstItem="KKG-uT-THr" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="15" id="WAf-It-PuO"/>
+                <constraint firstAttribute="bottom" secondItem="6a8-Tr-ncU" secondAttribute="bottom" id="alo-U9-l3y"/>
+                <constraint firstItem="6a8-Tr-ncU" firstAttribute="leading" secondItem="PZ8-Sq-sQS" secondAttribute="trailing" constant="38" id="fkp-a2-O3Z"/>
+                <constraint firstAttribute="bottom" secondItem="KKG-uT-THr" secondAttribute="bottom" id="kMP-TZ-KTS"/>
+                <constraint firstAttribute="bottom" secondItem="h12-hx-Y97" secondAttribute="bottom" id="n8m-E1-7lH"/>
+                <constraint firstAttribute="bottom" secondItem="PZ8-Sq-sQS" secondAttribute="bottom" id="zG8-Xe-j3K"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconFeedActions.png" width="162" height="25"/>
+    </resources>
+</document>

@@ -86,7 +86,7 @@ extension UIStackView {
         var length = CGFloat(0)
 
         for view in arrangedSubviews {
-            length += axis == .horizontal ? view.intrinsicContentSize.width : view.intrinsicContentSize.height
+            length += axis == .horizontal ? view.frame.width : view.frame.height
         }
         length += count > 1 ? (count - 1) * spacing : 0
         return length
