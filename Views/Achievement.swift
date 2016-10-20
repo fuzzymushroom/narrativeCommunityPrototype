@@ -14,15 +14,17 @@ class Achievement:UIViewFromNib{
     }
     override func customSetup() {
     }
-    func populate(laurel:Laurel, name:String, value:String){
-        self.laurel.image = UIImage(named: laurel.rawValue)
+    func populate(name:String, value:Int){
+        self.laurel.image = getLaurelImage(value: value)
         achievementLabel.text = name
-        quantityLabel.text = value
+        quantityLabel.text = "\(value)"
     }
-}
-
-enum Laurel:String {
-    case GRAY = "iconLaurelGray"
-    case GOLD = "iconLaurelGold"
-    case PLAT = "iconLaurelPlatinum"
+    private func getLaurelImage(value:Int) -> UIImage {
+        switch value {
+            case 0...49: return UIImage(named: "iconLaurelGray")!
+            case 50...499: return UIImage(named: "iconLaurelPlatinum")!
+            case 500...998: return UIImage(named: "iconLaurelGold")!
+            default: return UIImage(named: "iconLaurelRainbow")!
+        }
+    }
 }

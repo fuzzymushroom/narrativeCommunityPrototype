@@ -11,7 +11,7 @@ class GameModel{
             profile.username = "Pink-Haired Cass"
             profile.quote = "Allow myself to introduce my... shelf"
             profile.karma = 500
-            profile.chaptersRead = 200
+            profile.chaptersRead = 50
             profile.followers = 999
             profile.createdStoryIds = ["campfire", "kawataki"]
             profile.recommendedStoryIds = ["guy","demi","meanGirls","sundosia","bff","sorority"]
@@ -22,8 +22,8 @@ class GameModel{
             profile.characterImageName = "max"
             profile.username = "Maximoose"
             profile.quote = "Tap the pencil icon to TELL YOUR STORY!"
-            profile.karma = 0
-            profile.chaptersRead = 5
+            profile.karma = 50
+            profile.chaptersRead = 999
             profile.followers = 0
             profile.createdStoryIds = []
             profile.recommendedStoryIds = ["campfire"]

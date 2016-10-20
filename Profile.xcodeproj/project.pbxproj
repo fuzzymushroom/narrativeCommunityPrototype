@@ -117,6 +117,7 @@
 		B0F739A01DB95E4200AA2DF9 /* add_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7399F1DB95E4100AA2DF9 /* add_thumbnail@2x.png */; };
 		B0F739A21DB9606A00AA2DF9 /* bgCameraMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739A11DB9606A00AA2DF9 /* bgCameraMenu@2x.png */; };
 		B0F739A41DB9790500AA2DF9 /* feedPost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739A31DB9790500AA2DF9 /* feedPost@2x.png */; };
+		B0F739A61DB97C2100AA2DF9 /* iconLaurelRainbow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739A51DB97C2100AA2DF9 /* iconLaurelRainbow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -232,6 +233,7 @@
 		B0F7399F1DB95E4100AA2DF9 /* add_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_thumbnail@2x.png"; sourceTree = "<group>"; };
 		B0F739A11DB9606A00AA2DF9 /* bgCameraMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgCameraMenu@2x.png"; sourceTree = "<group>"; };
 		B0F739A31DB9790500AA2DF9 /* feedPost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedPost@2x.png"; sourceTree = "<group>"; };
+		B0F739A51DB97C2100AA2DF9 /* iconLaurelRainbow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconLaurelRainbow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,6 +459,7 @@
 				B05508371DAF034A00BDD1F2 /* iconLaurelGold@2x.png */,
 				B05508381DAF034A00BDD1F2 /* iconLaurelGray@2x.png */,
 				B05508391DAF034A00BDD1F2 /* iconLaurelPlatinum@2x.png */,
+				B0F739A51DB97C2100AA2DF9 /* iconLaurelRainbow@2x.png */,
 				B09AE6A11D9B475F001E6EAC /* iconMenu.png */,
 				B00F405C1DAD5D330020C2CE /* iconNav.png */,
 				B0F7396B1DB7E2CF00AA2DF9 /* iconReport@2x.png */,
@@ -574,6 +577,7 @@
 				B055082A1DAEE15400BDD1F2 /* ShortSceneLayout.xib in Resources */,
 				B055082C1DAEE31F00BDD1F2 /* cass@2x.png in Resources */,
 				B00F405B1DAD5C940020C2CE /* NavCellLayout.xib in Resources */,
+				B0F739A61DB97C2100AA2DF9 /* iconLaurelRainbow@2x.png in Resources */,
 				B05508341DAEED4300BDD1F2 /* CredBarLayout.xib in Resources */,
 				B0041D711DB041230013C56A /* story5.png in Resources */,
 				B0F7396F1DB7E2CF00AA2DF9 /* iconReport@2x.png in Resources */,

@@ -35,9 +35,9 @@ class MyShelfController:UIViewController{
         runShort()
     }
     private func populateCredBar(){
-        credBar.karmaAchievement.populate(laurel: .GOLD, name: "karma", value: "\(profile.karma)")
-        credBar.chaptersAchievement.populate(laurel: .GRAY, name: "chapters read", value: "\(profile.chaptersRead)")
-        credBar.followersAchievement.populate(laurel: .PLAT, name: "followers", value: "\(profile.followers)")
+        credBar.karmaAchievement.populate(name: "karma", value: profile.karma)
+        credBar.chaptersAchievement.populate(name: "chapters read", value: profile.chaptersRead)
+        credBar.followersAchievement.populate(name: "followers", value: profile.followers)
         credBar.followButton.isSelected = false
         credBar.followButton.addTarget(credBar.followButton, action: #selector(UIButton.toggleSelected), for: .touchUpInside)
     }
