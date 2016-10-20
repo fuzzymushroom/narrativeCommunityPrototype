@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -10,6 +11,7 @@
             <connections>
                 <outlet property="exitButton" destination="iu4-5N-2qP" id="boU-Mz-l9L"/>
                 <outlet property="imageView" destination="CTV-Al-aIF" id="XnP-7F-gm3"/>
+                <outlet property="storyMenu" destination="jhw-PT-FHv" id="3sD-xn-AY0"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Mjj-fl-Eoa"/>
             </connections>
         </placeholder>
@@ -25,17 +27,28 @@
                         <constraint firstAttribute="width" constant="60" id="eRT-Fd-OuC"/>
                     </constraints>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgCameraMenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="jhw-PT-FHv">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jhw-PT-FHv" secondAttribute="height" multiplier="207:116" id="2uw-rS-a9B"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="CTV-Al-aIF" secondAttribute="bottom" id="51e-wy-k3T"/>
+                <constraint firstItem="jhw-PT-FHv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Fbl-cD-7TD"/>
+                <constraint firstAttribute="bottom" secondItem="jhw-PT-FHv" secondAttribute="bottom" id="HXO-Nh-eJP"/>
                 <constraint firstItem="CTV-Al-aIF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jq0-VY-pa9"/>
                 <constraint firstItem="CTV-Al-aIF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ojo-Bf-ic4"/>
                 <constraint firstItem="iu4-5N-2qP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Y9o-Zl-t2T"/>
                 <constraint firstAttribute="trailing" secondItem="CTV-Al-aIF" secondAttribute="trailing" id="aar-KP-S5T"/>
+                <constraint firstAttribute="trailing" secondItem="jhw-PT-FHv" secondAttribute="trailing" id="kSd-8E-iaF"/>
                 <constraint firstItem="iu4-5N-2qP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ruN-iy-bkc"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
         </view>
     </objects>
+    <resources>
+        <image name="bgCameraMenu.png" width="414" height="232"/>
+    </resources>
 </document>

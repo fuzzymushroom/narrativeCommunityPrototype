@@ -19,7 +19,7 @@ class GameModel{
             profile.bgName = "bgCollege"
             profile.characterImageName = "max"
             profile.username = "Maximoose"
-            profile.quote = "Tap the pencil icon to customize yourself!"
+            profile.quote = "Tap the pencil icon to TELL YOUR STORY!"
             profile.karma = 0
             profile.chaptersRead = 5
             profile.followers = 0

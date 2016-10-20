@@ -115,6 +115,7 @@
 		B0F7399C1DB845DD00AA2DF9 /* SimplePopupLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F7399B1DB845DD00AA2DF9 /* SimplePopupLayout.xib */; };
 		B0F7399E1DB84ED800AA2DF9 /* feedCollaborators@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7399D1DB84ED800AA2DF9 /* feedCollaborators@2x.png */; };
 		B0F739A01DB95E4200AA2DF9 /* add_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7399F1DB95E4100AA2DF9 /* add_thumbnail@2x.png */; };
+		B0F739A21DB9606A00AA2DF9 /* bgCameraMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739A11DB9606A00AA2DF9 /* bgCameraMenu@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -228,6 +229,7 @@
 		B0F7399B1DB845DD00AA2DF9 /* SimplePopupLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimplePopupLayout.xib; sourceTree = "<group>"; };
 		B0F7399D1DB84ED800AA2DF9 /* feedCollaborators@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedCollaborators@2x.png"; sourceTree = "<group>"; };
 		B0F7399F1DB95E4100AA2DF9 /* add_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_thumbnail@2x.png"; sourceTree = "<group>"; };
+		B0F739A11DB9606A00AA2DF9 /* bgCameraMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgCameraMenu@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,9 +423,10 @@
 		B09AE6961D9B19A2001E6EAC /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				B00F40541DAD588D0020C2CE /* bgLoading.png */,
+				B0F739A11DB9606A00AA2DF9 /* bgCameraMenu@2x.png */,
 				B09AE6971D9B19A2001E6EAC /* bgCollege.png */,
 				B0F739971DB844E300AA2DF9 /* bgKarma@2x.png */,
+				B00F40541DAD588D0020C2CE /* bgLoading.png */,
 				B055084C1DAF125200BDD1F2 /* bgShelfHeader@2x.png */,
 				B09AE69E1D9B4057001E6EAC /* bgSpeechBubble@2x.png */,
 			);
@@ -594,6 +597,7 @@
 				B0F739981DB844E300AA2DF9 /* bgKarma@2x.png in Resources */,
 				B0B1241F1DB55FC500A2BEA1 /* buttonReadNext@2x.png in Resources */,
 				B0041D6D1DB041230013C56A /* story1.png in Resources */,
+				B0F739A21DB9606A00AA2DF9 /* bgCameraMenu@2x.png in Resources */,
 				B0B1242F1DB5825700A2BEA1 /* iconRose@2x.png in Resources */,
 				B037898E1DAD54BF00DCCACC /* PortalLayout.xib in Resources */,
 				B0F739961DB8307800AA2DF9 /* feedSurvey2@2x.png in Resources */,

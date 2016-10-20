@@ -17,6 +17,8 @@ class StoryController: UIViewController {
         "story8",
         "story9"
     ]
+    @IBOutlet var storyMenu: UIImageView!
+
     var frameIndex:Int!
     
     
@@ -32,6 +34,7 @@ class StoryController: UIViewController {
         goToFrame(index: 0)
         view.enableTap(target: self, action: #selector(advanceFrame))
         exitButton.addTarget(self, action: #selector(goProfile), for: .touchUpInside)
+        closeStoryMenu()
     }
     
     //MARK: STORY NAVIGATION
@@ -47,6 +50,14 @@ class StoryController: UIViewController {
         } else {
             goToFrame(index: frameIndex + 1)
         }
+    }
+    
+    //MARK: STORY MENU
+    func openStoryMenu(){
+        storyMenu.isHidden = false
+    }
+    func closeStoryMenu(){
+        storyMenu.isHidden = true
     }
     
     //MARK: END OF CHAPTER
