@@ -4,7 +4,6 @@ class CredBar:UIViewFromNib{
     
     //MARK: VARIABLES
     
-    @IBOutlet var vipAchievement: Achievement!
     @IBOutlet var karmaAchievement: Achievement!
     @IBOutlet var chaptersAchievement: Achievement!
     @IBOutlet var followersAchievement: Achievement!

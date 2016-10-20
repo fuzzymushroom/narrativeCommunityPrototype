@@ -409,6 +409,17 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "SimplePopupController.init(image : UIImage) -&gt; SimplePopupController:SimplePopupController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "image">
+            </PersistentString>
+            <PersistentString
+               value = "imageView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "UIViewController.spawnChildController(controller : UIViewController, view : UIView) -&gt; ():UIKitUtils.swift">
          <PersistentStrings>
             <PersistentString

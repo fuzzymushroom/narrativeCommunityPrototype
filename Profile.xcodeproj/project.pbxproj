@@ -109,6 +109,11 @@
 		B0F739901DB81F9800AA2DF9 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7398E1DB81F9800AA2DF9 /* Profile.swift */; };
 		B0F739921DB82CD800AA2DF9 /* max@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739911DB82CD800AA2DF9 /* max@2x.png */; };
 		B0F739941DB82E3600AA2DF9 /* search_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739931DB82E3600AA2DF9 /* search_thumbnail@2x.png */; };
+		B0F739961DB8307800AA2DF9 /* feedSurvey2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739951DB8307800AA2DF9 /* feedSurvey2@2x.png */; };
+		B0F739981DB844E300AA2DF9 /* bgKarma@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739971DB844E300AA2DF9 /* bgKarma@2x.png */; };
+		B0F7399A1DB8451600AA2DF9 /* SimplePopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F739991DB8451600AA2DF9 /* SimplePopupController.swift */; };
+		B0F7399C1DB845DD00AA2DF9 /* SimplePopupLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F7399B1DB845DD00AA2DF9 /* SimplePopupLayout.xib */; };
+		B0F7399E1DB84ED800AA2DF9 /* feedCollaborators@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7399D1DB84ED800AA2DF9 /* feedCollaborators@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -216,6 +221,11 @@
 		B0F7398E1DB81F9800AA2DF9 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		B0F739911DB82CD800AA2DF9 /* max@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "max@2x.png"; sourceTree = "<group>"; };
 		B0F739931DB82E3600AA2DF9 /* search_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_thumbnail@2x.png"; sourceTree = "<group>"; };
+		B0F739951DB8307800AA2DF9 /* feedSurvey2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedSurvey2@2x.png"; sourceTree = "<group>"; };
+		B0F739971DB844E300AA2DF9 /* bgKarma@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgKarma@2x.png"; sourceTree = "<group>"; };
+		B0F739991DB8451600AA2DF9 /* SimplePopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePopupController.swift; sourceTree = "<group>"; };
+		B0F7399B1DB845DD00AA2DF9 /* SimplePopupLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimplePopupLayout.xib; sourceTree = "<group>"; };
+		B0F7399D1DB84ED800AA2DF9 /* feedCollaborators@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedCollaborators@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +307,7 @@
 				B03789891DAD501100DCCACC /* PortalController.swift */,
 				B0003DAD1DADB8BF00F710C8 /* ProfileController.swift */,
 				B0B124301DB58DC200A2BEA1 /* ShortController.swift */,
+				B0F739991DB8451600AA2DF9 /* SimplePopupController.swift */,
 				B037898A1DAD501100DCCACC /* StoryController.swift */,
 			);
 			path = Controllers;
@@ -334,6 +345,7 @@
 				B037898D1DAD54BF00DCCACC /* PortalLayout.xib */,
 				B05508481DAF117B00BDD1F2 /* ShelfLayout.xib */,
 				B05508291DAEE15400BDD1F2 /* ShortSceneLayout.xib */,
+				B0F7399B1DB845DD00AA2DF9 /* SimplePopupLayout.xib */,
 				B05508531DB02DEE00BDD1F2 /* StoryCardLayout.xib */,
 				B0041D631DB03D070013C56A /* StoryLayout.xib */,
 			);
@@ -408,6 +420,7 @@
 			children = (
 				B00F40541DAD588D0020C2CE /* bgLoading.png */,
 				B09AE6971D9B19A2001E6EAC /* bgCollege.png */,
+				B0F739971DB844E300AA2DF9 /* bgKarma@2x.png */,
 				B055084C1DAF125200BDD1F2 /* bgShelfHeader@2x.png */,
 				B09AE69E1D9B4057001E6EAC /* bgSpeechBubble@2x.png */,
 			);
@@ -449,10 +462,12 @@
 			isa = PBXGroup;
 			children = (
 				B0F739621DB6F7EB00AA2DF9 /* feedCapture@2x.png */,
+				B0F7399D1DB84ED800AA2DF9 /* feedCollaborators@2x.png */,
 				B0F739661DB6FEDA00AA2DF9 /* feedMovie@2x.png */,
 				B0F739601DB6F49D00AA2DF9 /* feedRecommendation@2x.png */,
 				B0F7397F1DB806E300AA2DF9 /* feedShort@2x.png */,
 				B0F739641DB6F9C200AA2DF9 /* feedSurvey@2x.png */,
+				B0F739951DB8307800AA2DF9 /* feedSurvey2@2x.png */,
 			);
 			path = Feeds;
 			sourceTree = "<group>";
@@ -560,6 +575,7 @@
 				B0041D641DB03D070013C56A /* StoryLayout.xib in Resources */,
 				B0041D621DB03B750013C56A /* campfire@2x.png in Resources */,
 				B0F7396C1DB7E2CF00AA2DF9 /* iconComment@2x.png in Resources */,
+				B0F7399C1DB845DD00AA2DF9 /* SimplePopupLayout.xib in Resources */,
 				B0B124411DB5A59D00A2BEA1 /* guy_thumbnail@2x.png in Resources */,
 				B0F739801DB806E300AA2DF9 /* feedShort@2x.png in Resources */,
 				B0B124331DB59A5C00A2BEA1 /* BubbleLayout.xib in Resources */,
@@ -572,10 +588,12 @@
 				B0F7397E1DB7FA5600AA2DF9 /* mugshotColonelSanders@2x.png in Resources */,
 				B05508461DAF0A7100BDD1F2 /* buttonFollow@2x.png in Resources */,
 				B055082E1DAEE60400BDD1F2 /* iconCassName@2x.png in Resources */,
+				B0F739981DB844E300AA2DF9 /* bgKarma@2x.png in Resources */,
 				B0B1241F1DB55FC500A2BEA1 /* buttonReadNext@2x.png in Resources */,
 				B0041D6D1DB041230013C56A /* story1.png in Resources */,
 				B0B1242F1DB5825700A2BEA1 /* iconRose@2x.png in Resources */,
 				B037898E1DAD54BF00DCCACC /* PortalLayout.xib in Resources */,
+				B0F739961DB8307800AA2DF9 /* feedSurvey2@2x.png in Resources */,
 				B0F739831DB80E2D00AA2DF9 /* story6.png in Resources */,
 				B0F739711DB7E70B00AA2DF9 /* CommentThreadLayout.xib in Resources */,
 				B05508301DAEE7A500BDD1F2 /* iconEdit@2x.png in Resources */,
@@ -598,6 +616,7 @@
 				B055083C1DAF034A00BDD1F2 /* iconLaurelPlatinum@2x.png in Resources */,
 				B09AE6A21D9B475F001E6EAC /* iconMenu.png in Resources */,
 				B0F739921DB82CD800AA2DF9 /* max@2x.png in Resources */,
+				B0F7399E1DB84ED800AA2DF9 /* feedCollaborators@2x.png in Resources */,
 				B0B124401DB5A59D00A2BEA1 /* demi_thumbnail@2x.png in Resources */,
 				B09AE69F1D9B4057001E6EAC /* bgSpeechBubble@2x.png in Resources */,
 				B05508221DAEC66C00BDD1F2 /* MyShelfLayout.xib in Resources */,
@@ -634,6 +653,7 @@
 				B00F40611DAD64580020C2CE /* NavMenu.swift in Sources */,
 				B0F739751DB7EBB900AA2DF9 /* CommentsController.swift in Sources */,
 				B05508201DAEBD7200BDD1F2 /* StylizedButton.swift in Sources */,
+				B0F7399A1DB8451600AA2DF9 /* SimplePopupController.swift in Sources */,
 				B043488E1D99F18A00C8EE2B /* Atlasser.swift in Sources */,
 				B043911A1D9EDC44000CC018 /* UIKitUtils.swift in Sources */,
 				B05508321DAEECFD00BDD1F2 /* CredBar.swift in Sources */,

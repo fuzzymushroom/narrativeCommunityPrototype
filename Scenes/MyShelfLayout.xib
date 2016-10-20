@@ -9,6 +9,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyShelfController" customModule="Profile" customModuleProvider="target">
             <connections>
                 <outlet property="credBar" destination="qHa-DN-Mm7" id="Ee3-po-hGV"/>
+                <outlet property="credBarBottomConstraint" destination="aLw-s1-GlA" id="y6m-Ng-f2A"/>
                 <outlet property="shelf1" destination="fuw-md-3Nf" id="apu-C7-Quq"/>
                 <outlet property="shelf2" destination="lPb-mP-gte" id="1KT-sa-0If"/>
                 <outlet property="shortScene" destination="STg-m9-qdB" id="Gja-aN-lPm"/>

@@ -25,7 +25,7 @@ class GameModel{
             profile.followers = 0
             profile.createdStoryIds = []
             profile.recommendedStoryIds = ["campfire"]
-            profile.postImageNames = ["feedSurvey"]
+            profile.postImageNames = ["feedSurvey2"]
         default:
             break
         }

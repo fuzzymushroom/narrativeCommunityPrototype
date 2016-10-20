@@ -12,7 +12,6 @@
                 <outlet property="followButton" destination="Kax-AQ-5Qz" id="Nuh-or-Ksd"/>
                 <outlet property="followersAchievement" destination="1kM-xf-PMt" id="KqS-3U-sDy"/>
                 <outlet property="karmaAchievement" destination="iRo-FO-Psz" id="qCU-FF-JAP"/>
-                <outlet property="vipAchievement" destination="ubI-Ib-erv" id="0US-wd-KfY"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,12 +25,6 @@
                     <state key="normal" backgroundImage="buttonFollow.png"/>
                     <state key="selected" backgroundImage="buttonFollowing.png"/>
                 </button>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubI-Ib-erv" customClass="Achievement" customModule="Profile" customModuleProvider="target">
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="wbv-c5-rk8"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRo-FO-Psz" customClass="Achievement" customModule="Profile" customModuleProvider="target">
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -54,17 +47,14 @@
             <color key="backgroundColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="1kM-xf-PMt" secondAttribute="bottom" constant="5" id="09c-eh-K8u"/>
-                <constraint firstItem="iRo-FO-Psz" firstAttribute="leading" secondItem="ubI-Ib-erv" secondAttribute="trailing" constant="8" id="HO3-4q-2Oe"/>
                 <constraint firstAttribute="bottom" secondItem="2hi-ZS-TMM" secondAttribute="bottom" constant="5" id="Hb5-xa-Awu"/>
-                <constraint firstItem="ubI-Ib-erv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Ho6-Sb-cib"/>
-                <constraint firstItem="ubI-Ib-erv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="MLj-bM-gDV"/>
+                <constraint firstItem="iRo-FO-Psz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Kr5-z8-Blg"/>
                 <constraint firstAttribute="bottom" secondItem="iRo-FO-Psz" secondAttribute="bottom" constant="5" id="Ndu-t0-MYH"/>
                 <constraint firstItem="1kM-xf-PMt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Pw8-D3-wSE"/>
                 <constraint firstItem="iRo-FO-Psz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Ri1-2C-okw"/>
                 <constraint firstItem="2hi-ZS-TMM" firstAttribute="leading" secondItem="iRo-FO-Psz" secondAttribute="trailing" constant="8" id="Y60-V1-lpa"/>
                 <constraint firstItem="1kM-xf-PMt" firstAttribute="leading" secondItem="2hi-ZS-TMM" secondAttribute="trailing" constant="8" id="Yx7-70-KL6"/>
                 <constraint firstAttribute="bottom" secondItem="Kax-AQ-5Qz" secondAttribute="bottom" constant="10" id="b8W-Cp-Rnp"/>
-                <constraint firstAttribute="bottom" secondItem="ubI-Ib-erv" secondAttribute="bottom" constant="5" id="eSZ-vP-BmP"/>
                 <constraint firstItem="2hi-ZS-TMM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="iAX-8x-XAf"/>
                 <constraint firstItem="Kax-AQ-5Qz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="s9I-AP-omR"/>
                 <constraint firstAttribute="trailing" secondItem="Kax-AQ-5Qz" secondAttribute="trailing" constant="8" id="xga-0G-owc"/>

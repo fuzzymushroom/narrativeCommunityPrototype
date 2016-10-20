@@ -57,8 +57,8 @@ class PortalController:UIViewController {
         let recommendation = feedController.addFeedItem(imageName: "feedRecommendation")
         recommendation.enableTap(target: self, action: #selector(openStoryCard))
         _ = feedController.addFeedItem(imageName: "feedCapture")
+        _ = feedController.addFeedItem(imageName: "feedCollaborators")
         _ = feedController.addFeedItem(imageName: "feedShort")
-        _ = feedController.addFeedItem(imageName: "feedRecommendation")
     }
     
     //MARK: OVERLAYS
