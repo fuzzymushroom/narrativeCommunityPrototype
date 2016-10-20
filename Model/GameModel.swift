@@ -5,6 +5,7 @@ class GameModel{
         let profile = Profile()
         switch(userId){
         case "cass":
+            profile.isSelf = false
             profile.bgName = "bgCollege"
             profile.characterImageName = "cass"
             profile.username = "Pink-Haired Cass"
@@ -16,6 +17,7 @@ class GameModel{
             profile.recommendedStoryIds = ["guy","demi","meanGirls","sundosia","bff","sorority"]
             profile.postImageNames = ["feedMovie", "feedSurvey", "feedRecommendation", "feedCapture"]
         case "max":
+            profile.isSelf = true
             profile.bgName = "bgCollege"
             profile.characterImageName = "max"
             profile.username = "Maximoose"

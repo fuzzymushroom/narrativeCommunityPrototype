@@ -17,7 +17,7 @@ class PortalController:UIViewController {
         navMenu.addNavCell(named:"Home", onTap: { [unowned self] in self.navigateToPage(page: .HOME) })
         navMenu.addNavCell(named:"Explore", onTap: { [unowned self] in self.navigateToPage(page: .EXPLORE) })
         navMenu.addNavCell(named:"Feed", onTap: { [unowned self] in self.navigateToPage(page: .FEED) })
-        navMenu.addNavCell(named:"Profile", onTap: { [unowned self] in self.navigateToPage(page: .PROFILE) })
+        navMenu.addNavCell(named:"Tell Your Story", onTap: { [unowned self] in self.navigateToPage(page: .PROFILE) })
     }
     func toggleNavMenu(){
         navMenu.isHidden ? expandNavMenu() : collapseNavMenu()

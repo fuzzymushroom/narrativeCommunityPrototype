@@ -52,6 +52,10 @@ class ProfileController:UIViewController{
         killChildControllers()
         let feedController = FeedController()
         spawnChildController(controller: feedController, view: viewport)
+        if profile.isSelf {
+            let feedItem = feedController.addFeedItem(imageName: "feedPost")
+            feedItem.hideActionBar()
+        }
         for imageName in profile.postImageNames {
             _  = feedController.addFeedItem(imageName: imageName)
         }

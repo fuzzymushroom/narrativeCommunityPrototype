@@ -116,6 +116,7 @@
 		B0F7399E1DB84ED800AA2DF9 /* feedCollaborators@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7399D1DB84ED800AA2DF9 /* feedCollaborators@2x.png */; };
 		B0F739A01DB95E4200AA2DF9 /* add_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7399F1DB95E4100AA2DF9 /* add_thumbnail@2x.png */; };
 		B0F739A21DB9606A00AA2DF9 /* bgCameraMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739A11DB9606A00AA2DF9 /* bgCameraMenu@2x.png */; };
+		B0F739A41DB9790500AA2DF9 /* feedPost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739A31DB9790500AA2DF9 /* feedPost@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -230,6 +231,7 @@
 		B0F7399D1DB84ED800AA2DF9 /* feedCollaborators@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedCollaborators@2x.png"; sourceTree = "<group>"; };
 		B0F7399F1DB95E4100AA2DF9 /* add_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_thumbnail@2x.png"; sourceTree = "<group>"; };
 		B0F739A11DB9606A00AA2DF9 /* bgCameraMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgCameraMenu@2x.png"; sourceTree = "<group>"; };
+		B0F739A31DB9790500AA2DF9 /* feedPost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedPost@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,6 +472,7 @@
 				B0F739621DB6F7EB00AA2DF9 /* feedCapture@2x.png */,
 				B0F7399D1DB84ED800AA2DF9 /* feedCollaborators@2x.png */,
 				B0F739661DB6FEDA00AA2DF9 /* feedMovie@2x.png */,
+				B0F739A31DB9790500AA2DF9 /* feedPost@2x.png */,
 				B0F739601DB6F49D00AA2DF9 /* feedRecommendation@2x.png */,
 				B0F7397F1DB806E300AA2DF9 /* feedShort@2x.png */,
 				B0F739641DB6F9C200AA2DF9 /* feedSurvey@2x.png */,
@@ -610,6 +613,7 @@
 				B0B1244B1DB5AF7A00A2BEA1 /* iconFeedActions@2x.png in Resources */,
 				B09AE6921D9B012B001E6EAC /* LaunchScreen.storyboard in Resources */,
 				B05508491DAF117B00BDD1F2 /* ShelfLayout.xib in Resources */,
+				B0F739A41DB9790500AA2DF9 /* feedPost@2x.png in Resources */,
 				B0041D6F1DB041230013C56A /* story3.png in Resources */,
 				B0B124451DB5A59D00A2BEA1 /* sundosia_thumbnail@2x.png in Resources */,
 				B0F7396E1DB7E2CF00AA2DF9 /* iconHeartSelected@2x.png in Resources */,

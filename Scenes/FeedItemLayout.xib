@@ -13,6 +13,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedItem" customModule="Profile" customModuleProvider="target">
             <connections>
+                <outlet property="actionBar" destination="ll3-JM-raJ" id="qCE-rn-zfD"/>
                 <outlet property="commentButton" destination="LEc-8M-g3Z" id="dy3-Qu-QdK"/>
                 <outlet property="imageView" destination="h12-hx-Y97" id="IU0-NK-CPL"/>
                 <outlet property="likeButton" destination="YRb-MV-vQu" id="lr5-BT-ksz"/>

@@ -3,12 +3,13 @@ import UIKit
 class FeedItem:UIViewFromNib{
     
     //MARK: VARIABLES
-    @IBOutlet var imageView: UIImageView!
     override public var intrinsicContentSize:CGSize{
         get {
             return frame.size
         }
     }
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var actionBar: UIView!
     @IBOutlet var commentButton: UIButton!
     @IBOutlet var likeButton: UIButton!
     
@@ -26,5 +27,8 @@ class FeedItem:UIViewFromNib{
     }
     func toggleLike(){
         likeButton.isSelected = !likeButton.isSelected
+    }
+    func hideActionBar(){
+        actionBar.isHidden = true
     }
 }

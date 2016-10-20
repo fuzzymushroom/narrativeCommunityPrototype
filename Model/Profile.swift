@@ -3,6 +3,7 @@ import Foundation
 class Profile {
     
     //MARK: VARIABLES
+    var isSelf:Bool = false
     var bgName:String!
     var characterImageName:String!
     var username:String!

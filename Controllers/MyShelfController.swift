@@ -26,6 +26,9 @@ class MyShelfController:UIViewController{
         spawnChildController(controller: shortController, view: shortScene)
         populateCredBar()
         populateShelves()
+        if profile.isSelf {
+            _ = shelf2.addStory(storyId: "add")
+        }
         credBar.karmaAchievement.enableTap(target: self, action: #selector(openKarma))
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -58,7 +61,7 @@ class MyShelfController:UIViewController{
         }
         
         shelf2.setTitle(name: "Recommended by " + profile.username, qty: profile.recommendedStoryIds.count)
-        for storyId in (profile.recommendedStoryIds + ["add"]) {
+        for storyId in profile.recommendedStoryIds {
             let story = shelf2.addStory(storyId: storyId)
             if let pc2 = portalController {
                 story.enableTap(target: pc2, action: #selector(PortalController.openStoryCard))
