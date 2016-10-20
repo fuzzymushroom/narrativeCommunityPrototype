@@ -114,6 +114,7 @@
 		B0F7399A1DB8451600AA2DF9 /* SimplePopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F739991DB8451600AA2DF9 /* SimplePopupController.swift */; };
 		B0F7399C1DB845DD00AA2DF9 /* SimplePopupLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F7399B1DB845DD00AA2DF9 /* SimplePopupLayout.xib */; };
 		B0F7399E1DB84ED800AA2DF9 /* feedCollaborators@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7399D1DB84ED800AA2DF9 /* feedCollaborators@2x.png */; };
+		B0F739A01DB95E4200AA2DF9 /* add_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7399F1DB95E4100AA2DF9 /* add_thumbnail@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -226,6 +227,7 @@
 		B0F739991DB8451600AA2DF9 /* SimplePopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePopupController.swift; sourceTree = "<group>"; };
 		B0F7399B1DB845DD00AA2DF9 /* SimplePopupLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimplePopupLayout.xib; sourceTree = "<group>"; };
 		B0F7399D1DB84ED800AA2DF9 /* feedCollaborators@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedCollaborators@2x.png"; sourceTree = "<group>"; };
+		B0F7399F1DB95E4100AA2DF9 /* add_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_thumbnail@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +387,7 @@
 		B05508671DB038D400BDD1F2 /* StoryCards */ = {
 			isa = PBXGroup;
 			children = (
+				B0F7399F1DB95E4100AA2DF9 /* add_thumbnail@2x.png */,
 				B0B124361DB5A59D00A2BEA1 /* bff_thumbnail@2x.png */,
 				B0041D611DB03B750013C56A /* campfire@2x.png */,
 				B0B124371DB5A59D00A2BEA1 /* campfire_thumbnail@2x.png */,
@@ -625,6 +628,7 @@
 				B0F739841DB80E2D00AA2DF9 /* story7.png in Resources */,
 				B0003DAA1DADB86B00F710C8 /* ProfileLayout.xib in Resources */,
 				B0041D6E1DB041230013C56A /* story2.png in Resources */,
+				B0F739A01DB95E4200AA2DF9 /* add_thumbnail@2x.png in Resources */,
 				B0041D731DB043910013C56A /* EndOfChapterLayout.xib in Resources */,
 				B0F739881DB813E600AA2DF9 /* story9.png in Resources */,
 			);

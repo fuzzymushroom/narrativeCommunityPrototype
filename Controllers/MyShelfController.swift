@@ -58,7 +58,7 @@ class MyShelfController:UIViewController{
         }
         
         shelf2.setTitle(name: "Recommended by " + profile.username, qty: profile.recommendedStoryIds.count)
-        for storyId in profile.recommendedStoryIds{
+        for storyId in (profile.recommendedStoryIds + ["add"]) {
             let story = shelf2.addStory(storyId: storyId)
             if let pc2 = portalController {
                 story.enableTap(target: pc2, action: #selector(PortalController.openStoryCard))
