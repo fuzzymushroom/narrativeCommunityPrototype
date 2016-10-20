@@ -10,7 +10,8 @@ class EndOfChapterController:UIViewController{
     @IBOutlet var followButton: UIButton!
     @IBOutlet var favoriteButton: UIButton!
     @IBOutlet var recommendButton: UIButton!
-    
+    @IBOutlet var roseCountLabel: UILabel!
+
     var animator:UIDynamicAnimator!
     var gravity:UIGravityBehavior!
     var collision:UICollisionBehavior!
@@ -37,6 +38,7 @@ class EndOfChapterController:UIViewController{
         followButton.isHidden = true
         favoriteButton.isHidden = true
         recommendButton.isHidden = true
+        roseCountLabel.isHidden = true
     }
     
     //MARK: FUNCTIONS
@@ -45,6 +47,7 @@ class EndOfChapterController:UIViewController{
         followButton.isHidden = false
         favoriteButton.isHidden = false
         recommendButton.isHidden = false
+        roseCountLabel.isHidden = false
         
         let rose = UIImageView(image: UIImage(named: "iconRose"))
         rose.frame.origin = roseButton.frame.origin
