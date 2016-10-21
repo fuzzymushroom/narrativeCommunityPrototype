@@ -15,6 +15,7 @@
             <connections>
                 <outlet property="commentLabel" destination="W7N-FJ-A1e" id="7mB-TO-zit"/>
                 <outlet property="mugshot" destination="0XJ-Hz-lp0" id="Vj5-F2-Xxy"/>
+                <outlet property="sparkleContainer" destination="Y2p-Nz-p76" id="A9D-MY-Q5s"/>
                 <outlet property="usernameLabel" destination="JNu-B0-ofj" id="nxV-WP-w3j"/>
             </connections>
         </placeholder>
@@ -29,6 +30,9 @@
                         <constraint firstAttribute="height" constant="60" id="fGV-5R-Zjk"/>
                     </constraints>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2p-Nz-p76">
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pink-Haired Cass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNu-B0-ofj" userLabel="username">
                     <constraints>
                         <constraint firstAttribute="height" constant="14" id="eMq-8m-xDd"/>
@@ -59,7 +63,9 @@
             <constraints>
                 <constraint firstItem="JNu-B0-ofj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="6Le-ay-AD1"/>
                 <constraint firstAttribute="trailing" secondItem="Dlw-GF-ABU" secondAttribute="trailing" constant="5" id="897-gH-2DC"/>
+                <constraint firstItem="Y2p-Nz-p76" firstAttribute="bottom" secondItem="0XJ-Hz-lp0" secondAttribute="bottom" id="B4R-fm-any"/>
                 <constraint firstItem="W7N-FJ-A1e" firstAttribute="trailing" secondItem="JNu-B0-ofj" secondAttribute="trailing" id="C4J-ug-Y5y"/>
+                <constraint firstItem="Y2p-Nz-p76" firstAttribute="top" secondItem="0XJ-Hz-lp0" secondAttribute="top" id="CPK-os-anV"/>
                 <constraint firstItem="JNu-B0-ofj" firstAttribute="leading" secondItem="0XJ-Hz-lp0" secondAttribute="trailing" constant="5" id="CfJ-GD-Oxb"/>
                 <constraint firstItem="W7N-FJ-A1e" firstAttribute="top" secondItem="JNu-B0-ofj" secondAttribute="bottom" id="GKI-Eh-sDk"/>
                 <constraint firstItem="W7N-FJ-A1e" firstAttribute="leading" secondItem="0XJ-Hz-lp0" secondAttribute="trailing" constant="5" id="Glm-NK-tGY"/>
@@ -67,8 +73,10 @@
                 <constraint firstAttribute="trailing" secondItem="tWD-vn-MnI" secondAttribute="trailing" constant="5" id="Sqb-rk-b5H"/>
                 <constraint firstItem="tWD-vn-MnI" firstAttribute="top" secondItem="Dlw-GF-ABU" secondAttribute="bottom" constant="5" id="TFI-IT-jPJ"/>
                 <constraint firstItem="Dlw-GF-ABU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="aPy-RY-R2T"/>
+                <constraint firstItem="Y2p-Nz-p76" firstAttribute="leading" secondItem="0XJ-Hz-lp0" secondAttribute="leading" id="cN8-M0-PcR"/>
                 <constraint firstItem="Dlw-GF-ABU" firstAttribute="leading" secondItem="JNu-B0-ofj" secondAttribute="trailing" constant="5" id="roZ-t5-LCp"/>
                 <constraint firstItem="0XJ-Hz-lp0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="sqa-LL-UIs"/>
+                <constraint firstItem="Y2p-Nz-p76" firstAttribute="trailing" secondItem="0XJ-Hz-lp0" secondAttribute="trailing" id="vIw-Ih-QWh"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

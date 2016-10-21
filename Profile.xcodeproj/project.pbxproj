@@ -83,6 +83,8 @@
 		B0B124491DB5AE6A00A2BEA1 /* FeedItemLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B124481DB5AE6A00A2BEA1 /* FeedItemLayout.xib */; };
 		B0B1244B1DB5AF7A00A2BEA1 /* iconFeedActions@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B1244A1DB5AF7A00A2BEA1 /* iconFeedActions@2x.png */; };
 		B0B1244D1DB5AFEA00A2BEA1 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B1244C1DB5AFEA00A2BEA1 /* FeedItem.swift */; };
+		B0F27EDD1DBA93BE00BD8462 /* Sparkle.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0F27EDB1DBA93BE00BD8462 /* Sparkle.sks */; };
+		B0F27EDE1DBA93BE00BD8462 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F27EDC1DBA93BE00BD8462 /* spark.png */; };
 		B0F7395C1DB6DCB800AA2DF9 /* FeedLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F7395B1DB6DCB800AA2DF9 /* FeedLayout.xib */; };
 		B0F7395E1DB6DD4600AA2DF9 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7395D1DB6DD4600AA2DF9 /* FeedController.swift */; };
 		B0F739611DB6F49D00AA2DF9 /* feedRecommendation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739601DB6F49D00AA2DF9 /* feedRecommendation@2x.png */; };
@@ -201,6 +203,8 @@
 		B0B124481DB5AE6A00A2BEA1 /* FeedItemLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedItemLayout.xib; sourceTree = "<group>"; };
 		B0B1244A1DB5AF7A00A2BEA1 /* iconFeedActions@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconFeedActions@2x.png"; sourceTree = "<group>"; };
 		B0B1244C1DB5AFEA00A2BEA1 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		B0F27EDB1DBA93BE00BD8462 /* Sparkle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Sparkle.sks; sourceTree = "<group>"; };
+		B0F27EDC1DBA93BE00BD8462 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		B0F7395B1DB6DCB800AA2DF9 /* FeedLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedLayout.xib; sourceTree = "<group>"; };
 		B0F7395D1DB6DD4600AA2DF9 /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		B0F739601DB6F49D00AA2DF9 /* feedRecommendation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedRecommendation@2x.png"; sourceTree = "<group>"; };
@@ -357,8 +361,10 @@
 				B0003DA91DADB86B00F710C8 /* ProfileLayout.xib */,
 				B037898D1DAD54BF00DCCACC /* PortalLayout.xib */,
 				B05508481DAF117B00BDD1F2 /* ShelfLayout.xib */,
+				B0F27EDC1DBA93BE00BD8462 /* spark.png */,
 				B05508291DAEE15400BDD1F2 /* ShortSceneLayout.xib */,
 				B0F7399B1DB845DD00AA2DF9 /* SimplePopupLayout.xib */,
+				B0F27EDB1DBA93BE00BD8462 /* Sparkle.sks */,
 				B05508531DB02DEE00BDD1F2 /* StoryCardLayout.xib */,
 				B0041D631DB03D070013C56A /* StoryLayout.xib */,
 			);
@@ -624,6 +630,7 @@
 				B0B1244B1DB5AF7A00A2BEA1 /* iconFeedActions@2x.png in Resources */,
 				B09AE6921D9B012B001E6EAC /* LaunchScreen.storyboard in Resources */,
 				B05508491DAF117B00BDD1F2 /* ShelfLayout.xib in Resources */,
+				B0F27EDD1DBA93BE00BD8462 /* Sparkle.sks in Resources */,
 				B0F739A41DB9790500AA2DF9 /* feedPost@2x.png in Resources */,
 				B0041D6F1DB041230013C56A /* story3.png in Resources */,
 				B0B124451DB5A59D00A2BEA1 /* sundosia_thumbnail@2x.png in Resources */,
@@ -640,6 +647,7 @@
 				B0F739921DB82CD800AA2DF9 /* max@2x.png in Resources */,
 				B0F7399E1DB84ED800AA2DF9 /* feedCollaborators@2x.png in Resources */,
 				B0B124401DB5A59D00A2BEA1 /* demi_thumbnail@2x.png in Resources */,
+				B0F27EDE1DBA93BE00BD8462 /* spark.png in Resources */,
 				B09AE69F1D9B4057001E6EAC /* bgSpeechBubble@2x.png in Resources */,
 				B05508221DAEC66C00BDD1F2 /* MyShelfLayout.xib in Resources */,
 				B0B1242B1DB579F600A2BEA1 /* buttonWhite@2x.png in Resources */,

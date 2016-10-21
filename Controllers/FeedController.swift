@@ -34,10 +34,9 @@ class FeedController:UIViewController{
         return feedItem
     }
     func openComments(){
-        let commentsController = CommentsController()
         let masterController = getParentOfType(type: MasterController.self)!
         let thread = masterController.gameModel.getCommentThread(id: "portal")
-        commentsController.loadThread(thread: thread)
+        let commentsController = CommentsController(thread: thread)
         commentsController.modalPresentationStyle = .overFullScreen
         //commentsController.isModalInPopover = true
         present(commentsController, animated: false, completion: nil)

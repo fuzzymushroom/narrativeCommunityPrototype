@@ -3,6 +3,8 @@ import UIKit
 class CommentsController:UIViewController{
     
     //MARK: VARIABLES
+    let thread:[CommentData]
+    
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var stackView: UIStackView!
     @IBOutlet var xButton: UIButton!
@@ -12,7 +14,8 @@ class CommentsController:UIViewController{
     }
     
     //MARK: INITIALIZATION
-    init(){
+    init(thread:[CommentData]){
+        self.thread = thread
         let nibName = "CommentThreadLayout"
         super.init(nibName: nibName, bundle: nil)
     }
@@ -23,13 +26,17 @@ class CommentsController:UIViewController{
         xButton.addTarget(self, action: #selector(close), for: .touchUpInside)
     }
     override func viewDidAppear(_ animated: Bool) {
+        loadThread()
     }
     
     //MARK: FUNCTIONS
-    func loadThread(thread:[CommentData]){
+    func loadThread(){
         for commentData in thread {
             let comment = addComment()
             comment.populate(mugshot: UIImage(named: commentData.mugshotImageName)!, username: commentData.username, comment: commentData.comment)
+            if commentData.mugshotImageName == "mugshotCass" {
+                comment.sparkle()
+            }
         }
     }
     func close(){
