@@ -118,6 +118,8 @@
 		B0F739A21DB9606A00AA2DF9 /* bgCameraMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739A11DB9606A00AA2DF9 /* bgCameraMenu@2x.png */; };
 		B0F739A41DB9790500AA2DF9 /* feedPost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739A31DB9790500AA2DF9 /* feedPost@2x.png */; };
 		B0F739A61DB97C2100AA2DF9 /* iconLaurelRainbow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739A51DB97C2100AA2DF9 /* iconLaurelRainbow@2x.png */; };
+		B0F739A81DB9812200AA2DF9 /* story10.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F739A71DB9812200AA2DF9 /* story10.png */; };
+		B0F739AC1DB98DCB00AA2DF9 /* CommentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F739AB1DB98DCB00AA2DF9 /* CommentData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -234,6 +236,8 @@
 		B0F739A11DB9606A00AA2DF9 /* bgCameraMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgCameraMenu@2x.png"; sourceTree = "<group>"; };
 		B0F739A31DB9790500AA2DF9 /* feedPost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedPost@2x.png"; sourceTree = "<group>"; };
 		B0F739A51DB97C2100AA2DF9 /* iconLaurelRainbow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconLaurelRainbow@2x.png"; sourceTree = "<group>"; };
+		B0F739A71DB9812200AA2DF9 /* story10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = story10.png; sourceTree = "<group>"; };
+		B0F739AB1DB98DCB00AA2DF9 /* CommentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +263,7 @@
 				B0F739821DB80E2D00AA2DF9 /* story7.png */,
 				B0F739851DB813E600AA2DF9 /* story8.png */,
 				B0F739861DB813E600AA2DF9 /* story9.png */,
+				B0F739A71DB9812200AA2DF9 /* story10.png */,
 			);
 			path = StoryFrames;
 			sourceTree = "<group>";
@@ -496,6 +501,7 @@
 		B0F7398C1DB81F9800AA2DF9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B0F739AB1DB98DCB00AA2DF9 /* CommentData.swift */,
 				B0F7398D1DB81F9800AA2DF9 /* GameModel.swift */,
 				B0F7398E1DB81F9800AA2DF9 /* Profile.swift */,
 			);
@@ -594,6 +600,7 @@
 				B0B124331DB59A5C00A2BEA1 /* BubbleLayout.xib in Resources */,
 				B03789991DAD571A00DCCACC /* DidactGothic.ttf in Resources */,
 				B0F7396D1DB7E2CF00AA2DF9 /* iconHeart@2x.png in Resources */,
+				B0F739A81DB9812200AA2DF9 /* story10.png in Resources */,
 				B0B124421DB5A59D00A2BEA1 /* kawataki_thumbnail@2x.png in Resources */,
 				B05508541DB02DEE00BDD1F2 /* StoryCardLayout.xib in Resources */,
 				B055083B1DAF034A00BDD1F2 /* iconLaurelGray@2x.png in Resources */,
@@ -679,6 +686,7 @@
 				B043911C1D9EDC51000CC018 /* MasterController.swift in Sources */,
 				B04348911D99F18A00C8EE2B /* SpriteKitUtils.swift in Sources */,
 				B0B124351DB59B6B00A2BEA1 /* Bubble.swift in Sources */,
+				B0F739AC1DB98DCB00AA2DF9 /* CommentData.swift in Sources */,
 				B00F405F1DAD5D870020C2CE /* NavCell.swift in Sources */,
 				B055083E1DAF040300BDD1F2 /* Achievement.swift in Sources */,
 				B0B1244D1DB5AFEA00A2BEA1 /* FeedItem.swift in Sources */,

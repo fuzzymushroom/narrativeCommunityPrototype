@@ -24,6 +24,9 @@ class MyShelfController:UIViewController{
     override func viewDidLoad() {
         shortController = ShortController()
         spawnChildController(controller: shortController, view: shortScene)
+        if(!profile.isSelf){
+            shortController.editButton.isHidden = true
+        }
         populateCredBar()
         populateShelves()
         if profile.isSelf {

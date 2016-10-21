@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShortController" customModule="Profile" customModuleProvider="target">
             <connections>
+                <outlet property="editButton" destination="Wsb-Fp-TGu" id="iaF-9N-ukv"/>
                 <outlet property="view" destination="iN0-l3-epB" id="NrM-aK-DJp"/>
             </connections>
         </placeholder>

@@ -15,11 +15,13 @@ class StoryController: UIViewController {
         "story6",
         "story7",
         "story8",
-        "story9"
+        "story9",
+        "story10"
     ]
     @IBOutlet var storyMenu: UIImageView!
 
     var frameIndex:Int!
+    var didShowComments:Bool = false
     
     
     //MARK: OVERRIDES
@@ -44,7 +46,10 @@ class StoryController: UIViewController {
         imageView.image = UIImage(named: frames[index])
     }
     func advanceFrame(){
-        if frameIndex == frames.count - 1 {
+        if frameIndex == 9 && !didShowComments {
+            openComments()
+            didShowComments = true
+        } else if frameIndex == frames.count - 1 {
             view.gestureRecognizers?.forEach(view.removeGestureRecognizer)
             openEndOfChapter()
         } else {
@@ -52,7 +57,16 @@ class StoryController: UIViewController {
         }
     }
     
-    //MARK: STORY MENU
+    //MARK: STORY MENUS
+    func openComments(){
+        let commentsController = CommentsController()
+        let masterController = getParentOfType(type: MasterController.self)!
+        let thread = masterController.gameModel.getCommentThread(id: "story")
+        commentsController.loadThread(thread: thread)
+        commentsController.modalPresentationStyle = .overFullScreen
+        //commentsController.isModalInPopover = true
+        present(commentsController, animated: false, completion: nil)
+    }
     func openStoryMenu(){
         storyMenu.isHidden = false
     }

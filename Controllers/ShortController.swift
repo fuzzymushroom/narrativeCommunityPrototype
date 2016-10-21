@@ -6,6 +6,8 @@ class ShortController:UIViewController {
     var character:UIImageView!
     let bubble = Bubble()
     
+    @IBOutlet var editButton: UIImageView!
+    
     //MARK: INITIALIZATION
     init(){
         let nibName = "ShortSceneLayout"
