@@ -2,6 +2,7 @@ import UIKit
 
 class NavCell:UIViewFromNib{
     
+    @IBOutlet var imageView: UIImageView!
     @IBOutlet var label:UILabel!
     var onTap:VoidClosure?
     
@@ -13,8 +14,9 @@ class NavCell:UIViewFromNib{
         layer.borderWidth = 1
     }
     
-    func setName(name:String){
+    func populate(name:String, image:UIImage){
         label.text = name
+        imageView.image = image
     }
     func setOnTap(onTap:@escaping VoidClosure){
         self.onTap = onTap

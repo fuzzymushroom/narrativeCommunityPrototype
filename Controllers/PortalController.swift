@@ -14,10 +14,17 @@ class PortalController:UIViewController {
     
     //MARK: NAV MENU
     private func populateNavMenu(){
-        navMenu.addNavCell(named:"Home", onTap: { [unowned self] in self.navigateToPage(page: .HOME) })
-        navMenu.addNavCell(named:"Explore", onTap: { [unowned self] in self.navigateToPage(page: .EXPLORE) })
-        navMenu.addNavCell(named:"Feed", onTap: { [unowned self] in self.navigateToPage(page: .FEED) })
-        navMenu.addNavCell(named:"Tell Your Story", onTap: { [unowned self] in self.navigateToPage(page: .PROFILE) })
+        navMenu.addNavCell(named:"Home", image: UIImage(named: "navHome")!, onTap: { [unowned self] in self.navigateToPage(page: .HOME) })
+        navMenu.addNavCell(named:"Featured", image: UIImage(named: "navFeatured")!, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
+        navMenu.addNavCell(named:"Feed", image: UIImage(named: "navFeed")!, onTap: { [unowned self] in self.navigateToPage(page: .FEED) })
+        navMenu.addNavCell(named:"Mean Girls", image: UIImage(named: "navMeanGirls")!, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
+        navMenu.addNavCell(named:"Demi Stories", image: UIImage(named: "navDemi")!, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
+        navMenu.addNavCell(named:"Genres", image: UIImage(named: "navGenres")!, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
+        navMenu.addNavCell(named:"Adventures", image: UIImage(named: "navAdventures")!, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
+        navMenu.addNavCell(named:"User Stories", image: UIImage(named: "navUserStories")!, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
+        navMenu.addNavCell(named:"Create", image: UIImage(named: "navCreate")!, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
+        navMenu.addNavCell(named:"Profile", image: UIImage(named: "navProfile")!, onTap: { [unowned self] in self.navigateToPage(page: .PROFILE) })
+        navMenu.addNavCell(named:"Settings", image: UIImage(named: "navSettings")!, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
     }
     func toggleNavMenu(){
         navMenu.isHidden ? expandNavMenu() : collapseNavMenu()
@@ -35,10 +42,20 @@ class PortalController:UIViewController {
         collapseNavMenu()
         pageLabel.text = page.rawValue
         switch page {
+            case .HOME: launchHome()
             case .PROFILE: launchProfile(userId: "max")
             case .FEED: launchFeed()
             default: killChildControllers()
         }
+    }
+    func launchHome(){
+        killChildControllers()
+        let controller = UIViewController()
+        spawnChildController(controller: controller, view: pageContainer)
+        view.layoutIfNeeded()
+        let imageView = UIImageView(frame: pageContainer.bounds)
+        imageView.image = UIImage(named: "bgHome")!
+        controller.view.addSubview(imageView)
     }
     func launchProfile(userId:String){
         killChildControllers()
@@ -91,7 +108,7 @@ class PortalController:UIViewController {
 
 enum Page:String {
     case HOME = "Home"
-    case EXPLORE = "Explore"
     case FEED = "Feed"
     case PROFILE = "Profile"
+    case BLANK = "Placeholder"
 }

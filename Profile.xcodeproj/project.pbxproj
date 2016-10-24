@@ -57,6 +57,18 @@
 		B055084D1DAF125200BDD1F2 /* bgShelfHeader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B055084C1DAF125200BDD1F2 /* bgShelfHeader@2x.png */; };
 		B05508541DB02DEE00BDD1F2 /* StoryCardLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05508531DB02DEE00BDD1F2 /* StoryCardLayout.xib */; };
 		B05508561DB02EA300BDD1F2 /* StoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05508551DB02EA300BDD1F2 /* StoryCard.swift */; };
+		B070AFBC1DBEC1BE00EA627F /* navAdventures@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFB11DBEC1BE00EA627F /* navAdventures@2x.png */; };
+		B070AFBD1DBEC1BE00EA627F /* navCreate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFB21DBEC1BE00EA627F /* navCreate@2x.png */; };
+		B070AFBE1DBEC1BE00EA627F /* navDemi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFB31DBEC1BE00EA627F /* navDemi@2x.png */; };
+		B070AFBF1DBEC1BE00EA627F /* navFeatured@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFB41DBEC1BE00EA627F /* navFeatured@2x.png */; };
+		B070AFC01DBEC1BE00EA627F /* navFeed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFB51DBEC1BE00EA627F /* navFeed@2x.png */; };
+		B070AFC11DBEC1BE00EA627F /* navGenres@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFB61DBEC1BE00EA627F /* navGenres@2x.png */; };
+		B070AFC21DBEC1BE00EA627F /* navHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFB71DBEC1BE00EA627F /* navHome@2x.png */; };
+		B070AFC41DBEC1BE00EA627F /* navMeanGirls@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFB91DBEC1BE00EA627F /* navMeanGirls@2x.png */; };
+		B070AFC51DBEC1BE00EA627F /* navSettings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFBA1DBEC1BE00EA627F /* navSettings@2x.png */; };
+		B070AFC61DBEC1BE00EA627F /* navUserStories@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFBB1DBEC1BE00EA627F /* navUserStories@2x.png */; };
+		B070AFC81DBEC2CE00EA627F /* navProfile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFC71DBEC2CE00EA627F /* navProfile@2x.png */; };
+		B070AFCA1DBEC4B900EA627F /* bgHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFC91DBEC4B900EA627F /* bgHome@2x.png */; };
 		B09AE6921D9B012B001E6EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09AE6911D9B012B001E6EAC /* LaunchScreen.storyboard */; };
 		B09AE6981D9B19A2001E6EAC /* bgCollege.png in Resources */ = {isa = PBXBuildFile; fileRef = B09AE6971D9B19A2001E6EAC /* bgCollege.png */; };
 		B09AE69F1D9B4057001E6EAC /* bgSpeechBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09AE69E1D9B4057001E6EAC /* bgSpeechBubble@2x.png */; };
@@ -177,6 +189,18 @@
 		B055084C1DAF125200BDD1F2 /* bgShelfHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgShelfHeader@2x.png"; sourceTree = "<group>"; };
 		B05508531DB02DEE00BDD1F2 /* StoryCardLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryCardLayout.xib; sourceTree = "<group>"; };
 		B05508551DB02EA300BDD1F2 /* StoryCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryCard.swift; sourceTree = "<group>"; };
+		B070AFB11DBEC1BE00EA627F /* navAdventures@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navAdventures@2x.png"; sourceTree = "<group>"; };
+		B070AFB21DBEC1BE00EA627F /* navCreate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navCreate@2x.png"; sourceTree = "<group>"; };
+		B070AFB31DBEC1BE00EA627F /* navDemi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navDemi@2x.png"; sourceTree = "<group>"; };
+		B070AFB41DBEC1BE00EA627F /* navFeatured@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navFeatured@2x.png"; sourceTree = "<group>"; };
+		B070AFB51DBEC1BE00EA627F /* navFeed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navFeed@2x.png"; sourceTree = "<group>"; };
+		B070AFB61DBEC1BE00EA627F /* navGenres@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navGenres@2x.png"; sourceTree = "<group>"; };
+		B070AFB71DBEC1BE00EA627F /* navHome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navHome@2x.png"; sourceTree = "<group>"; };
+		B070AFB91DBEC1BE00EA627F /* navMeanGirls@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navMeanGirls@2x.png"; sourceTree = "<group>"; };
+		B070AFBA1DBEC1BE00EA627F /* navSettings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navSettings@2x.png"; sourceTree = "<group>"; };
+		B070AFBB1DBEC1BE00EA627F /* navUserStories@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navUserStories@2x.png"; sourceTree = "<group>"; };
+		B070AFC71DBEC2CE00EA627F /* navProfile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navProfile@2x.png"; sourceTree = "<group>"; };
+		B070AFC91DBEC4B900EA627F /* bgHome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgHome@2x.png"; sourceTree = "<group>"; };
 		B09AE6911D9B012B001E6EAC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B09AE6971D9B19A2001E6EAC /* bgCollege.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgCollege.png; sourceTree = "<group>"; };
 		B09AE69E1D9B4057001E6EAC /* bgSpeechBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgSpeechBubble@2x.png"; sourceTree = "<group>"; };
@@ -440,6 +464,7 @@
 			children = (
 				B0F739A11DB9606A00AA2DF9 /* bgCameraMenu@2x.png */,
 				B09AE6971D9B19A2001E6EAC /* bgCollege.png */,
+				B070AFC91DBEC4B900EA627F /* bgHome@2x.png */,
 				B0F739971DB844E300AA2DF9 /* bgKarma@2x.png */,
 				B00F40541DAD588D0020C2CE /* bgLoading.png */,
 				B055084C1DAF125200BDD1F2 /* bgShelfHeader@2x.png */,
@@ -476,6 +501,17 @@
 				B0F7396B1DB7E2CF00AA2DF9 /* iconReport@2x.png */,
 				B0B1242E1DB5825700A2BEA1 /* iconRose@2x.png */,
 				B0F739721DB7E7C200AA2DF9 /* iconX@2x.png */,
+				B070AFB11DBEC1BE00EA627F /* navAdventures@2x.png */,
+				B070AFB21DBEC1BE00EA627F /* navCreate@2x.png */,
+				B070AFB31DBEC1BE00EA627F /* navDemi@2x.png */,
+				B070AFB41DBEC1BE00EA627F /* navFeatured@2x.png */,
+				B070AFB51DBEC1BE00EA627F /* navFeed@2x.png */,
+				B070AFB61DBEC1BE00EA627F /* navGenres@2x.png */,
+				B070AFB71DBEC1BE00EA627F /* navHome@2x.png */,
+				B070AFB91DBEC1BE00EA627F /* navMeanGirls@2x.png */,
+				B070AFC71DBEC2CE00EA627F /* navProfile@2x.png */,
+				B070AFBA1DBEC1BE00EA627F /* navSettings@2x.png */,
+				B070AFBB1DBEC1BE00EA627F /* navUserStories@2x.png */,
 			);
 			path = Icons;
 			sourceTree = "<group>";
@@ -574,8 +610,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B070AFC11DBEC1BE00EA627F /* navGenres@2x.png in Resources */,
 				B0F739781DB7F2DB00AA2DF9 /* mugshotCass@2x.png in Resources */,
 				B0B124491DB5AE6A00A2BEA1 /* FeedItemLayout.xib in Resources */,
+				B070AFC01DBEC1BE00EA627F /* navFeed@2x.png in Resources */,
 				B09AE6981D9B19A2001E6EAC /* bgCollege.png in Resources */,
 				B055084D1DAF125200BDD1F2 /* bgShelfHeader@2x.png in Resources */,
 				B0F739941DB82E3600AA2DF9 /* search_thumbnail@2x.png in Resources */,
@@ -600,6 +638,7 @@
 				B0041D641DB03D070013C56A /* StoryLayout.xib in Resources */,
 				B0041D621DB03B750013C56A /* campfire@2x.png in Resources */,
 				B0F7396C1DB7E2CF00AA2DF9 /* iconComment@2x.png in Resources */,
+				B070AFCA1DBEC4B900EA627F /* bgHome@2x.png in Resources */,
 				B0F7399C1DB845DD00AA2DF9 /* SimplePopupLayout.xib in Resources */,
 				B0B124411DB5A59D00A2BEA1 /* guy_thumbnail@2x.png in Resources */,
 				B0F739801DB806E300AA2DF9 /* feedShort@2x.png in Resources */,
@@ -610,6 +649,8 @@
 				B0B124421DB5A59D00A2BEA1 /* kawataki_thumbnail@2x.png in Resources */,
 				B05508541DB02DEE00BDD1F2 /* StoryCardLayout.xib in Resources */,
 				B055083B1DAF034A00BDD1F2 /* iconLaurelGray@2x.png in Resources */,
+				B070AFC81DBEC2CE00EA627F /* navProfile@2x.png in Resources */,
+				B070AFBF1DBEC1BE00EA627F /* navFeatured@2x.png in Resources */,
 				B0041D701DB041230013C56A /* story4.png in Resources */,
 				B0F7397E1DB7FA5600AA2DF9 /* mugshotColonelSanders@2x.png in Resources */,
 				B05508461DAF0A7100BDD1F2 /* buttonFollow@2x.png in Resources */,
@@ -619,20 +660,27 @@
 				B0041D6D1DB041230013C56A /* story1.png in Resources */,
 				B0F739A21DB9606A00AA2DF9 /* bgCameraMenu@2x.png in Resources */,
 				B0B1242F1DB5825700A2BEA1 /* iconRose@2x.png in Resources */,
+				B070AFC41DBEC1BE00EA627F /* navMeanGirls@2x.png in Resources */,
+				B070AFC51DBEC1BE00EA627F /* navSettings@2x.png in Resources */,
+				B070AFC61DBEC1BE00EA627F /* navUserStories@2x.png in Resources */,
 				B037898E1DAD54BF00DCCACC /* PortalLayout.xib in Resources */,
 				B0F739961DB8307800AA2DF9 /* feedSurvey2@2x.png in Resources */,
 				B0F739831DB80E2D00AA2DF9 /* story6.png in Resources */,
 				B0F739711DB7E70B00AA2DF9 /* CommentThreadLayout.xib in Resources */,
 				B05508301DAEE7A500BDD1F2 /* iconEdit@2x.png in Resources */,
 				B0F739611DB6F49D00AA2DF9 /* feedRecommendation@2x.png in Resources */,
+				B070AFC21DBEC1BE00EA627F /* navHome@2x.png in Resources */,
 				B0B124251DB5649600A2BEA1 /* buttonLovedIt@2x.png in Resources */,
+				B070AFBE1DBEC1BE00EA627F /* navDemi@2x.png in Resources */,
 				B05508471DAF0A7100BDD1F2 /* buttonFollowing@2x.png in Resources */,
 				B0B1244B1DB5AF7A00A2BEA1 /* iconFeedActions@2x.png in Resources */,
+				B070AFBC1DBEC1BE00EA627F /* navAdventures@2x.png in Resources */,
 				B09AE6921D9B012B001E6EAC /* LaunchScreen.storyboard in Resources */,
 				B05508491DAF117B00BDD1F2 /* ShelfLayout.xib in Resources */,
 				B0F27EDD1DBA93BE00BD8462 /* Sparkle.sks in Resources */,
 				B0F739A41DB9790500AA2DF9 /* feedPost@2x.png in Resources */,
 				B0041D6F1DB041230013C56A /* story3.png in Resources */,
+				B070AFBD1DBEC1BE00EA627F /* navCreate@2x.png in Resources */,
 				B0B124451DB5A59D00A2BEA1 /* sundosia_thumbnail@2x.png in Resources */,
 				B0F7396E1DB7E2CF00AA2DF9 /* iconHeartSelected@2x.png in Resources */,
 				B00F40551DAD588D0020C2CE /* bgLoading.png in Resources */,
