@@ -82,6 +82,9 @@
 		B070AFE01DBED31600EA627F /* feedVideo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFD71DBED31600EA627F /* feedVideo@2x.png */; };
 		B070AFE21DBED53200EA627F /* mugshotChristine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFE11DBED53200EA627F /* mugshotChristine@2x.png */; };
 		B070AFE41DBED6A200EA627F /* mugshotMax@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFE31DBED6A200EA627F /* mugshotMax@2x.png */; };
+		B070AFE81DC006C700EA627F /* feedMessageUser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFE51DC006C700EA627F /* feedMessageUser@2x.png */; };
+		B070AFE91DC006C700EA627F /* feedPicAnnouncement@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFE61DC006C700EA627F /* feedPicAnnouncement@2x.png */; };
+		B070AFEA1DC006C700EA627F /* feedPicSurvey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFE71DC006C700EA627F /* feedPicSurvey@2x.png */; };
 		B09AE6921D9B012B001E6EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09AE6911D9B012B001E6EAC /* LaunchScreen.storyboard */; };
 		B09AE6981D9B19A2001E6EAC /* bgCollege.png in Resources */ = {isa = PBXBuildFile; fileRef = B09AE6971D9B19A2001E6EAC /* bgCollege.png */; };
 		B09AE69F1D9B4057001E6EAC /* bgSpeechBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09AE69E1D9B4057001E6EAC /* bgSpeechBubble@2x.png */; };
@@ -219,6 +222,9 @@
 		B070AFD71DBED31600EA627F /* feedVideo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedVideo@2x.png"; sourceTree = "<group>"; };
 		B070AFE11DBED53200EA627F /* mugshotChristine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mugshotChristine@2x.png"; sourceTree = "<group>"; };
 		B070AFE31DBED6A200EA627F /* mugshotMax@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mugshotMax@2x.png"; sourceTree = "<group>"; };
+		B070AFE51DC006C700EA627F /* feedMessageUser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedMessageUser@2x.png"; sourceTree = "<group>"; };
+		B070AFE61DC006C700EA627F /* feedPicAnnouncement@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedPicAnnouncement@2x.png"; sourceTree = "<group>"; };
+		B070AFE71DC006C700EA627F /* feedPicSurvey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedPicSurvey@2x.png"; sourceTree = "<group>"; };
 		B09AE6911D9B012B001E6EAC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B09AE6971D9B19A2001E6EAC /* bgCollege.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgCollege.png; sourceTree = "<group>"; };
 		B09AE69E1D9B4057001E6EAC /* bgSpeechBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgSpeechBubble@2x.png"; sourceTree = "<group>"; };
@@ -533,6 +539,9 @@
 				B070AFCF1DBED31600EA627F /* feedLink@2x.png */,
 				B070AFD01DBED31600EA627F /* feedMessageCollaborators@2x.png */,
 				B070AFD11DBED31600EA627F /* feedMessageRec@2x.png */,
+				B070AFE51DC006C700EA627F /* feedMessageUser@2x.png */,
+				B070AFE61DC006C700EA627F /* feedPicAnnouncement@2x.png */,
+				B070AFE71DC006C700EA627F /* feedPicSurvey@2x.png */,
 				B070AFD21DBED31600EA627F /* feedPost@2x.png */,
 				B070AFD31DBED31600EA627F /* feedSceneCapture@2x.png */,
 				B070AFD41DBED31600EA627F /* feedScreenCapture@2x.png */,
@@ -628,6 +637,7 @@
 				B070AFC11DBEC1BE00EA627F /* navGenres@2x.png in Resources */,
 				B0F739781DB7F2DB00AA2DF9 /* mugshotCass@2x.png in Resources */,
 				B0B124491DB5AE6A00A2BEA1 /* FeedItemLayout.xib in Resources */,
+				B070AFEA1DC006C700EA627F /* feedPicSurvey@2x.png in Resources */,
 				B070AFC01DBEC1BE00EA627F /* navFeed@2x.png in Resources */,
 				B09AE6981D9B19A2001E6EAC /* bgCollege.png in Resources */,
 				B055084D1DAF125200BDD1F2 /* bgShelfHeader@2x.png in Resources */,
@@ -683,6 +693,7 @@
 				B0F739A21DB9606A00AA2DF9 /* bgCameraMenu@2x.png in Resources */,
 				B0B1242F1DB5825700A2BEA1 /* iconRose@2x.png in Resources */,
 				B070AFC41DBEC1BE00EA627F /* navMeanGirls@2x.png in Resources */,
+				B070AFE91DC006C700EA627F /* feedPicAnnouncement@2x.png in Resources */,
 				B070AFC51DBEC1BE00EA627F /* navSettings@2x.png in Resources */,
 				B070AFC61DBEC1BE00EA627F /* navUserStories@2x.png in Resources */,
 				B037898E1DAD54BF00DCCACC /* PortalLayout.xib in Resources */,
@@ -706,6 +717,7 @@
 				B00F40551DAD588D0020C2CE /* bgLoading.png in Resources */,
 				B055083A1DAF034A00BDD1F2 /* iconLaurelGold@2x.png in Resources */,
 				B0B124441DB5A59D00A2BEA1 /* sorority_thumbnail@2x.png in Resources */,
+				B070AFE81DC006C700EA627F /* feedMessageUser@2x.png in Resources */,
 				B04348771D99EEEF00C8EE2B /* Assets.xcassets in Resources */,
 				B00F405D1DAD5D330020C2CE /* iconNav.png in Resources */,
 				B0F739871DB813E600AA2DF9 /* story8.png in Resources */,

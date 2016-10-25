@@ -70,6 +70,27 @@ class GameModel{
         feedLink.date = "Oct 24 2016"
         feedLink.imageName = "feedLink"
         
+        let feedUser = FeedData()
+        feedUser.mugshotName = "mugshotChristine"
+        feedUser.username = "Christine@Episode"
+        feedUser.mediaName = "Shoutout"
+        feedUser.date = "Oct 24 2016"
+        feedUser.imageName = "feedMessageUser"
+        
+        let feedAnnounce = FeedData()
+        feedAnnounce.mugshotName = "mugshotChristine"
+        feedAnnounce.username = "Christine@Episode"
+        feedAnnounce.mediaName = "Shoutout"
+        feedAnnounce.date = "Oct 24 2016"
+        feedAnnounce.imageName = "feedPicAnnouncement"
+
+        let feedPicSurvey = FeedData()
+        feedPicSurvey.mugshotName = "mugshotColonelSanders"
+        feedPicSurvey.username = "ColonelSanders"
+        feedPicSurvey.mediaName = "Picture"
+        feedPicSurvey.date = "Oct 24 2016"
+        feedPicSurvey.imageName = "feedPicSurvey"
+        
         let feedScreenCapture = FeedData()
         feedScreenCapture.mugshotName = "mugshotCass"
         feedScreenCapture.username = "Pink-Haired Cass"
@@ -93,12 +114,12 @@ class GameModel{
         feedShort.imageName = "feedShort"
         feedShort.showPlayButton = true
         
-        let feedDatas = [feedDataVideo, feedRec, feedCollab, feedLink, feedScreenCapture, feedSceneCapture,feedShort]
+        let feedDatas = [feedDataVideo, feedRec, feedCollab, feedLink, feedUser, feedAnnounce, feedPicSurvey, feedScreenCapture, feedSceneCapture,feedShort]
         return feedDatas
     }
     func getCommentThread(id:String) -> [CommentData] {
         switch(id){
-        case "portal":
+        case "story":
             let comment1 = CommentData()
             comment1.mugshotImageName = "mugshotCass"
             comment1.username = "Pink-Haired Cass"
@@ -110,7 +131,7 @@ class GameModel{
             comment2.comment = "But what are relationships w/o TRUST?"
         
             return [comment1, comment2]
-        case "story":
+        case "profile":
             let comment0 = CommentData()
             comment0.mugshotImageName = "mugshotColonelSanders"
             comment0.username = "Colonel Sanders"
@@ -132,6 +153,23 @@ class GameModel{
             comment2.comment = "MAKE AMERICA GREAT AGAIN!"
             
             return [comment0, comment1, comment1b, comment2]
+        case "portal":
+            let comment0 = CommentData()
+            comment0.mugshotImageName = "mugshotMax"
+            comment0.username = "Maximoose"
+            comment0.comment = "The ability to whine without being judged!"
+            
+            let comment1 = CommentData()
+            comment1.mugshotImageName = "mugshotChristine"
+            comment1.username = "Goth Girl"
+            comment1.comment = "The power to love again."
+            
+            let comment2 = CommentData()
+            comment2.mugshotImageName = "mugshotColonelSanders"
+            comment2.username = "Colonel Sanders"
+            comment2.comment = "LASER BEAM EYES!"
+            
+            return [comment0, comment1, comment2]
         default:
             return []
         }
