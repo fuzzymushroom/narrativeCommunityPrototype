@@ -15,15 +15,70 @@
             <connections>
                 <outlet property="actionBar" destination="ll3-JM-raJ" id="qCE-rn-zfD"/>
                 <outlet property="commentButton" destination="LEc-8M-g3Z" id="dy3-Qu-QdK"/>
+                <outlet property="dateLabel" destination="nt6-Dd-rqb" id="Z9t-gs-xwL"/>
+                <outlet property="header" destination="jOg-go-LDq" id="cgy-f5-NWj"/>
                 <outlet property="imageView" destination="h12-hx-Y97" id="IU0-NK-CPL"/>
                 <outlet property="likeButton" destination="YRb-MV-vQu" id="lr5-BT-ksz"/>
+                <outlet property="mediaLabel" destination="jAl-c3-iUd" id="QVg-so-RLs"/>
+                <outlet property="mugshot" destination="W7k-Ks-Uxl" id="67c-3v-vGT"/>
+                <outlet property="nameLabel" destination="Hc8-KX-lNz" id="od6-4C-hyc"/>
+                <outlet property="playButton" destination="Cfn-7l-Aie" id="5v7-RF-ikw"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOg-go-LDq" userLabel="Header">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W7k-Ks-Uxl">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="Hky-Gb-dz3"/>
+                                <constraint firstAttribute="height" constant="45" id="ykg-hY-pkM"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colonel Sanders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hc8-KX-lNz">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="ytC-jz-6xf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="24"/>
+                            <color key="textColor" red="0.19607843137254902" green="0.29411764705882354" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube Video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAl-c3-iUd">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="0z3-fQ-e8O"/>
+                                <constraint firstAttribute="width" priority="1" constant="100" id="Xnj-pN-ryE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nt6-Dd-rqb">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="xoe-gf-zUW"/>
+                                <constraint firstAttribute="width" priority="1" constant="100" id="yOg-Ch-b7x"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="16"/>
+                            <color key="textColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="28q-Wn-WoJ"/>
+                        <constraint firstItem="nt6-Dd-rqb" firstAttribute="top" secondItem="Hc8-KX-lNz" secondAttribute="bottom" constant="2.5" id="T80-ai-V9d"/>
+                        <constraint firstItem="W7k-Ks-Uxl" firstAttribute="centerY" secondItem="jOg-go-LDq" secondAttribute="centerY" id="aLR-pg-W1i"/>
+                        <constraint firstItem="jAl-c3-iUd" firstAttribute="top" secondItem="Hc8-KX-lNz" secondAttribute="bottom" constant="2.5" id="b0A-5z-f6k"/>
+                        <constraint firstItem="jAl-c3-iUd" firstAttribute="leading" secondItem="W7k-Ks-Uxl" secondAttribute="trailing" constant="5" id="b0g-mj-J5i"/>
+                        <constraint firstItem="Hc8-KX-lNz" firstAttribute="leading" secondItem="W7k-Ks-Uxl" secondAttribute="trailing" constant="5" id="hLY-d4-ifi"/>
+                        <constraint firstItem="Hc8-KX-lNz" firstAttribute="top" secondItem="W7k-Ks-Uxl" secondAttribute="top" id="ipL-6g-rMt"/>
+                        <constraint firstItem="nt6-Dd-rqb" firstAttribute="leading" secondItem="jAl-c3-iUd" secondAttribute="trailing" constant="8" id="l2h-5i-NEn"/>
+                        <constraint firstAttribute="trailing" secondItem="Hc8-KX-lNz" secondAttribute="trailing" constant="5" id="mfJ-JW-YKd"/>
+                        <constraint firstItem="W7k-Ks-Uxl" firstAttribute="leading" secondItem="jOg-go-LDq" secondAttribute="leading" constant="2.5" id="qE8-Cd-YTR"/>
+                    </constraints>
+                </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h12-hx-Y97"/>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll3-JM-raJ">
                     <subviews>
@@ -50,7 +105,7 @@
                             </state>
                             <state key="selected" image="iconHeartSelected.png"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfO-0h-IZY">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfO-0h-IZY" userLabel="Report">
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="Xgl-1Y-Oc6"/>
                                 <constraint firstAttribute="width" constant="40" id="iFi-wW-Jaq"/>
@@ -62,23 +117,35 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="WfO-0h-IZY" secondAttribute="trailing" id="3io-xb-4QL"/>
                         <constraint firstAttribute="bottom" secondItem="WfO-0h-IZY" secondAttribute="bottom" id="BDY-vT-3uh"/>
-                        <constraint firstItem="LEc-8M-g3Z" firstAttribute="leading" secondItem="ll3-JM-raJ" secondAttribute="leading" id="DEy-4d-VGV"/>
+                        <constraint firstItem="LEc-8M-g3Z" firstAttribute="trailing" secondItem="YRb-MV-vQu" secondAttribute="leading" constant="-8" id="EKj-fe-5Vt"/>
                         <constraint firstItem="YRb-MV-vQu" firstAttribute="top" secondItem="ll3-JM-raJ" secondAttribute="top" id="YVt-bP-yJJ"/>
-                        <constraint firstItem="YRb-MV-vQu" firstAttribute="leading" secondItem="LEc-8M-g3Z" secondAttribute="trailing" id="bqR-5p-gMR"/>
                         <constraint firstItem="LEc-8M-g3Z" firstAttribute="top" secondItem="ll3-JM-raJ" secondAttribute="top" id="jYt-Nh-hUf"/>
-                        <constraint firstAttribute="width" constant="170" id="q4R-lf-UCk"/>
+                        <constraint firstItem="YRb-MV-vQu" firstAttribute="trailing" secondItem="WfO-0h-IZY" secondAttribute="leading" constant="-8" id="sxl-nH-Cjt"/>
                         <constraint firstAttribute="height" constant="25" id="tuF-h7-jTl"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfn-7l-Aie">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="J8l-7z-yf0"/>
+                        <constraint firstAttribute="height" constant="140" id="hch-tM-GSN"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="iconPlay.png"/>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ll3-JM-raJ" secondAttribute="trailing" id="5NG-0y-dbJ"/>
+                <constraint firstAttribute="trailing" secondItem="Cfn-7l-Aie" secondAttribute="trailing" id="BdN-g8-8Kc"/>
                 <constraint firstAttribute="trailing" secondItem="h12-hx-Y97" secondAttribute="trailing" id="D6u-Vd-x5D"/>
-                <constraint firstItem="h12-hx-Y97" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WNg-JJ-wpE"/>
+                <constraint firstItem="h12-hx-Y97" firstAttribute="top" secondItem="jOg-go-LDq" secondAttribute="bottom" id="Smh-me-zdh"/>
                 <constraint firstAttribute="bottom" secondItem="ll3-JM-raJ" secondAttribute="bottom" id="YDA-rk-bMw"/>
+                <constraint firstItem="jOg-go-LDq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Yhh-hn-1va"/>
+                <constraint firstItem="ll3-JM-raJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eU5-Nb-96Y"/>
+                <constraint firstAttribute="trailing" secondItem="jOg-go-LDq" secondAttribute="trailing" id="mcZ-OW-Nbu"/>
                 <constraint firstItem="h12-hx-Y97" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oaG-QM-bn6"/>
                 <constraint firstAttribute="bottom" secondItem="h12-hx-Y97" secondAttribute="bottom" id="sgK-8O-oRU"/>
+                <constraint firstItem="ll3-JM-raJ" firstAttribute="top" secondItem="Cfn-7l-Aie" secondAttribute="bottom" id="ulO-mf-cvE"/>
+                <constraint firstItem="jOg-go-LDq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="y1c-9J-Pus"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -88,6 +155,7 @@
         <image name="iconComment.png" width="20" height="20"/>
         <image name="iconHeart.png" width="22" height="20"/>
         <image name="iconHeartSelected.png" width="22" height="20"/>
+        <image name="iconPlay.png" width="140" height="140"/>
         <image name="iconReport.png" width="20" height="20"/>
     </resources>
 </document>

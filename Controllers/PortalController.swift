@@ -70,12 +70,11 @@ class PortalController:UIViewController {
         killChildControllers()
         let feedController = FeedController()
         spawnChildController(controller: feedController, view: pageContainer)
-        
-        let recommendation = feedController.addFeedItem(imageName: "feedRecommendation")
-        recommendation.enableTap(target: self, action: #selector(openStoryCard))
-        _ = feedController.addFeedItem(imageName: "feedCapture")
-        _ = feedController.addFeedItem(imageName: "feedCollaborators")
-        _ = feedController.addFeedItem(imageName: "feedShort")
+        let masterController = getParentOfType(type: MasterController.self)!
+        let gameModel = masterController.gameModel
+        let feedDatas = gameModel.getFeedDatas()
+        feedController.addFeedItems(feedDatas: feedDatas)
+        //recommendation.enableTap(target: self, action: #selector(openStoryCard))
     }
     
     //MARK: OVERLAYS

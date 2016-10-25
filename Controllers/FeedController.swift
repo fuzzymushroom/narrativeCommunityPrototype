@@ -5,7 +5,6 @@ class FeedController:UIViewController{
     //MARK: VARIABLES
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var stackView: UIStackView!
-    @IBOutlet var stackViewHeight: NSLayoutConstraint!
     
     //MARK: INITIALIZATION
     init(){
@@ -21,15 +20,18 @@ class FeedController:UIViewController{
     }
     
     //MARK: FUNCTIONS
-    
-    func addFeedItem(imageName:String) -> FeedItem {
+    func addFeedItems(feedDatas:[FeedData]){
+        for feedData in feedDatas{
+            _ = addFeedItem(feedData: feedData)
+        }
+    }
+    func addFeedItem(feedData: FeedData) -> FeedItem {
         let feedItem = FeedItem()
         feedItem.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: feedItem.intrinsicContentSize.height * view.bounds.width / feedItem.intrinsicContentSize.width)
         stackView.addArrangedSubview(feedItem)
         let axisLength = stackView.getAxisLength()
-        stackViewHeight.constant = axisLength
         scrollView.contentSize = CGSize(width: view.bounds.width, height: axisLength)
-        feedItem.setImage(image:UIImage(named: imageName)!)
+        feedItem.populate(feedData: feedData)
         feedItem.commentButton.addTarget(self, action: #selector(openComments), for: .touchUpInside)
         return feedItem
     }

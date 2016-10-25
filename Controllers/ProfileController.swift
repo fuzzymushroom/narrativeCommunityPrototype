@@ -53,12 +53,19 @@ class ProfileController:UIViewController{
         let feedController = FeedController()
         spawnChildController(controller: feedController, view: viewport)
         if profile.isSelf {
-            let feedItem = feedController.addFeedItem(imageName: "feedPost")
-            feedItem.hideActionBar()
+            let feedData = FeedData()
+            feedData.mugshotName = nil
+            feedData.username = nil
+            feedData.mediaName = nil
+            feedData.date = nil
+            feedData.imageName = "feedPost"
+            feedData.showHeader = false
+            feedData.showPlayButton = false
+            feedData.showActionBar = false
+            
+            _ = feedController.addFeedItem(feedData: feedData)
         }
-        for imageName in profile.postImageNames {
-            _  = feedController.addFeedItem(imageName: imageName)
-        }
+        feedController.addFeedItems(feedDatas: profile.feedDatas)
         selectTab(tab: postTab)
     }
     private func selectTab(tab:StylizedButton){

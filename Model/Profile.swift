@@ -13,7 +13,7 @@ class Profile {
     var followers:Int = 0
     var createdStoryIds:[String]!
     var recommendedStoryIds:[String]!
-    var postImageNames:[String]!
+    var feedDatas:[FeedData]!
     
     //MARK: INITIALIZATION
 }

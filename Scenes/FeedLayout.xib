@@ -10,7 +10,6 @@
             <connections>
                 <outlet property="scrollView" destination="vek-59-Aqp" id="wTg-Rj-mnR"/>
                 <outlet property="stackView" destination="ERM-nY-76H" id="fzl-IJ-YAI"/>
-                <outlet property="stackViewHeight" destination="RDK-wK-15S" id="8Jx-D2-ool"/>
                 <outlet property="view" destination="iN0-l3-epB" id="wzo-2C-8L2"/>
             </connections>
         </placeholder>
@@ -21,9 +20,9 @@
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vek-59-Aqp">
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ERM-nY-76H">
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ERM-nY-76H">
                             <constraints>
-                                <constraint firstAttribute="height" constant="736" id="RDK-wK-15S"/>
+                                <constraint firstAttribute="height" priority="1" constant="736" id="RDK-wK-15S"/>
                             </constraints>
                         </stackView>
                     </subviews>

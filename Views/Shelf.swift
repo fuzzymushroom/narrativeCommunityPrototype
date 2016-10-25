@@ -7,7 +7,6 @@ class Shelf:UIViewFromNib{
     @IBOutlet var headerLabel: UILabel!
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var stackView: UIStackView!
-    @IBOutlet var stackViewWidth: NSLayoutConstraint!
     
     //MARK: INITIALIZATION
     override func getNibName() -> String {
@@ -25,8 +24,7 @@ class Shelf:UIViewFromNib{
         let thumb = UIImage(named: "\(storyId)_thumbnail")
         let story = UIImageView(image: thumb)
         stackView.addArrangedSubview(story)
-        stackViewWidth.constant = stackView.getAxisLength()
-        scrollView.contentSize = stackView.frame.size
+        scrollView.contentSize = CGSize(width: stackView.getAxisLength(), height: stackView.frame.height)
         return story
     }
 }

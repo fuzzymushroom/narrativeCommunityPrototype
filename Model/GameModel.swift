@@ -15,7 +15,7 @@ class GameModel{
             profile.followers = 999
             profile.createdStoryIds = ["campfire", "kawataki"]
             profile.recommendedStoryIds = ["guy","demi","meanGirls","sundosia","bff","sorority"]
-            profile.postImageNames = ["feedMovie", "feedSurvey", "feedRecommendation", "feedCapture"]
+            profile.feedDatas = []
         case "max":
             profile.isSelf = true
             profile.bgName = "bgCollege"
@@ -27,11 +27,73 @@ class GameModel{
             profile.followers = 0
             profile.createdStoryIds = []
             profile.recommendedStoryIds = ["campfire"]
-            profile.postImageNames = ["feedSurvey2"]
+            let feedSurvey = FeedData()
+            feedSurvey.mugshotName = "mugshotMax"
+            feedSurvey.username = "Maximoose"
+            feedSurvey.mediaName = "Survey from Campfire Episode 1"
+            feedSurvey.date = "Oct 24 2016"
+            feedSurvey.imageName = "feedSurvey"
+            profile.feedDatas = [feedSurvey]
         default:
             break
         }
         return profile
+    }
+    func getFeedDatas() -> [FeedData] {
+        let feedDataVideo = FeedData()
+        feedDataVideo.mugshotName = "mugshotCass"
+        feedDataVideo.username = "Pink-Haired Cass"
+        feedDataVideo.mediaName = "YouTube Video"
+        feedDataVideo.date = "Oct 24 2016"
+        feedDataVideo.imageName = "feedVideo"
+        feedDataVideo.showPlayButton = true
+        
+        let feedRec = FeedData()
+        feedRec.mugshotName = "mugshotCass"
+        feedRec.username = "Pink-Haired Cass"
+        feedRec.mediaName = "Shoutout"
+        feedRec.date = "Oct 24 2016"
+        feedRec.imageName = "feedMessageRec"
+        
+        let feedCollab = FeedData()
+        feedCollab.mugshotName = "mugshotCass"
+        feedCollab.username = "Pink-Haired Cass"
+        feedCollab.mediaName = "Shoutout"
+        feedCollab.date = "Oct 24 2016"
+        feedCollab.imageName = "feedMessageCollaborators"
+        
+        let feedLink = FeedData()
+        feedLink.mugshotName = "mugshotChristine"
+        feedLink.username = "Christine@Episode"
+        feedLink.mediaName = "Shoutout"
+        feedLink.date = "Oct 24 2016"
+        feedLink.imageName = "feedLink"
+        
+        let feedScreenCapture = FeedData()
+        feedScreenCapture.mugshotName = "mugshotCass"
+        feedScreenCapture.username = "Pink-Haired Cass"
+        feedScreenCapture.mediaName = "Screenshot from Old Maid Adventures"
+        feedScreenCapture.date = "Oct 24 2016"
+        feedScreenCapture.imageName = "feedScreenCapture"
+        
+        let feedSceneCapture = FeedData()
+        feedSceneCapture.mugshotName = "mugshotCass"
+        feedSceneCapture.username = "Pink-Haired Cass"
+        feedSceneCapture.mediaName = "Scene Capture from Old Maid Adventures"
+        feedSceneCapture.date = "Oct 24 2016"
+        feedSceneCapture.imageName = "feedSceneCapture"
+        feedSceneCapture.showPlayButton = true
+        
+        let feedShort = FeedData()
+        feedShort.mugshotName = "mugshotColonelSanders"
+        feedShort.username = "Colonel Sanders"
+        feedShort.mediaName = "3-beat Short"
+        feedShort.date = "Oct 24 2016"
+        feedShort.imageName = "feedShort"
+        feedShort.showPlayButton = true
+        
+        let feedDatas = [feedDataVideo, feedRec, feedCollab, feedLink, feedScreenCapture, feedSceneCapture,feedShort]
+        return feedDatas
     }
     func getCommentThread(id:String) -> [CommentData] {
         switch(id){

@@ -16,7 +16,6 @@
                 <outlet property="headerLabel" destination="OYe-PY-eQM" id="HrG-Zh-V3Q"/>
                 <outlet property="scrollView" destination="oqH-Aq-QbV" id="YBZ-Ld-Bjx"/>
                 <outlet property="stackView" destination="D8Z-Ev-S4J" id="t2U-xM-MHR"/>
-                <outlet property="stackViewWidth" destination="UlN-F9-7Et" id="1RA-k4-0K7"/>
                 <outlet property="view" destination="iN0-l3-epB" id="SlV-Qk-4fy"/>
             </connections>
         </placeholder>
@@ -42,7 +41,7 @@
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D8Z-Ev-S4J">
                             <constraints>
-                                <constraint firstAttribute="width" constant="414" id="UlN-F9-7Et"/>
+                                <constraint firstAttribute="width" priority="1" constant="414" id="UlN-F9-7Et"/>
                             </constraints>
                         </stackView>
                     </subviews>
