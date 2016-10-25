@@ -46,6 +46,7 @@ class GameModel{
         feedDataVideo.mediaName = "YouTube Video"
         feedDataVideo.date = "Oct 24 2016"
         feedDataVideo.imageName = "feedVideo"
+//        feedDataVideo.imageName = "iconMenu"
         feedDataVideo.showPlayButton = true
         
         let feedRec = FeedData()

@@ -24,11 +24,16 @@ class FeedController:UIViewController{
         for feedData in feedDatas{
             _ = addFeedItem(feedData: feedData)
         }
+        view.layoutIfNeeded()
     }
     func addFeedItem(feedData: FeedData) -> FeedItem {
         let feedItem = FeedItem()
-        feedItem.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: feedItem.intrinsicContentSize.height * view.bounds.width / feedItem.intrinsicContentSize.width)
+        let height = 50 + (feedItem.intrinsicContentSize.height - 50) * view.bounds.width / feedItem.intrinsicContentSize.width
+        feedItem.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: floor(height))
+
+        view.layoutIfNeeded()
         stackView.addArrangedSubview(feedItem)
+        view.layoutIfNeeded()
         let axisLength = stackView.getAxisLength()
         scrollView.contentSize = CGSize(width: view.bounds.width, height: axisLength)
         feedItem.populate(feedData: feedData)

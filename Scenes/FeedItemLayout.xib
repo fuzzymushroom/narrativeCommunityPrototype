@@ -79,7 +79,7 @@
                         <constraint firstItem="W7k-Ks-Uxl" firstAttribute="leading" secondItem="jOg-go-LDq" secondAttribute="leading" constant="2.5" id="qE8-Cd-YTR"/>
                     </constraints>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h12-hx-Y97"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="h12-hx-Y97"/>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll3-JM-raJ">
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEc-8M-g3Z">
@@ -113,7 +113,7 @@
                             <state key="normal" image="iconReport.png"/>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="WfO-0h-IZY" secondAttribute="trailing" id="3io-xb-4QL"/>
                         <constraint firstAttribute="bottom" secondItem="WfO-0h-IZY" secondAttribute="bottom" id="BDY-vT-3uh"/>
