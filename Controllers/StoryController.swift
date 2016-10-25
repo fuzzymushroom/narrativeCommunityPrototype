@@ -10,13 +10,7 @@ class StoryController: UIViewController {
         "story1",
         "story2",
         "story3",
-        "story4",
-        "story5",
-        "story6",
-        "story7",
-        "story8",
-        "story9",
-        "story10"
+        "story4"
     ]
     @IBOutlet var storyMenu: UIImageView!
 
@@ -46,7 +40,7 @@ class StoryController: UIViewController {
         imageView.image = UIImage(named: frames[index])
     }
     func advanceFrame(){
-        if frameIndex == 9 && !didShowComments {
+        if frameIndex == 3 && !didShowComments {
             openComments()
             didShowComments = true
         } else if frameIndex == frames.count - 1 {

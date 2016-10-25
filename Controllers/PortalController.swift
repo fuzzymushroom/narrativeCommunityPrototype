@@ -82,7 +82,7 @@ class PortalController:UIViewController {
         let storyCard = StoryCard(frame: view.bounds)
         view.addSubview(storyCard)
         
-        storyCard.imageView.image = UIImage(named: "campfire")
+        storyCard.imageView.image = UIImage(named: "pll")
         storyCard.enableTap(target: storyCard, action: #selector(StoryCard.removeFromSuperview))
         let masterController = getParentOfType(type: MasterController.self)!
         storyCard.launchButton.addTarget(masterController, action: #selector(MasterController.loadStory), for: .touchUpInside)
@@ -110,4 +110,7 @@ enum Page:String {
     case FEED = "Feed"
     case PROFILE = "Profile"
     case BLANK = "Placeholder"
+}
+enum DeepLink {
+    case STORY
 }

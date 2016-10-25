@@ -55,6 +55,7 @@ class GameModel{
         feedRec.mediaName = "Shoutout"
         feedRec.date = "Oct 24 2016"
         feedRec.imageName = "feedMessageRec"
+        feedRec.deepLink = .STORY
         
         let feedCollab = FeedData()
         feedCollab.mugshotName = "mugshotCass"

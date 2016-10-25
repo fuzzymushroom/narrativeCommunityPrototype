@@ -38,6 +38,15 @@ class FeedController:UIViewController{
         scrollView.contentSize = CGSize(width: view.bounds.width, height: axisLength)
         feedItem.populate(feedData: feedData)
         feedItem.commentButton.addTarget(self, action: #selector(openComments), for: .touchUpInside)
+        
+        if let deepLink = feedData.deepLink {
+            switch deepLink {
+                case .STORY:
+                    let portalController = getParentOfType(type: PortalController.self)!
+                    feedItem.enableTap(target: portalController, action: #selector(PortalController.openStoryCard))
+            }
+        }
+        
         return feedItem
     }
     func openComments(){
