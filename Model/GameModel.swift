@@ -77,20 +77,27 @@ class GameModel{
         feedUser.mediaName = "Shoutout"
         feedUser.date = "Oct 24 2016"
         feedUser.imageName = "feedMessageUser"
-        
-        let feedAnnounce = FeedData()
-        feedAnnounce.mugshotName = "mugshotChristine"
-        feedAnnounce.username = "Christine@Episode"
-        feedAnnounce.mediaName = "Shoutout"
-        feedAnnounce.date = "Oct 24 2016"
-        feedAnnounce.imageName = "feedPicAnnouncement"
 
         let feedPicSurvey = FeedData()
         feedPicSurvey.mugshotName = "mugshotColonelSanders"
         feedPicSurvey.username = "ColonelSanders"
-        feedPicSurvey.mediaName = "Picture"
+        feedPicSurvey.mediaName = "Survey"
         feedPicSurvey.date = "Oct 24 2016"
         feedPicSurvey.imageName = "feedPicSurvey"
+        
+        let feedChoiceFun = FeedData()
+        feedChoiceFun.mugshotName = "mugshotColonelSanders"
+        feedChoiceFun.username = "ColonelSanders"
+        feedChoiceFun.mediaName = "Survey"
+        feedChoiceFun.date = "Oct 24 2016"
+        feedChoiceFun.imageName = "feedChoiceFun"
+        
+        let feedChoiceSerious = FeedData()
+        feedChoiceSerious.mugshotName = "mugshotChristine"
+        feedChoiceSerious.username = "Christine@Episode"
+        feedChoiceSerious.mediaName = "Survey"
+        feedChoiceSerious.date = "Oct 24 2016"
+        feedChoiceSerious.imageName = "feedChoiceSerious"
         
         let feedScreenCapture = FeedData()
         feedScreenCapture.mugshotName = "mugshotCass"
@@ -110,12 +117,20 @@ class GameModel{
         let feedShort = FeedData()
         feedShort.mugshotName = "mugshotColonelSanders"
         feedShort.username = "Colonel Sanders"
-        feedShort.mediaName = "3-beat Short"
+        feedShort.mediaName = "Short"
         feedShort.date = "Oct 24 2016"
         feedShort.imageName = "feedShort"
         feedShort.showPlayButton = true
         
-        let feedDatas = [feedDataVideo, feedRec, feedCollab, feedLink, feedUser, feedAnnounce, feedPicSurvey, feedScreenCapture, feedSceneCapture,feedShort]
+        let feedGucci = FeedData()
+        feedGucci.mugshotName = "mugshotAngela"
+        feedGucci.username = "Angela"
+        feedGucci.mediaName = "Profile Update"
+        feedGucci.date = "Oct 24 2016"
+        feedGucci.imageName = "feedGucci"
+        feedGucci.showPlayButton = true
+        
+        let feedDatas = [feedDataVideo, feedRec, feedCollab, feedLink, feedUser, feedPicSurvey, feedChoiceFun, feedChoiceSerious, feedScreenCapture, feedSceneCapture, feedShort, feedGucci]
         return feedDatas
     }
     func getCommentThread(id:String) -> [CommentData] {

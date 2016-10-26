@@ -28,7 +28,7 @@ class FeedController:UIViewController{
     }
     func addFeedItem(feedData: FeedData) -> FeedItem {
         let feedItem = FeedItem()
-        let height = 50 + (feedItem.intrinsicContentSize.height - 50) * view.bounds.width / feedItem.intrinsicContentSize.width
+        let height = 75 + (feedItem.intrinsicContentSize.height - 75) * view.bounds.width / feedItem.intrinsicContentSize.width
         feedItem.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: floor(height))
 
         view.layoutIfNeeded()
