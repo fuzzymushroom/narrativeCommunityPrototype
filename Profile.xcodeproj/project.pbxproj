@@ -86,6 +86,9 @@
 		B070AFF21DC01C5800EA627F /* story4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFEE1DC01C5800EA627F /* story4@2x.png */; };
 		B070AFF51DC01FDD00EA627F /* pll_thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFF31DC01FDD00EA627F /* pll_thumbnail@2x.png */; };
 		B070AFF61DC01FDD00EA627F /* pll.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFF41DC01FDD00EA627F /* pll.png */; };
+		B070AFF81DC0302000EA627F /* buttonChoice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFF71DC0302000EA627F /* buttonChoice@2x.png */; };
+		B070AFFA1DC0372100EA627F /* storyReminder.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFF91DC0372100EA627F /* storyReminder.png */; };
+		B070AFFC1DC039CF00EA627F /* buttonLovingIt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B070AFFB1DC039CF00EA627F /* buttonLovingIt@2x.png */; };
 		B09AE6921D9B012B001E6EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09AE6911D9B012B001E6EAC /* LaunchScreen.storyboard */; };
 		B09AE6981D9B19A2001E6EAC /* bgCollege.png in Resources */ = {isa = PBXBuildFile; fileRef = B09AE6971D9B19A2001E6EAC /* bgCollege.png */; };
 		B09AE69F1D9B4057001E6EAC /* bgSpeechBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B09AE69E1D9B4057001E6EAC /* bgSpeechBubble@2x.png */; };
@@ -222,6 +225,9 @@
 		B070AFEE1DC01C5800EA627F /* story4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "story4@2x.png"; sourceTree = "<group>"; };
 		B070AFF31DC01FDD00EA627F /* pll_thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pll_thumbnail@2x.png"; sourceTree = "<group>"; };
 		B070AFF41DC01FDD00EA627F /* pll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pll.png; sourceTree = "<group>"; };
+		B070AFF71DC0302000EA627F /* buttonChoice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonChoice@2x.png"; sourceTree = "<group>"; };
+		B070AFF91DC0372100EA627F /* storyReminder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = storyReminder.png; sourceTree = "<group>"; };
+		B070AFFB1DC039CF00EA627F /* buttonLovingIt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonLovingIt@2x.png"; sourceTree = "<group>"; };
 		B09AE6911D9B012B001E6EAC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B09AE6971D9B19A2001E6EAC /* bgCollege.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgCollege.png; sourceTree = "<group>"; };
 		B09AE69E1D9B4057001E6EAC /* bgSpeechBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgSpeechBubble@2x.png"; sourceTree = "<group>"; };
@@ -294,6 +300,7 @@
 				B070AFEC1DC01C5800EA627F /* story2@2x.png */,
 				B070AFED1DC01C5800EA627F /* story3@2x.png */,
 				B070AFEE1DC01C5800EA627F /* story4@2x.png */,
+				B070AFF91DC0372100EA627F /* storyReminder.png */,
 			);
 			path = StoryFrames;
 			sourceTree = "<group>";
@@ -416,10 +423,12 @@
 		B05508431DAF0A7100BDD1F2 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				B070AFF71DC0302000EA627F /* buttonChoice@2x.png */,
 				B05508441DAF0A7100BDD1F2 /* buttonFollow@2x.png */,
 				B05508451DAF0A7100BDD1F2 /* buttonFollowing@2x.png */,
 				B0B124201DB560C200A2BEA1 /* buttonLight@2x.png */,
 				B0B124241DB5649600A2BEA1 /* buttonLovedIt@2x.png */,
+				B070AFFB1DC039CF00EA627F /* buttonLovingIt@2x.png */,
 				B0B1241E1DB55FC500A2BEA1 /* buttonReadNext@2x.png */,
 				B0B1242A1DB579F600A2BEA1 /* buttonWhite@2x.png */,
 				B0B1242C1DB57AA600A2BEA1 /* buttonWhiteSelected@2x.png */,
@@ -655,6 +664,7 @@
 				B070AFE21DBED53200EA627F /* mugshotChristine@2x.png in Resources */,
 				B070AFDD1DBED31600EA627F /* feedScreenCapture@2x.png in Resources */,
 				B0B1243E1DB5A59D00A2BEA1 /* bff_thumbnail@2x.png in Resources */,
+				B070AFFA1DC0372100EA627F /* storyReminder.png in Resources */,
 				B0041D641DB03D070013C56A /* StoryLayout.xib in Resources */,
 				B0041D621DB03B750013C56A /* campfire@2x.png in Resources */,
 				B0F7396C1DB7E2CF00AA2DF9 /* iconComment@2x.png in Resources */,
@@ -677,6 +687,7 @@
 				B055082E1DAEE60400BDD1F2 /* iconCassName@2x.png in Resources */,
 				B0F739981DB844E300AA2DF9 /* bgKarma@2x.png in Resources */,
 				B0B1241F1DB55FC500A2BEA1 /* buttonReadNext@2x.png in Resources */,
+				B070AFFC1DC039CF00EA627F /* buttonLovingIt@2x.png in Resources */,
 				B0F739A21DB9606A00AA2DF9 /* bgCameraMenu@2x.png in Resources */,
 				B0B1242F1DB5825700A2BEA1 /* iconRose@2x.png in Resources */,
 				B070AFC41DBEC1BE00EA627F /* navMeanGirls@2x.png in Resources */,
@@ -721,6 +732,7 @@
 				B0003DAA1DADB86B00F710C8 /* ProfileLayout.xib in Resources */,
 				B0F739A01DB95E4200AA2DF9 /* add_thumbnail@2x.png in Resources */,
 				B0041D731DB043910013C56A /* EndOfChapterLayout.xib in Resources */,
+				B070AFF81DC0302000EA627F /* buttonChoice@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

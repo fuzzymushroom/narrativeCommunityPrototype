@@ -63,7 +63,7 @@ class MyShelfController:UIViewController{
             view.addConstraint(constraint)
         }
         
-        shelf2.setTitle(name: "Recommended by " + profile.username, qty: profile.recommendedStoryIds.count)
+        shelf2.setTitle(name: "Loved by " + profile.username, qty: profile.recommendedStoryIds.count)
         for storyId in profile.recommendedStoryIds {
             let story = shelf2.addStory(storyId: storyId)
             if let pc2 = portalController {

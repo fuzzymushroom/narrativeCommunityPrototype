@@ -3,19 +3,17 @@ import UIKit
 class EndOfChapterController:UIViewController{
     
     //MARK: VARIABLES
-    @IBOutlet var visitAuthorButton: UIButton!
-    @IBOutlet var homeButton: UIButton!
     @IBOutlet var author: UIImageView!
     @IBOutlet var roseButton: UIButton!
     @IBOutlet var followButton: UIButton!
-    @IBOutlet var favoriteButton: UIButton!
-    @IBOutlet var recommendButton: UIButton!
     @IBOutlet var roseCountLabel: UILabel!
-
+    @IBOutlet var favButton: UIButton!
+    
     var animator:UIDynamicAnimator!
     var gravity:UIGravityBehavior!
     var collision:UICollisionBehavior!
     var push:UIPushBehavior!
+    var didAlreadyRose = false
     
     //MARK: INITIALIZATION
     init(){
@@ -27,30 +25,29 @@ class EndOfChapterController:UIViewController{
     }
     override func viewDidLoad() {
         let storyController = getParentOfType(type: StoryController.self)!
-        homeButton.addTarget(storyController, action: #selector(StoryController.goHome), for: .touchUpInside)
-        visitAuthorButton.addTarget(storyController, action: #selector(StoryController.goProfile), for: .touchUpInside)
-        roseButton.addTarget(self, action: #selector(rose), for: . touchUpInside)
+        favButton.addTarget(storyController, action: #selector(StoryController.goHome), for: .touchUpInside)
+        roseButton.addTarget(self, action: #selector(toggleRose), for: . touchUpInside)
         followButton.addTarget(followButton, action: #selector(UIButton.toggleSelected), for: .touchUpInside)
-        favoriteButton.addTarget(favoriteButton, action: #selector(UIButton.toggleSelected), for: .touchUpInside)
-        recommendButton.addTarget(recommendButton, action: #selector(UIButton.toggleSelected), for: .touchUpInside)
     }
     override func viewDidAppear(_ animated: Bool) {
-        followButton.isHidden = true
-        favoriteButton.isHidden = true
-        recommendButton.isHidden = true
         roseCountLabel.isHidden = true
     }
     
     //MARK: FUNCTIONS
-    func rose(){
-        roseButton.isHidden = true
-        followButton.isHidden = false
-        favoriteButton.isHidden = false
-        recommendButton.isHidden = false
+    func toggleRose(){
+        if roseButton.isSelected == false {
+            roseButton.isSelected = true
+            if !didAlreadyRose { firstTimeRose() }
+        } else {
+            roseButton.isSelected = false
+        }
+    }
+    func firstTimeRose(){
         roseCountLabel.isHidden = false
+        didAlreadyRose = true
         
         let rose = UIImageView(image: UIImage(named: "iconRose"))
-        rose.frame.origin = roseButton.frame.origin
+        rose.frame.origin = view.convert(roseButton.frame.origin, from: roseButton.superview!)
         view.addSubview(rose)
         
         animator = UIDynamicAnimator(referenceView: view)
