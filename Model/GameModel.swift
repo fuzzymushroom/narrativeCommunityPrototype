@@ -4,6 +4,18 @@ class GameModel{
     func getProfile(userId:String) -> Profile {
         let profile = Profile()
         switch(userId){
+        case "marlene":
+            profile.isSelf = false
+            profile.bgName = "bgCollege"
+            profile.characterImageName = "marlene"
+            profile.username = "Marlene"
+            profile.quote = "Hi I'm the creator of Pretty Little Liars! I love telling a good story."
+            profile.karma = 500
+            profile.chaptersRead = 50
+            profile.followers = 999
+            profile.createdStoryIds = ["pll", "kawataki"]
+            profile.recommendedStoryIds = ["guy","demi","meanGirls","sundosia","bff","sorority"]
+            profile.feedDatas = []
         case "cass":
             profile.isSelf = false
             profile.bgName = "bgCollege"

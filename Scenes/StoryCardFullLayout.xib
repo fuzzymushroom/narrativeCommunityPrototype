@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FullStoryCardController" customModule="Profile" customModuleProvider="target">
+            <connections>
+                <outlet property="authorButton" destination="t8R-Qm-WZI" id="dTG-5O-Otf"/>
+                <outlet property="exitButton" destination="iu4-5N-2qP" id="boU-Mz-l9L"/>
+                <outlet property="imageView" destination="CTV-Al-aIF" id="XnP-7F-gm3"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cin-Ny-KEU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CTV-Al-aIF"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu4-5N-2qP">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Qi0-0F-gnE"/>
+                        <constraint firstAttribute="width" constant="60" id="eRT-Fd-OuC"/>
+                    </constraints>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8R-Qm-WZI">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="207" id="NGJ-6a-wXY"/>
+                        <constraint firstAttribute="height" constant="100" id="skt-bV-GDx"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CTV-Al-aIF" secondAttribute="bottom" id="51e-wy-k3T"/>
+                <constraint firstItem="CTV-Al-aIF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jq0-VY-pa9"/>
+                <constraint firstAttribute="bottom" secondItem="t8R-Qm-WZI" secondAttribute="bottom" id="Kjd-QN-cip"/>
+                <constraint firstItem="CTV-Al-aIF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ojo-Bf-ic4"/>
+                <constraint firstItem="t8R-Qm-WZI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="S8n-uR-uGP"/>
+                <constraint firstItem="iu4-5N-2qP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Y9o-Zl-t2T"/>
+                <constraint firstAttribute="trailing" secondItem="CTV-Al-aIF" secondAttribute="trailing" id="aar-KP-S5T"/>
+                <constraint firstItem="iu4-5N-2qP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ruN-iy-bkc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

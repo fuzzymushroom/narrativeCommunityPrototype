@@ -77,7 +77,7 @@ class StoryController: UIViewController {
     //MARK: EXIT
     func goHome(){
         let masterController = getParentOfType(type: MasterController.self)!
-        masterController.loadPortal(page: .HOME)
+        masterController.loadFullStoryCard()
     }
     func goProfile(){
         let masterController = getParentOfType(type: MasterController.self)!

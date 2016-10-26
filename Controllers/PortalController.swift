@@ -56,6 +56,7 @@ class PortalController:UIViewController {
         let imageView = UIImageView(frame: pageContainer.bounds)
         imageView.image = UIImage(named: "bgHome")!
         controller.view.addSubview(imageView)
+        controller.view.enableTap(target: self, action: #selector(openStoryCard))
     }
     func launchProfile(userId:String){
         killChildControllers()

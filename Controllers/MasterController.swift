@@ -22,12 +22,17 @@ class MasterController: UIViewController {
         spawnChildController(controller: portalController, view: view)
         portalController.launchProfile(userId: userId)
     }
+    func loadFullStoryCard(){
+        killChildControllers()
+        let fullStoryCardController = FullStoryCardController()
+        spawnChildController(controller: fullStoryCardController, view: view)
+    }
     
     //MARK: UIViewController overrides
     override func viewDidLoad() {
     }
     override func viewDidAppear(_ animated: Bool) {
-        loadPortal(page: .PROFILE)
+        loadPortal(page: .HOME)
     }
     override var shouldAutorotate: Bool {
         return true

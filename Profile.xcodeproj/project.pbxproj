@@ -21,6 +21,11 @@
 		B01F6CE31DC126E100F78591 /* feedChoiceSerious@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CE11DC126E100F78591 /* feedChoiceSerious@2x.png */; };
 		B01F6CE51DC128E900F78591 /* feedGucci@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CE41DC128E900F78591 /* feedGucci@2x.png */; };
 		B01F6CE71DC1297C00F78591 /* mugshotAngela@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CE61DC1297C00F78591 /* mugshotAngela@2x.png */; };
+		B01F6CE91DC12D5200F78591 /* pll_full@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CE81DC12D5200F78591 /* pll_full@2x.png */; };
+		B01F6CEB1DC12D9A00F78591 /* StoryCardFullLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CEA1DC12D9A00F78591 /* StoryCardFullLayout.xib */; };
+		B01F6CED1DC12F1800F78591 /* FullStoryCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F6CEC1DC12F1800F78591 /* FullStoryCardController.swift */; };
+		B01F6CEF1DC131A900F78591 /* marlene@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CEE1DC131A900F78591 /* marlene@2x.png */; };
+		B01F6CF11DC131EA00F78591 /* mugshotMarlene@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CF01DC131EA00F78591 /* mugshotMarlene@2x.png */; };
 		B037898B1DAD501100DCCACC /* PortalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03789891DAD501100DCCACC /* PortalController.swift */; };
 		B037898C1DAD501100DCCACC /* StoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B037898A1DAD501100DCCACC /* StoryController.swift */; };
 		B037898E1DAD54BF00DCCACC /* PortalLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B037898D1DAD54BF00DCCACC /* PortalLayout.xib */; };
@@ -161,6 +166,11 @@
 		B01F6CE11DC126E100F78591 /* feedChoiceSerious@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedChoiceSerious@2x.png"; sourceTree = "<group>"; };
 		B01F6CE41DC128E900F78591 /* feedGucci@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feedGucci@2x.png"; sourceTree = "<group>"; };
 		B01F6CE61DC1297C00F78591 /* mugshotAngela@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mugshotAngela@2x.png"; sourceTree = "<group>"; };
+		B01F6CE81DC12D5200F78591 /* pll_full@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pll_full@2x.png"; sourceTree = "<group>"; };
+		B01F6CEA1DC12D9A00F78591 /* StoryCardFullLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryCardFullLayout.xib; sourceTree = "<group>"; };
+		B01F6CEC1DC12F1800F78591 /* FullStoryCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullStoryCardController.swift; sourceTree = "<group>"; };
+		B01F6CEE1DC131A900F78591 /* marlene@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marlene@2x.png"; sourceTree = "<group>"; };
+		B01F6CF01DC131EA00F78591 /* mugshotMarlene@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mugshotMarlene@2x.png"; sourceTree = "<group>"; };
 		B03789891DAD501100DCCACC /* PortalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortalController.swift; sourceTree = "<group>"; };
 		B037898A1DAD501100DCCACC /* StoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryController.swift; sourceTree = "<group>"; };
 		B037898D1DAD54BF00DCCACC /* PortalLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortalLayout.xib; sourceTree = "<group>"; };
@@ -357,6 +367,7 @@
 				B0B124261DB5662100A2BEA1 /* EndOfChapterController.swift */,
 				B0F739741DB7EBB900AA2DF9 /* CommentsController.swift */,
 				B0F7395D1DB6DD4600AA2DF9 /* FeedController.swift */,
+				B01F6CEC1DC12F1800F78591 /* FullStoryCardController.swift */,
 				B04348841D99F0BF00C8EE2B /* GameScene.swift */,
 				B043911B1D9EDC51000CC018 /* MasterController.swift */,
 				B05508251DAEE07400BDD1F2 /* MyShelfController.swift */,
@@ -404,6 +415,7 @@
 				B05508291DAEE15400BDD1F2 /* ShortSceneLayout.xib */,
 				B0F7399B1DB845DD00AA2DF9 /* SimplePopupLayout.xib */,
 				B0F27EDB1DBA93BE00BD8462 /* Sparkle.sks */,
+				B01F6CEA1DC12D9A00F78591 /* StoryCardFullLayout.xib */,
 				B05508531DB02DEE00BDD1F2 /* StoryCardLayout.xib */,
 				B0041D631DB03D070013C56A /* StoryLayout.xib */,
 			);
@@ -453,6 +465,7 @@
 				B0B124391DB5A59D00A2BEA1 /* guy_thumbnail@2x.png */,
 				B0B1243A1DB5A59D00A2BEA1 /* kawataki_thumbnail@2x.png */,
 				B0B1243B1DB5A59D00A2BEA1 /* meanGirls_thumbnail@2x.png */,
+				B01F6CE81DC12D5200F78591 /* pll_full@2x.png */,
 				B070AFF31DC01FDD00EA627F /* pll_thumbnail@2x.png */,
 				B070AFF41DC01FDD00EA627F /* pll.png */,
 				B0F739931DB82E3600AA2DF9 /* search_thumbnail@2x.png */,
@@ -497,6 +510,7 @@
 			children = (
 				B055082B1DAEE31F00BDD1F2 /* cass@2x.png */,
 				B0B124221DB561DD00A2BEA1 /* colonelSanders@2x.png */,
+				B01F6CEE1DC131A900F78591 /* marlene@2x.png */,
 				B0F739911DB82CD800AA2DF9 /* max@2x.png */,
 			);
 			path = Characters;
@@ -564,6 +578,7 @@
 				B0F739771DB7F2DB00AA2DF9 /* mugshotCass@2x.png */,
 				B070AFE11DBED53200EA627F /* mugshotChristine@2x.png */,
 				B0F7397D1DB7FA5600AA2DF9 /* mugshotColonelSanders@2x.png */,
+				B01F6CF01DC131EA00F78591 /* mugshotMarlene@2x.png */,
 				B070AFE31DBED6A200EA627F /* mugshotMax@2x.png */,
 			);
 			path = Mugshots;
@@ -649,6 +664,7 @@
 				B055084D1DAF125200BDD1F2 /* bgShelfHeader@2x.png in Resources */,
 				B0F739941DB82E3600AA2DF9 /* search_thumbnail@2x.png in Resources */,
 				B0B1242D1DB57AA600A2BEA1 /* buttonWhiteSelected@2x.png in Resources */,
+				B01F6CEB1DC12D9A00F78591 /* StoryCardFullLayout.xib in Resources */,
 				B070AFD91DBED31600EA627F /* feedMessageCollaborators@2x.png in Resources */,
 				B0F7397A1DB7F2F600AA2DF9 /* CommentLayout.xib in Resources */,
 				B0B124231DB561DD00A2BEA1 /* colonelSanders@2x.png in Resources */,
@@ -658,6 +674,7 @@
 				B05508361DAF025E00BDD1F2 /* AchievementLayout.xib in Resources */,
 				B055082A1DAEE15400BDD1F2 /* ShortSceneLayout.xib in Resources */,
 				B070AFDB1DBED31600EA627F /* feedPost@2x.png in Resources */,
+				B01F6CEF1DC131A900F78591 /* marlene@2x.png in Resources */,
 				B055082C1DAEE31F00BDD1F2 /* cass@2x.png in Resources */,
 				B070AFDE1DBED31600EA627F /* feedShort@2x.png in Resources */,
 				B00F405B1DAD5C940020C2CE /* NavCellLayout.xib in Resources */,
@@ -714,6 +731,7 @@
 				B070AFBE1DBEC1BE00EA627F /* navDemi@2x.png in Resources */,
 				B05508471DAF0A7100BDD1F2 /* buttonFollowing@2x.png in Resources */,
 				B0B1244B1DB5AF7A00A2BEA1 /* iconFeedActions@2x.png in Resources */,
+				B01F6CE91DC12D5200F78591 /* pll_full@2x.png in Resources */,
 				B01F6CE31DC126E100F78591 /* feedChoiceSerious@2x.png in Resources */,
 				B070AFBC1DBEC1BE00EA627F /* navAdventures@2x.png in Resources */,
 				B01F6CE51DC128E900F78591 /* feedGucci@2x.png in Resources */,
@@ -736,6 +754,7 @@
 				B09AE6A21D9B475F001E6EAC /* iconMenu.png in Resources */,
 				B0F739921DB82CD800AA2DF9 /* max@2x.png in Resources */,
 				B0B124401DB5A59D00A2BEA1 /* demi_thumbnail@2x.png in Resources */,
+				B01F6CF11DC131EA00F78591 /* mugshotMarlene@2x.png in Resources */,
 				B0F27EDE1DBA93BE00BD8462 /* spark.png in Resources */,
 				B09AE69F1D9B4057001E6EAC /* bgSpeechBubble@2x.png in Resources */,
 				B05508221DAEC66C00BDD1F2 /* MyShelfLayout.xib in Resources */,
@@ -784,6 +803,7 @@
 				B0B124351DB59B6B00A2BEA1 /* Bubble.swift in Sources */,
 				B0F739AC1DB98DCB00AA2DF9 /* CommentData.swift in Sources */,
 				B00F405F1DAD5D870020C2CE /* NavCell.swift in Sources */,
+				B01F6CED1DC12F1800F78591 /* FullStoryCardController.swift in Sources */,
 				B055083E1DAF040300BDD1F2 /* Achievement.swift in Sources */,
 				B0B1244D1DB5AFEA00A2BEA1 /* FeedItem.swift in Sources */,
 				B037898B1DAD501100DCCACC /* PortalController.swift in Sources */,

@@ -54,7 +54,7 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colonelSanders.png" translatesAutoresizingMaskIntoConstraints="NO" id="QcM-RH-Lah">
+                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marlene.png" translatesAutoresizingMaskIntoConstraints="NO" id="QcM-RH-Lah">
                     <constraints>
                         <constraint firstAttribute="width" constant="150" id="KNS-gH-QKw" userLabel="width = 150"/>
                         <constraint firstAttribute="height" constant="535" id="gnF-z0-8UZ" userLabel="height = 535"/>
@@ -101,7 +101,7 @@
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Colonel Sanders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGd-RG-lRb">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Marlene" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGd-RG-lRb">
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="MPy-lv-stL"/>
                             </constraints>
@@ -165,7 +165,7 @@
         <image name="buttonFollowing.png" width="100" height="30"/>
         <image name="buttonLovedIt.png" width="100" height="30"/>
         <image name="buttonLovingIt.png" width="100" height="30"/>
-        <image name="colonelSanders.png" width="150" height="535"/>
+        <image name="marlene.png" width="117" height="535"/>
         <image name="storyReminder.png" width="268" height="193"/>
     </resources>
 </document>
