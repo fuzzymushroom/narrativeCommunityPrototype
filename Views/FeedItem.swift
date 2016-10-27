@@ -1,4 +1,5 @@
 import UIKit
+import youtube_ios_player_helper.YTPlayerView
 
 class FeedItem:UIViewFromNib{
     
@@ -14,6 +15,7 @@ class FeedItem:UIViewFromNib{
     @IBOutlet var mediaLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var youtubeView: YTPlayerView!
     @IBOutlet var playButton: UIButton!
     @IBOutlet var actionBar: UIView!
     @IBOutlet var commentButton: UIButton!
@@ -24,6 +26,7 @@ class FeedItem:UIViewFromNib{
         return "FeedItemLayout"
     }
     override func customSetup() {
+        youtubeView.isHidden = true
         likeButton.addTarget(self, action: #selector(toggleLike), for: .touchUpInside)
     }
     
@@ -46,5 +49,9 @@ class FeedItem:UIViewFromNib{
     }
     func toggleLike(){
         likeButton.isSelected = !likeButton.isSelected
+    }
+    func showVideo(videoId:String){
+        youtubeView.isHidden = false
+        youtubeView.load(withVideoId: videoId)
     }
 }

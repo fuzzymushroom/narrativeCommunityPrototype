@@ -17,13 +17,11 @@ class PortalController:UIViewController {
         navMenu.addNavCell(named:"Home", image: UIImage(named: "navHome")!, showBadge: false, onTap: { [unowned self] in self.navigateToPage(page: .HOME) })
         navMenu.addNavCell(named:"Featured", image: UIImage(named: "navFeatured")!, showBadge: false, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
         navMenu.addNavCell(named:"Feed", image: UIImage(named: "navFeed")!, showBadge: false, onTap: { [unowned self] in self.navigateToPage(page: .FEED) })
-        navMenu.addNavCell(named:"Mean Girls", image: UIImage(named: "navMeanGirls")!, showBadge: false, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
-        navMenu.addNavCell(named:"Demi Stories", image: UIImage(named: "navDemi")!, showBadge: false, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
         navMenu.addNavCell(named:"Genres", image: UIImage(named: "navGenres")!, showBadge: false, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
-        navMenu.addNavCell(named:"Adventures", image: UIImage(named: "navAdventures")!, showBadge: false, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
         navMenu.addNavCell(named:"User Stories", image: UIImage(named: "navUserStories")!, showBadge: false, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
         navMenu.addNavCell(named:"Create", image: UIImage(named: "navCreate")!, showBadge: false, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
         navMenu.addNavCell(named:"Profile", image: UIImage(named: "navProfile")!, showBadge: true, onTap: { [unowned self] in self.navigateToPage(page: .PROFILE) })
+        navMenu.addNavCell(named:"Fans", image: UIImage(named: "navHeart")!, showBadge: true, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
         navMenu.addNavCell(named:"Settings", image: UIImage(named: "navSettings")!, showBadge: false, onTap: { [unowned self] in self.navigateToPage(page: .BLANK) })
     }
     func toggleNavMenu(){

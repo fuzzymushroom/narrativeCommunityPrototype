@@ -24,6 +24,7 @@
                 <outlet property="mugshot" destination="W7k-Ks-Uxl" id="67c-3v-vGT"/>
                 <outlet property="nameLabel" destination="Hc8-KX-lNz" id="od6-4C-hyc"/>
                 <outlet property="playButton" destination="Cfn-7l-Aie" id="5v7-RF-ikw"/>
+                <outlet property="youtubeView" destination="C6y-K0-7ii" id="e2X-HK-cKv"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -76,7 +77,7 @@
                         <constraint firstItem="Hc8-KX-lNz" firstAttribute="leading" secondItem="W7k-Ks-Uxl" secondAttribute="trailing" constant="5" id="hLY-d4-ifi"/>
                         <constraint firstItem="Hc8-KX-lNz" firstAttribute="top" secondItem="W7k-Ks-Uxl" secondAttribute="top" id="ipL-6g-rMt"/>
                         <constraint firstItem="nt6-Dd-rqb" firstAttribute="leading" secondItem="jAl-c3-iUd" secondAttribute="trailing" constant="8" id="l2h-5i-NEn"/>
-                        <constraint firstAttribute="trailing" secondItem="Hc8-KX-lNz" secondAttribute="trailing" constant="5" id="mfJ-JW-YKd"/>
+                        <constraint firstAttribute="trailing" secondItem="Hc8-KX-lNz" secondAttribute="trailing" constant="8" id="ooG-wA-p4n"/>
                         <constraint firstItem="W7k-Ks-Uxl" firstAttribute="leading" secondItem="jOg-go-LDq" secondAttribute="leading" constant="2.5" id="qE8-Cd-YTR"/>
                     </constraints>
                 </view>
@@ -85,6 +86,9 @@
                         <constraint firstAttribute="width" secondItem="h12-hx-Y97" secondAttribute="height" multiplier="207:175" id="B5h-Ry-NhS"/>
                     </constraints>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6y-K0-7ii" customClass="YTPlayerView">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll3-JM-raJ">
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEc-8M-g3Z">
@@ -143,16 +147,21 @@
                 <constraint firstAttribute="trailing" secondItem="Cfn-7l-Aie" secondAttribute="trailing" id="BdN-g8-8Kc"/>
                 <constraint firstAttribute="trailing" secondItem="h12-hx-Y97" secondAttribute="trailing" id="D6u-Vd-x5D"/>
                 <constraint firstItem="h12-hx-Y97" firstAttribute="top" secondItem="jOg-go-LDq" secondAttribute="bottom" id="Smh-me-zdh"/>
+                <constraint firstItem="C6y-K0-7ii" firstAttribute="top" secondItem="h12-hx-Y97" secondAttribute="top" id="WTM-ht-1uc"/>
                 <constraint firstItem="jOg-go-LDq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Yhh-hn-1va"/>
+                <constraint firstItem="C6y-K0-7ii" firstAttribute="trailing" secondItem="h12-hx-Y97" secondAttribute="trailing" id="buC-IC-pPu"/>
                 <constraint firstItem="ll3-JM-raJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eU5-Nb-96Y"/>
+                <constraint firstItem="C6y-K0-7ii" firstAttribute="leading" secondItem="h12-hx-Y97" secondAttribute="leading" id="fZP-ag-mut"/>
                 <constraint firstItem="ll3-JM-raJ" firstAttribute="top" secondItem="h12-hx-Y97" secondAttribute="bottom" id="iU0-N5-T0T"/>
                 <constraint firstAttribute="trailing" secondItem="jOg-go-LDq" secondAttribute="trailing" id="mcZ-OW-Nbu"/>
                 <constraint firstItem="h12-hx-Y97" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oaG-QM-bn6"/>
                 <constraint firstItem="ll3-JM-raJ" firstAttribute="top" secondItem="Cfn-7l-Aie" secondAttribute="bottom" id="ulO-mf-cvE"/>
                 <constraint firstItem="jOg-go-LDq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="y1c-9J-Pus"/>
+                <constraint firstItem="C6y-K0-7ii" firstAttribute="bottom" secondItem="h12-hx-Y97" secondAttribute="bottom" id="z8m-tv-Wda"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="54" y="108.5"/>
         </view>
     </objects>
     <resources>

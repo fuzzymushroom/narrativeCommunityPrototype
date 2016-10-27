@@ -58,8 +58,6 @@ class GameModel{
         feedDataVideo.mediaName = "YouTube Video"
         feedDataVideo.date = "Oct 24 2016"
         feedDataVideo.imageName = "feedVideo"
-//        feedDataVideo.imageName = "iconMenu"
-        feedDataVideo.showPlayButton = true
         
         let feedRec = FeedData()
         feedRec.mugshotName = "mugshotCass"
@@ -159,7 +157,7 @@ class GameModel{
             comment2.comment = "But what are relationships w/o TRUST?"
         
             return [comment1, comment2]
-        case "profile":
+        case "portal":
             let comment0 = CommentData()
             comment0.mugshotImageName = "mugshotColonelSanders"
             comment0.username = "Colonel Sanders"
@@ -181,7 +179,7 @@ class GameModel{
             comment2.comment = "MAKE AMERICA GREAT AGAIN!"
             
             return [comment0, comment1, comment1b, comment2]
-        case "portal":
+        case "notInUse":
             let comment0 = CommentData()
             comment0.mugshotImageName = "mugshotMax"
             comment0.username = "Maximoose"
@@ -211,7 +209,7 @@ class GameModel{
         
         let choiceData1 = ChoiceData()
         choiceData1.question = "Bieber?"
-        choiceData1.answers = ["Disagreer...", "Belieber!"]
+        choiceData1.answers = ["Disagreer", "Belieber!"]
         choiceData1.iconNames = ["choiceSad", "choiceStarstruck"]
         choiceData1.selectionIndex = 1
         

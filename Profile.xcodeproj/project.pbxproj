@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F50B31628B09FEDA02A19DD /* Pods_Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CB0284A79FBE28DD962FAC /* Pods_Profile.framework */; };
 		B0003DAA1DADB86B00F710C8 /* ProfileLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0003DA91DADB86B00F710C8 /* ProfileLayout.xib */; };
 		B0003DAE1DADB8BF00F710C8 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0003DAD1DADB8BF00F710C8 /* ProfileController.swift */; };
 		B0041D621DB03B750013C56A /* campfire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0041D611DB03B750013C56A /* campfire@2x.png */; };
@@ -40,6 +41,7 @@
 		B01F6D0B1DC1873700F78591 /* ChoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F6D0A1DC1873700F78591 /* ChoiceCell.swift */; };
 		B01F6D0D1DC2767200F78591 /* iconBadge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6D0C1DC2767200F78591 /* iconBadge@2x.png */; };
 		B01F6D0F1DC27A5800F78591 /* iconFollower@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6D0E1DC27A5800F78591 /* iconFollower@2x.png */; };
+		B01F6D111DC27DAF00F78591 /* navHeart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6D101DC27DAF00F78591 /* navHeart@2x.png */; };
 		B037898B1DAD501100DCCACC /* PortalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03789891DAD501100DCCACC /* PortalController.swift */; };
 		B037898C1DAD501100DCCACC /* StoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B037898A1DAD501100DCCACC /* StoryController.swift */; };
 		B037898E1DAD54BF00DCCACC /* PortalLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B037898D1DAD54BF00DCCACC /* PortalLayout.xib */; };
@@ -54,6 +56,7 @@
 		B04348911D99F18A00C8EE2B /* SpriteKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B043488C1D99F18A00C8EE2B /* SpriteKitUtils.swift */; };
 		B043911A1D9EDC44000CC018 /* UIKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04391191D9EDC44000CC018 /* UIKitUtils.swift */; };
 		B043911C1D9EDC51000CC018 /* MasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B043911B1D9EDC51000CC018 /* MasterController.swift */; };
+		B04FF3C51DC2B04C0087E4B7 /* Profile-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = B04FF3C41DC2B04C0087E4B7 /* Profile-Bridging-Header.m */; };
 		B05508201DAEBD7200BDD1F2 /* StylizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B055081F1DAEBD7200BDD1F2 /* StylizedButton.swift */; };
 		B05508221DAEC66C00BDD1F2 /* MyShelfLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05508211DAEC66C00BDD1F2 /* MyShelfLayout.xib */; };
 		B05508261DAEE07400BDD1F2 /* MyShelfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05508251DAEE07400BDD1F2 /* MyShelfController.swift */; };
@@ -166,6 +169,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73E9B5F83674E9B7E8A0185B /* Pods-Profile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Profile.release.xcconfig"; path = "Pods/Target Support Files/Pods-Profile/Pods-Profile.release.xcconfig"; sourceTree = "<group>"; };
 		B0003DA91DADB86B00F710C8 /* ProfileLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileLayout.xib; sourceTree = "<group>"; };
 		B0003DAD1DADB8BF00F710C8 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		B0041D611DB03B750013C56A /* campfire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "campfire@2x.png"; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 		B01F6D0A1DC1873700F78591 /* ChoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceCell.swift; sourceTree = "<group>"; };
 		B01F6D0C1DC2767200F78591 /* iconBadge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconBadge@2x.png"; sourceTree = "<group>"; };
 		B01F6D0E1DC27A5800F78591 /* iconFollower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconFollower@2x.png"; sourceTree = "<group>"; };
+		B01F6D101DC27DAF00F78591 /* navHeart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navHeart@2x.png"; sourceTree = "<group>"; };
 		B03789891DAD501100DCCACC /* PortalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortalController.swift; sourceTree = "<group>"; };
 		B037898A1DAD501100DCCACC /* StoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryController.swift; sourceTree = "<group>"; };
 		B037898D1DAD54BF00DCCACC /* PortalLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortalLayout.xib; sourceTree = "<group>"; };
@@ -215,6 +220,8 @@
 		B043488C1D99F18A00C8EE2B /* SpriteKitUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteKitUtils.swift; sourceTree = "<group>"; };
 		B04391191D9EDC44000CC018 /* UIKitUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitUtils.swift; sourceTree = "<group>"; };
 		B043911B1D9EDC51000CC018 /* MasterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterController.swift; sourceTree = "<group>"; };
+		B04FF3C31DC2B04C0087E4B7 /* Profile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Profile-Bridging-Header.h"; sourceTree = "<group>"; };
+		B04FF3C41DC2B04C0087E4B7 /* Profile-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Profile-Bridging-Header.m"; sourceTree = "<group>"; };
 		B055081F1DAEBD7200BDD1F2 /* StylizedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylizedButton.swift; sourceTree = "<group>"; };
 		B05508211DAEC66C00BDD1F2 /* MyShelfLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyShelfLayout.xib; sourceTree = "<group>"; };
 		B05508251DAEE07400BDD1F2 /* MyShelfController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShelfController.swift; sourceTree = "<group>"; };
@@ -324,6 +331,8 @@
 		B0F739A11DB9606A00AA2DF9 /* bgCameraMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgCameraMenu@2x.png"; sourceTree = "<group>"; };
 		B0F739A51DB97C2100AA2DF9 /* iconLaurelRainbow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconLaurelRainbow@2x.png"; sourceTree = "<group>"; };
 		B0F739AB1DB98DCB00AA2DF9 /* CommentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentData.swift; sourceTree = "<group>"; };
+		C8CB0284A79FBE28DD962FAC /* Pods_Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Profile.framework; path = "../../../../../../../../../Users/maxglin/Library/Developer/Xcode/DerivedData/Profile-fpxrrbyzxfsbhtbdoqelqjiqylfk/Build/Products/Debug-iphoneos/Pods_Profile.framework"; sourceTree = SDKROOT; };
+		CFA22C04DEDBB1968E3C188E /* Pods-Profile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Profile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Profile/Pods-Profile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,12 +340,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F50B31628B09FEDA02A19DD /* Pods_Profile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ED624087EE1DFF80A8F2F57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFA22C04DEDBB1968E3C188E /* Pods-Profile.debug.xcconfig */,
+				73E9B5F83674E9B7E8A0185B /* Pods-Profile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B0041D671DB041230013C56A /* StoryFrames */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +388,8 @@
 				B04348861D99F0E800C8EE2B /* Utils */,
 				B043911F1D9EDF52000CC018 /* Views */,
 				B04348691D99EEEF00C8EE2B /* Products */,
+				2ED624087EE1DFF80A8F2F57 /* Pods */,
+				B6F9AF2959293F1BF070E6BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -386,6 +407,8 @@
 				B043486B1D99EEEF00C8EE2B /* AppDelegate.swift */,
 				B04348761D99EEEF00C8EE2B /* Assets.xcassets */,
 				B043487B1D99EEEF00C8EE2B /* Info.plist */,
+				B04FF3C41DC2B04C0087E4B7 /* Profile-Bridging-Header.m */,
+				B04FF3C31DC2B04C0087E4B7 /* Profile-Bridging-Header.h */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -582,6 +605,7 @@
 				B070AFB41DBEC1BE00EA627F /* navFeatured@2x.png */,
 				B070AFB51DBEC1BE00EA627F /* navFeed@2x.png */,
 				B070AFB61DBEC1BE00EA627F /* navGenres@2x.png */,
+				B01F6D101DC27DAF00F78591 /* navHeart@2x.png */,
 				B070AFB71DBEC1BE00EA627F /* navHome@2x.png */,
 				B070AFB91DBEC1BE00EA627F /* navMeanGirls@2x.png */,
 				B070AFC71DBEC2CE00EA627F /* navProfile@2x.png */,
@@ -637,6 +661,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		B6F9AF2959293F1BF070E6BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8CB0284A79FBE28DD962FAC /* Pods_Profile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -644,9 +676,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B043487E1D99EEEF00C8EE2B /* Build configuration list for PBXNativeTarget "Profile" */;
 			buildPhases = (
+				85DD498814664F45E807247D /* [CP] Check Pods Manifest.lock */,
 				B04348641D99EEEF00C8EE2B /* Sources */,
 				B04348651D99EEEF00C8EE2B /* Frameworks */,
 				B04348661D99EEEF00C8EE2B /* Resources */,
+				2247451C55A9A17E9E831856 /* [CP] Embed Pods Frameworks */,
+				6D9C47C5DB79B6260F7E6F1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -774,6 +809,7 @@
 				B070AFC21DBEC1BE00EA627F /* navHome@2x.png in Resources */,
 				B0B124251DB5649600A2BEA1 /* buttonLovedIt@2x.png in Resources */,
 				B070AFF51DC01FDD00EA627F /* pll_thumbnail@2x.png in Resources */,
+				B01F6D111DC27DAF00F78591 /* navHeart@2x.png in Resources */,
 				B070AFBE1DBEC1BE00EA627F /* navDemi@2x.png in Resources */,
 				B05508471DAF0A7100BDD1F2 /* buttonFollowing@2x.png in Resources */,
 				B01F6CF91DC184AB00F78591 /* ChoicesLayout.xib in Resources */,
@@ -822,6 +858,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2247451C55A9A17E9E831856 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Profile/Pods-Profile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D9C47C5DB79B6260F7E6F1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Profile/Pods-Profile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85DD498814664F45E807247D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B04348641D99EEEF00C8EE2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -854,6 +938,7 @@
 				B043486C1D99EEEF00C8EE2B /* AppDelegate.swift in Sources */,
 				B070AFCC1DBECCBC00EA627F /* FeedData.swift in Sources */,
 				B043911C1D9EDC51000CC018 /* MasterController.swift in Sources */,
+				B04FF3C51DC2B04C0087E4B7 /* Profile-Bridging-Header.m in Sources */,
 				B04348911D99F18A00C8EE2B /* SpriteKitUtils.swift in Sources */,
 				B0B124351DB59B6B00A2BEA1 /* Bubble.swift in Sources */,
 				B0F739AC1DB98DCB00AA2DF9 /* CommentData.swift in Sources */,
@@ -959,26 +1044,33 @@
 		};
 		B043487F1D99EEEF00C8EE2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA22C04DEDBB1968E3C188E /* Pods-Profile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 298F5G8964;
 				INFOPLIST_FILE = Profile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mushroomStudio.Profile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Profile/Profile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		B04348801D99EEEF00C8EE2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73E9B5F83674E9B7E8A0185B /* Pods-Profile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 298F5G8964;
 				INFOPLIST_FILE = Profile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mushroomStudio.Profile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Profile/Profile-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

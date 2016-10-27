@@ -31,9 +31,7 @@ class FeedController:UIViewController{
         let height = 75 + (feedItem.intrinsicContentSize.height - 75) * view.bounds.width / feedItem.intrinsicContentSize.width
         feedItem.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: floor(height))
 
-        view.layoutIfNeeded()
         stackView.addArrangedSubview(feedItem)
-        view.layoutIfNeeded()
         let axisLength = stackView.getAxisLength()
         scrollView.contentSize = CGSize(width: view.bounds.width, height: axisLength)
         feedItem.populate(feedData: feedData)
@@ -45,6 +43,12 @@ class FeedController:UIViewController{
                     let portalController = getParentOfType(type: PortalController.self)!
                     feedItem.enableTap(target: portalController, action: #selector(PortalController.openStoryCard))
             }
+        }
+        
+        if feedData.imageName == "feedVideo" {
+            view.layoutIfNeeded()
+            let videoId = "83BsxzW_n7c"
+            feedItem.showVideo(videoId: videoId)
         }
         
         return feedItem
