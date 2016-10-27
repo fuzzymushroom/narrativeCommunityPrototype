@@ -7,9 +7,9 @@ class NavMenu:UIView{
     var height = CGFloat(0)
     
     //MARK: METHODS
-    func addNavCell(named name:String, image: UIImage, onTap:@escaping VoidClosure){
+    func addNavCell(named name:String, image: UIImage, showBadge:Bool, onTap:@escaping VoidClosure){
         let navCell = NavCell()
-        navCell.populate(name: name, image: image)
+        navCell.populate(name: name, image: image, showBadge: showBadge)
         navCell.setOnTap(onTap: onTap)
         
         navCell.frame.origin = CGPoint(x: 0, y: height)

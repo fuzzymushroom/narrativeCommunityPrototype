@@ -12,7 +12,7 @@ class GameModel{
             profile.quote = "Hi I'm the creator of Pretty Little Liars! I love telling a good story."
             profile.karma = 500
             profile.chaptersRead = 50
-            profile.followers = 999
+            profile.roses = 999
             profile.createdStoryIds = ["pll", "kawataki"]
             profile.recommendedStoryIds = ["guy","demi","meanGirls","sundosia","bff","sorority"]
             profile.feedDatas = []
@@ -24,7 +24,7 @@ class GameModel{
             profile.quote = "Allow myself to introduce my... shelf"
             profile.karma = 500
             profile.chaptersRead = 50
-            profile.followers = 999
+            profile.roses = 999
             profile.createdStoryIds = ["campfire", "kawataki"]
             profile.recommendedStoryIds = ["guy","demi","meanGirls","sundosia","bff","sorority"]
             profile.feedDatas = []
@@ -36,7 +36,7 @@ class GameModel{
             profile.quote = "Tap the pencil icon to TELL YOUR STORY!"
             profile.karma = 50
             profile.chaptersRead = 999
-            profile.followers = 0
+            profile.roses = 0
             profile.createdStoryIds = []
             profile.recommendedStoryIds = ["pll"]
             let feedSurvey = FeedData()

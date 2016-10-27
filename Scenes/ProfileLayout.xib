@@ -38,10 +38,11 @@
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fp-5g-uJV" customClass="StylizedButton" customModule="Profile" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fp-5g-uJV" customClass="StylizedButton" customModule="Profile" customModuleProvider="target">
                             <color key="backgroundColor" red="0.89248216150000004" green="0.89245545859999997" blue="0.89247059819999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="20"/>
-                            <state key="normal" title="Choices">
+                            <inset key="titleEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="90" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Choices" image="iconBadge.png">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <state key="selected" title="Posts"/>
@@ -73,4 +74,7 @@
             <nil key="simulatedStatusBarMetrics"/>
         </view>
     </objects>
+    <resources>
+        <image name="iconBadge.png" width="20" height="20"/>
+    </resources>
 </document>

@@ -38,6 +38,8 @@
 		B01F6D071DC1861600F78591 /* choiceStrawberry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6D011DC1861500F78591 /* choiceStrawberry@2x.png */; };
 		B01F6D091DC1872800F78591 /* ChoiceCellLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01F6D081DC1872800F78591 /* ChoiceCellLayout.xib */; };
 		B01F6D0B1DC1873700F78591 /* ChoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F6D0A1DC1873700F78591 /* ChoiceCell.swift */; };
+		B01F6D0D1DC2767200F78591 /* iconBadge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6D0C1DC2767200F78591 /* iconBadge@2x.png */; };
+		B01F6D0F1DC27A5800F78591 /* iconFollower@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6D0E1DC27A5800F78591 /* iconFollower@2x.png */; };
 		B037898B1DAD501100DCCACC /* PortalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03789891DAD501100DCCACC /* PortalController.swift */; };
 		B037898C1DAD501100DCCACC /* StoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B037898A1DAD501100DCCACC /* StoryController.swift */; };
 		B037898E1DAD54BF00DCCACC /* PortalLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B037898D1DAD54BF00DCCACC /* PortalLayout.xib */; };
@@ -195,6 +197,8 @@
 		B01F6D011DC1861500F78591 /* choiceStrawberry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choiceStrawberry@2x.png"; sourceTree = "<group>"; };
 		B01F6D081DC1872800F78591 /* ChoiceCellLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoiceCellLayout.xib; sourceTree = "<group>"; };
 		B01F6D0A1DC1873700F78591 /* ChoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceCell.swift; sourceTree = "<group>"; };
+		B01F6D0C1DC2767200F78591 /* iconBadge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconBadge@2x.png"; sourceTree = "<group>"; };
+		B01F6D0E1DC27A5800F78591 /* iconFollower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconFollower@2x.png"; sourceTree = "<group>"; };
 		B03789891DAD501100DCCACC /* PortalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortalController.swift; sourceTree = "<group>"; };
 		B037898A1DAD501100DCCACC /* StoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryController.swift; sourceTree = "<group>"; };
 		B037898D1DAD54BF00DCCACC /* PortalLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortalLayout.xib; sourceTree = "<group>"; };
@@ -554,10 +558,12 @@
 				B01F6CFF1DC1861500F78591 /* choiceSad@2x.png */,
 				B01F6D001DC1861500F78591 /* choiceStarstruck@2x.png */,
 				B01F6D011DC1861500F78591 /* choiceStrawberry@2x.png */,
+				B01F6D0C1DC2767200F78591 /* iconBadge@2x.png */,
 				B055082D1DAEE60400BDD1F2 /* iconCassName@2x.png */,
 				B0F739681DB7E2CF00AA2DF9 /* iconComment@2x.png */,
 				B055082F1DAEE7A500BDD1F2 /* iconEdit@2x.png */,
 				B0B1244A1DB5AF7A00A2BEA1 /* iconFeedActions@2x.png */,
+				B01F6D0E1DC27A5800F78591 /* iconFollower@2x.png */,
 				B0F739691DB7E2CF00AA2DF9 /* iconHeart@2x.png */,
 				B0F7396A1DB7E2CF00AA2DF9 /* iconHeartSelected@2x.png */,
 				B05508371DAF034A00BDD1F2 /* iconLaurelGold@2x.png */,
@@ -739,6 +745,7 @@
 				B070AFDC1DBED31600EA627F /* feedSceneCapture@2x.png in Resources */,
 				B0F7399C1DB845DD00AA2DF9 /* SimplePopupLayout.xib in Resources */,
 				B0B124411DB5A59D00A2BEA1 /* guy_thumbnail@2x.png in Resources */,
+				B01F6D0D1DC2767200F78591 /* iconBadge@2x.png in Resources */,
 				B0B124331DB59A5C00A2BEA1 /* BubbleLayout.xib in Resources */,
 				B03789991DAD571A00DCCACC /* DidactGothic.ttf in Resources */,
 				B0F7396D1DB7E2CF00AA2DF9 /* iconHeart@2x.png in Resources */,
@@ -797,6 +804,7 @@
 				B09AE6A21D9B475F001E6EAC /* iconMenu.png in Resources */,
 				B0F739921DB82CD800AA2DF9 /* max@2x.png in Resources */,
 				B0B124401DB5A59D00A2BEA1 /* demi_thumbnail@2x.png in Resources */,
+				B01F6D0F1DC27A5800F78591 /* iconFollower@2x.png in Resources */,
 				B01F6CF11DC131EA00F78591 /* mugshotMarlene@2x.png in Resources */,
 				B0F27EDE1DBA93BE00BD8462 /* spark.png in Resources */,
 				B09AE69F1D9B4057001E6EAC /* bgSpeechBubble@2x.png in Resources */,

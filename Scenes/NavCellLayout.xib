@@ -13,6 +13,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavCell" customModule="Profile" customModuleProvider="target">
             <connections>
+                <outlet property="iconBadge" destination="HPI-YT-O4T" id="by2-dY-OCM"/>
                 <outlet property="imageView" destination="iO0-Ag-QGo" id="XGh-j2-JOp"/>
                 <outlet property="label" destination="DBW-nb-RXk" id="21y-7M-fGh"/>
             </connections>
@@ -33,11 +34,19 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconBadge.png" translatesAutoresizingMaskIntoConstraints="NO" id="HPI-YT-O4T">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="KST-ab-DC4"/>
+                        <constraint firstAttribute="height" constant="20" id="kgU-fp-sfX"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="DBW-nb-RXk" firstAttribute="leading" secondItem="iO0-Ag-QGo" secondAttribute="trailing" constant="8" id="GEq-6N-yn6"/>
                 <constraint firstAttribute="bottom" secondItem="DBW-nb-RXk" secondAttribute="bottom" constant="5" id="Kpb-sb-uuQ"/>
+                <constraint firstItem="HPI-YT-O4T" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Mdx-Z6-lTm"/>
+                <constraint firstItem="HPI-YT-O4T" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="-8" id="V18-9V-9Kg"/>
                 <constraint firstItem="DBW-nb-RXk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Zbm-CV-zt5"/>
                 <constraint firstItem="iO0-Ag-QGo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ZpO-hY-NzE"/>
                 <constraint firstItem="iO0-Ag-QGo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="buH-EU-jfX"/>
@@ -47,4 +56,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
+    <resources>
+        <image name="iconBadge.png" width="20" height="20"/>
+    </resources>
 </document>

@@ -6,9 +6,10 @@ class CredBar:UIViewFromNib{
     
     @IBOutlet var karmaAchievement: Achievement!
     @IBOutlet var chaptersAchievement: Achievement!
-    @IBOutlet var followersAchievement: Achievement!
+    @IBOutlet var rosesAchievement: Achievement!
     @IBOutlet var followButton: UIButton!
     
+
     //MARK: OVERRIDES
     override func getNibName() -> String{
         return "CredBarLayout"

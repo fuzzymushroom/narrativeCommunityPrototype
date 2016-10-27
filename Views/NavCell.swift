@@ -4,6 +4,7 @@ class NavCell:UIViewFromNib{
     
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var label:UILabel!
+    @IBOutlet var iconBadge: UIImageView!
     var onTap:VoidClosure?
     
     override func getNibName() -> String{
@@ -14,9 +15,10 @@ class NavCell:UIViewFromNib{
         layer.borderWidth = 1
     }
     
-    func populate(name:String, image:UIImage){
+    func populate(name:String, image:UIImage, showBadge:Bool){
         label.text = name
         imageView.image = image
+        if !showBadge { iconBadge.isHidden = true }
     }
     func setOnTap(onTap:@escaping VoidClosure){
         self.onTap = onTap
