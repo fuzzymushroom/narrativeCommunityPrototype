@@ -26,6 +26,18 @@
 		B01F6CED1DC12F1800F78591 /* FullStoryCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F6CEC1DC12F1800F78591 /* FullStoryCardController.swift */; };
 		B01F6CEF1DC131A900F78591 /* marlene@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CEE1DC131A900F78591 /* marlene@2x.png */; };
 		B01F6CF11DC131EA00F78591 /* mugshotMarlene@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CF01DC131EA00F78591 /* mugshotMarlene@2x.png */; };
+		B01F6CF31DC17FCE00F78591 /* story5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CF21DC17FCE00F78591 /* story5@2x.png */; };
+		B01F6CF51DC1841D00F78591 /* ChoicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F6CF41DC1841D00F78591 /* ChoicesController.swift */; };
+		B01F6CF91DC184AB00F78591 /* ChoicesLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CF81DC184AB00F78591 /* ChoicesLayout.xib */; };
+		B01F6CFB1DC1850700F78591 /* ChoiceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F6CFA1DC1850700F78591 /* ChoiceData.swift */; };
+		B01F6D021DC1861500F78591 /* choiceFlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CFC1DC1861500F78591 /* choiceFlight@2x.png */; };
+		B01F6D031DC1861500F78591 /* choiceHam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CFD1DC1861500F78591 /* choiceHam@2x.png */; };
+		B01F6D041DC1861500F78591 /* choiceInvisibility@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CFE1DC1861500F78591 /* choiceInvisibility@2x.png */; };
+		B01F6D051DC1861500F78591 /* choiceSad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6CFF1DC1861500F78591 /* choiceSad@2x.png */; };
+		B01F6D061DC1861600F78591 /* choiceStarstruck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6D001DC1861500F78591 /* choiceStarstruck@2x.png */; };
+		B01F6D071DC1861600F78591 /* choiceStrawberry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01F6D011DC1861500F78591 /* choiceStrawberry@2x.png */; };
+		B01F6D091DC1872800F78591 /* ChoiceCellLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01F6D081DC1872800F78591 /* ChoiceCellLayout.xib */; };
+		B01F6D0B1DC1873700F78591 /* ChoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F6D0A1DC1873700F78591 /* ChoiceCell.swift */; };
 		B037898B1DAD501100DCCACC /* PortalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03789891DAD501100DCCACC /* PortalController.swift */; };
 		B037898C1DAD501100DCCACC /* StoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B037898A1DAD501100DCCACC /* StoryController.swift */; };
 		B037898E1DAD54BF00DCCACC /* PortalLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B037898D1DAD54BF00DCCACC /* PortalLayout.xib */; };
@@ -171,6 +183,18 @@
 		B01F6CEC1DC12F1800F78591 /* FullStoryCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullStoryCardController.swift; sourceTree = "<group>"; };
 		B01F6CEE1DC131A900F78591 /* marlene@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marlene@2x.png"; sourceTree = "<group>"; };
 		B01F6CF01DC131EA00F78591 /* mugshotMarlene@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mugshotMarlene@2x.png"; sourceTree = "<group>"; };
+		B01F6CF21DC17FCE00F78591 /* story5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "story5@2x.png"; sourceTree = "<group>"; };
+		B01F6CF41DC1841D00F78591 /* ChoicesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoicesController.swift; sourceTree = "<group>"; };
+		B01F6CF81DC184AB00F78591 /* ChoicesLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoicesLayout.xib; sourceTree = "<group>"; };
+		B01F6CFA1DC1850700F78591 /* ChoiceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceData.swift; sourceTree = "<group>"; };
+		B01F6CFC1DC1861500F78591 /* choiceFlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choiceFlight@2x.png"; sourceTree = "<group>"; };
+		B01F6CFD1DC1861500F78591 /* choiceHam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choiceHam@2x.png"; sourceTree = "<group>"; };
+		B01F6CFE1DC1861500F78591 /* choiceInvisibility@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choiceInvisibility@2x.png"; sourceTree = "<group>"; };
+		B01F6CFF1DC1861500F78591 /* choiceSad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choiceSad@2x.png"; sourceTree = "<group>"; };
+		B01F6D001DC1861500F78591 /* choiceStarstruck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choiceStarstruck@2x.png"; sourceTree = "<group>"; };
+		B01F6D011DC1861500F78591 /* choiceStrawberry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choiceStrawberry@2x.png"; sourceTree = "<group>"; };
+		B01F6D081DC1872800F78591 /* ChoiceCellLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoiceCellLayout.xib; sourceTree = "<group>"; };
+		B01F6D0A1DC1873700F78591 /* ChoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceCell.swift; sourceTree = "<group>"; };
 		B03789891DAD501100DCCACC /* PortalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortalController.swift; sourceTree = "<group>"; };
 		B037898A1DAD501100DCCACC /* StoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryController.swift; sourceTree = "<group>"; };
 		B037898D1DAD54BF00DCCACC /* PortalLayout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortalLayout.xib; sourceTree = "<group>"; };
@@ -316,6 +340,7 @@
 				B070AFEC1DC01C5800EA627F /* story2@2x.png */,
 				B070AFED1DC01C5800EA627F /* story3@2x.png */,
 				B070AFEE1DC01C5800EA627F /* story4@2x.png */,
+				B01F6CF21DC17FCE00F78591 /* story5@2x.png */,
 				B070AFF91DC0372100EA627F /* storyReminder.png */,
 			);
 			path = StoryFrames;
@@ -364,8 +389,9 @@
 		B04348811D99F05300C8EE2B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B0B124261DB5662100A2BEA1 /* EndOfChapterController.swift */,
+				B01F6CF41DC1841D00F78591 /* ChoicesController.swift */,
 				B0F739741DB7EBB900AA2DF9 /* CommentsController.swift */,
+				B0B124261DB5662100A2BEA1 /* EndOfChapterController.swift */,
 				B0F7395D1DB6DD4600AA2DF9 /* FeedController.swift */,
 				B01F6CEC1DC12F1800F78591 /* FullStoryCardController.swift */,
 				B04348841D99F0BF00C8EE2B /* GameScene.swift */,
@@ -399,6 +425,8 @@
 			children = (
 				B05508351DAF025E00BDD1F2 /* AchievementLayout.xib */,
 				B0B124321DB59A5C00A2BEA1 /* BubbleLayout.xib */,
+				B01F6D081DC1872800F78591 /* ChoiceCellLayout.xib */,
+				B01F6CF81DC184AB00F78591 /* ChoicesLayout.xib */,
 				B0F739791DB7F2F600AA2DF9 /* CommentLayout.xib */,
 				B0F739701DB7E70B00AA2DF9 /* CommentThreadLayout.xib */,
 				B05508331DAEED4300BDD1F2 /* CredBarLayout.xib */,
@@ -427,6 +455,7 @@
 			children = (
 				B055083D1DAF040300BDD1F2 /* Achievement.swift */,
 				B0B124341DB59B6B00A2BEA1 /* Bubble.swift */,
+				B01F6D0A1DC1873700F78591 /* ChoiceCell.swift */,
 				B0F7397B1DB7F4C600AA2DF9 /* Comment.swift */,
 				B05508311DAEECFD00BDD1F2 /* CredBar.swift */,
 				B0B1244C1DB5AFEA00A2BEA1 /* FeedItem.swift */,
@@ -519,6 +548,12 @@
 		B09AE6A01D9B475F001E6EAC /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				B01F6CFC1DC1861500F78591 /* choiceFlight@2x.png */,
+				B01F6CFD1DC1861500F78591 /* choiceHam@2x.png */,
+				B01F6CFE1DC1861500F78591 /* choiceInvisibility@2x.png */,
+				B01F6CFF1DC1861500F78591 /* choiceSad@2x.png */,
+				B01F6D001DC1861500F78591 /* choiceStarstruck@2x.png */,
+				B01F6D011DC1861500F78591 /* choiceStrawberry@2x.png */,
 				B055082D1DAEE60400BDD1F2 /* iconCassName@2x.png */,
 				B0F739681DB7E2CF00AA2DF9 /* iconComment@2x.png */,
 				B055082F1DAEE7A500BDD1F2 /* iconEdit@2x.png */,
@@ -587,6 +622,7 @@
 		B0F7398C1DB81F9800AA2DF9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B01F6CFA1DC1850700F78591 /* ChoiceData.swift */,
 				B0F739AB1DB98DCB00AA2DF9 /* CommentData.swift */,
 				B070AFCB1DBECCBC00EA627F /* FeedData.swift */,
 				B0F7398D1DB81F9800AA2DF9 /* GameModel.swift */,
@@ -689,14 +725,17 @@
 				B0B124431DB5A59D00A2BEA1 /* meanGirls_thumbnail@2x.png in Resources */,
 				B070AFE21DBED53200EA627F /* mugshotChristine@2x.png in Resources */,
 				B070AFDD1DBED31600EA627F /* feedScreenCapture@2x.png in Resources */,
+				B01F6D091DC1872800F78591 /* ChoiceCellLayout.xib in Resources */,
 				B0B1243E1DB5A59D00A2BEA1 /* bff_thumbnail@2x.png in Resources */,
 				B070AFFA1DC0372100EA627F /* storyReminder.png in Resources */,
 				B0041D641DB03D070013C56A /* StoryLayout.xib in Resources */,
 				B0041D621DB03B750013C56A /* campfire@2x.png in Resources */,
+				B01F6D041DC1861500F78591 /* choiceInvisibility@2x.png in Resources */,
 				B0F7396C1DB7E2CF00AA2DF9 /* iconComment@2x.png in Resources */,
 				B070AFCA1DBEC4B900EA627F /* bgHome@2x.png in Resources */,
 				B070AFD81DBED31600EA627F /* feedLink@2x.png in Resources */,
 				B070AFE41DBED6A200EA627F /* mugshotMax@2x.png in Resources */,
+				B01F6CF31DC17FCE00F78591 /* story5@2x.png in Resources */,
 				B070AFDC1DBED31600EA627F /* feedSceneCapture@2x.png in Resources */,
 				B0F7399C1DB845DD00AA2DF9 /* SimplePopupLayout.xib in Resources */,
 				B0B124411DB5A59D00A2BEA1 /* guy_thumbnail@2x.png in Resources */,
@@ -730,15 +769,18 @@
 				B070AFF51DC01FDD00EA627F /* pll_thumbnail@2x.png in Resources */,
 				B070AFBE1DBEC1BE00EA627F /* navDemi@2x.png in Resources */,
 				B05508471DAF0A7100BDD1F2 /* buttonFollowing@2x.png in Resources */,
+				B01F6CF91DC184AB00F78591 /* ChoicesLayout.xib in Resources */,
 				B0B1244B1DB5AF7A00A2BEA1 /* iconFeedActions@2x.png in Resources */,
 				B01F6CE91DC12D5200F78591 /* pll_full@2x.png in Resources */,
 				B01F6CE31DC126E100F78591 /* feedChoiceSerious@2x.png in Resources */,
+				B01F6D061DC1861600F78591 /* choiceStarstruck@2x.png in Resources */,
 				B070AFBC1DBEC1BE00EA627F /* navAdventures@2x.png in Resources */,
 				B01F6CE51DC128E900F78591 /* feedGucci@2x.png in Resources */,
 				B09AE6921D9B012B001E6EAC /* LaunchScreen.storyboard in Resources */,
 				B05508491DAF117B00BDD1F2 /* ShelfLayout.xib in Resources */,
 				B0F27EDD1DBA93BE00BD8462 /* Sparkle.sks in Resources */,
 				B070AFBD1DBEC1BE00EA627F /* navCreate@2x.png in Resources */,
+				B01F6D051DC1861500F78591 /* choiceSad@2x.png in Resources */,
 				B0B124451DB5A59D00A2BEA1 /* sundosia_thumbnail@2x.png in Resources */,
 				B0F7396E1DB7E2CF00AA2DF9 /* iconHeartSelected@2x.png in Resources */,
 				B00F40551DAD588D0020C2CE /* bgLoading.png in Resources */,
@@ -750,6 +792,7 @@
 				B01F6CE71DC1297C00F78591 /* mugshotAngela@2x.png in Resources */,
 				B070AFE01DBED31600EA627F /* feedVideo@2x.png in Resources */,
 				B055083C1DAF034A00BDD1F2 /* iconLaurelPlatinum@2x.png in Resources */,
+				B01F6D031DC1861500F78591 /* choiceHam@2x.png in Resources */,
 				B01F6CE21DC126E100F78591 /* feedChoiceFun@2x.png in Resources */,
 				B09AE6A21D9B475F001E6EAC /* iconMenu.png in Resources */,
 				B0F739921DB82CD800AA2DF9 /* max@2x.png in Resources */,
@@ -758,6 +801,8 @@
 				B0F27EDE1DBA93BE00BD8462 /* spark.png in Resources */,
 				B09AE69F1D9B4057001E6EAC /* bgSpeechBubble@2x.png in Resources */,
 				B05508221DAEC66C00BDD1F2 /* MyShelfLayout.xib in Resources */,
+				B01F6D021DC1861500F78591 /* choiceFlight@2x.png in Resources */,
+				B01F6D071DC1861600F78591 /* choiceStrawberry@2x.png in Resources */,
 				B0B1242B1DB579F600A2BEA1 /* buttonWhite@2x.png in Resources */,
 				B0F7395C1DB6DCB800AA2DF9 /* FeedLayout.xib in Resources */,
 				B0003DAA1DADB86B00F710C8 /* ProfileLayout.xib in Resources */,
@@ -774,7 +819,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B01F6CF51DC1841D00F78591 /* ChoicesController.swift in Sources */,
 				B055084B1DAF118500BDD1F2 /* Shelf.swift in Sources */,
+				B01F6D0B1DC1873700F78591 /* ChoiceCell.swift in Sources */,
 				B04348881D99F0E800C8EE2B /* SKScenePlus.swift in Sources */,
 				B0F739901DB81F9800AA2DF9 /* Profile.swift in Sources */,
 				B0003DAE1DADB8BF00F710C8 /* ProfileController.swift in Sources */,
@@ -803,6 +850,7 @@
 				B0B124351DB59B6B00A2BEA1 /* Bubble.swift in Sources */,
 				B0F739AC1DB98DCB00AA2DF9 /* CommentData.swift in Sources */,
 				B00F405F1DAD5D870020C2CE /* NavCell.swift in Sources */,
+				B01F6CFB1DC1850700F78591 /* ChoiceData.swift in Sources */,
 				B01F6CED1DC12F1800F78591 /* FullStoryCardController.swift in Sources */,
 				B055083E1DAF040300BDD1F2 /* Achievement.swift in Sources */,
 				B0B1244D1DB5AFEA00A2BEA1 /* FeedItem.swift in Sources */,

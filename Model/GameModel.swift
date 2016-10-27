@@ -38,11 +38,11 @@ class GameModel{
             profile.chaptersRead = 999
             profile.followers = 0
             profile.createdStoryIds = []
-            profile.recommendedStoryIds = ["campfire"]
+            profile.recommendedStoryIds = ["pll"]
             let feedSurvey = FeedData()
             feedSurvey.mugshotName = "mugshotMax"
             feedSurvey.username = "Maximoose"
-            feedSurvey.mediaName = "Survey from Campfire Episode 1"
+            feedSurvey.mediaName = "Capture from Campfire Episode 1"
             feedSurvey.date = "Oct 24 2016"
             feedSurvey.imageName = "feedSurvey"
             profile.feedDatas = [feedSurvey]
@@ -201,5 +201,26 @@ class GameModel{
         default:
             return []
         }
+    }
+    func getChoiceDatas() -> [ChoiceData] {
+        let choiceData0 = ChoiceData()
+        choiceData0.question = "Superhero power?"
+        choiceData0.answers = ["Flight", "Invisibility"]
+        choiceData0.iconNames = ["choiceFlight", "choiceInvisibility"]
+        choiceData0.selectionIndex = -1
+        
+        let choiceData1 = ChoiceData()
+        choiceData1.question = "Bieber?"
+        choiceData1.answers = ["Disagreer...", "Belieber!"]
+        choiceData1.iconNames = ["choiceSad", "choiceStarstruck"]
+        choiceData1.selectionIndex = 1
+        
+        let choiceData2 = ChoiceData()
+        choiceData2.question = "How's your crepe?"
+        choiceData2.answers = ["Sweet", "Savory"]
+        choiceData2.iconNames = ["choiceStrawberry", "choiceHam"]
+        choiceData2.selectionIndex = 1
+        
+        return [choiceData0, choiceData1, choiceData2]
     }
 }

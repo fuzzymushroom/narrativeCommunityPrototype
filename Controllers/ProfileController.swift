@@ -8,6 +8,7 @@ class ProfileController:UIViewController{
 
     
     @IBOutlet var shelfTab: StylizedButton!
+    @IBOutlet var choicesTab: StylizedButton!
     @IBOutlet var postTab: StylizedButton!
     @IBOutlet var viewport: UIView!
 
@@ -33,6 +34,11 @@ class ProfileController:UIViewController{
         shelfTab.selectedColor = ProfileController.COLOR_TAB_SELECTED
         shelfTab.addTarget(self, action: #selector(openShelf), for: .touchUpInside)
         
+        choicesTab.showBorder()
+        choicesTab.deselectedColor = ProfileController.COLOR_TAB_DESELECTED
+        choicesTab.selectedColor = ProfileController.COLOR_TAB_SELECTED
+        choicesTab.addTarget(self, action: #selector(openChoices), for: .touchUpInside)
+        
         postTab.showBorder()
         postTab.deselectedColor = ProfileController.COLOR_TAB_DESELECTED
         postTab.selectedColor = ProfileController.COLOR_TAB_SELECTED
@@ -47,6 +53,15 @@ class ProfileController:UIViewController{
         killChildControllers()
         let myShelfController = MyShelfController(profile: profile)
         spawnChildController(controller: myShelfController, view: viewport)
+    }
+    func openChoices(){
+        selectTab(tab: choicesTab)
+        killChildControllers()
+        let choicesController = ChoicesController()
+        spawnChildController(controller: choicesController, view: viewport)
+        let masterController = getParentOfType(type: MasterController.self)!
+        let choiceDatas = masterController.gameModel.getChoiceDatas()
+        choicesController.addChoices(choiceDatas: choiceDatas)
     }
     func openPosts(){
         killChildControllers()

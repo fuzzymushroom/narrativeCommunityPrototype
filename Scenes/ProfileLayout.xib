@@ -13,6 +13,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileController" customModule="Profile" customModuleProvider="target">
             <connections>
+                <outlet property="choicesTab" destination="5fp-5g-uJV" id="BAF-NF-Ih7"/>
                 <outlet property="postTab" destination="L3v-fG-oyv" id="MhK-ex-FVf"/>
                 <outlet property="shelfTab" destination="tPC-VO-Bgm" id="I0R-Qs-REp"/>
                 <outlet property="view" destination="iN0-l3-epB" id="m7s-bM-9Al"/>
@@ -21,7 +22,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tCQ-X6-3hY">
@@ -33,9 +34,17 @@
                             <color key="backgroundColor" red="0.89248216152191162" green="0.89245545864105225" blue="0.8924705982208252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="20"/>
                             <color key="tintColor" red="0.82941257953643799" green="0.55364590883255005" blue="0.14276765286922455" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="Shelf">
+                            <state key="normal" title="My Story">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fp-5g-uJV" customClass="StylizedButton" customModule="Profile" customModuleProvider="target">
+                            <color key="backgroundColor" red="0.89248216150000004" green="0.89245545859999997" blue="0.89247059819999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="20"/>
+                            <state key="normal" title="Choices">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" title="Posts"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3v-fG-oyv" customClass="StylizedButton" customModule="Profile" customModuleProvider="target">
                             <color key="backgroundColor" red="0.89248216152191162" green="0.89245545864105225" blue="0.8924705982208252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

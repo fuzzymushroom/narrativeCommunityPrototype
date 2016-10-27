@@ -137,7 +137,7 @@
                     <state key="normal" title="Button" image="iconPlay.png"/>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ll3-JM-raJ" secondAttribute="trailing" id="5NG-0y-dbJ"/>
                 <constraint firstAttribute="trailing" secondItem="Cfn-7l-Aie" secondAttribute="trailing" id="BdN-g8-8Kc"/>
