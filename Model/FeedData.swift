@@ -5,9 +5,9 @@ class FeedData {
     var username:String?
     var mediaName:String?
     var date:String?
-    var imageName:String!
+    var imageNames:[String]!
+    var videoId:String?
     var deepLink:DeepLink?
     var showHeader = true
-    var showPlayButton = false
     var showActionBar = true
 }

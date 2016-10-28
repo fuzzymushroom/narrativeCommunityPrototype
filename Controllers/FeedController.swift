@@ -45,10 +45,13 @@ class FeedController:UIViewController{
             }
         }
         
-        if feedData.imageName == "feedVideo" {
+        if let videoId = feedData.videoId {
             view.layoutIfNeeded()
-            let videoId = "83BsxzW_n7c"
             feedItem.showVideo(videoId: videoId)
+        }
+
+        if feedData.imageNames.count > 1 {
+            feedItem.enableTap(target: feedItem, action: #selector(FeedItem.nextFrame))
         }
         
         return feedItem

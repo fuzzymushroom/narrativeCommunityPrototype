@@ -73,9 +73,8 @@ class ProfileController:UIViewController{
             feedData.username = nil
             feedData.mediaName = nil
             feedData.date = nil
-            feedData.imageName = "feedPost"
+            feedData.imageNames = ["feedPost"]
             feedData.showHeader = false
-            feedData.showPlayButton = false
             feedData.showActionBar = false
             
             _ = feedController.addFeedItem(feedData: feedData)
