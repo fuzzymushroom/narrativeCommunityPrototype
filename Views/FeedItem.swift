@@ -11,6 +11,7 @@ class FeedItem:UIViewFromNib{
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var youtubeView: YTPlayerView!
+    @IBOutlet var choice: Choice!
     @IBOutlet var playButton: UIButton!
     @IBOutlet var actionBar: UIView!
     @IBOutlet var commentButton: UIButton!
@@ -66,5 +67,12 @@ class FeedItem:UIViewFromNib{
         if let feedImage = UIImage(named: imageNames[frameIndex]){
             imageView.image = feedImage
         }
+    }
+    func showChoices(_ choices:[(answer:String, percentage:CGFloat)]){
+        var button:ChoiceButton!
+        for aChoice in choices {
+            button = choice.addChoice(label: aChoice.answer, percent: aChoice.percentage)
+        }
+        enableTap(target: button, action: #selector(ChoiceButton.tap)) //hack
     }
 }

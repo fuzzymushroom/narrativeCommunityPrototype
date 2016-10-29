@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DidactGothic.ttf">
+            <string>DidactGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoiceButton" customModule="Profile" customModuleProvider="target">
+            <connections>
+                <outlet property="bgImageView" destination="bP1-ot-iaP" id="xUY-dH-UyJ"/>
+                <outlet property="darkFillImageView" destination="eHG-0B-S3Y" id="B4E-sR-pEc"/>
+                <outlet property="darkFillWidth" destination="CBr-lL-xnG" id="d7D-oS-l1W"/>
+                <outlet property="fillImageView" destination="fqv-xz-cVg" id="J9f-Yi-Fpe"/>
+                <outlet property="fillWidth" destination="Aq8-lH-Jqf" id="sJ3-VK-SaZ"/>
+                <outlet property="label" destination="gLN-98-vD7" id="bSZ-yh-A9E"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonChoice.png" translatesAutoresizingMaskIntoConstraints="NO" id="bP1-ot-iaP">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Alf-Wx-XiM"/>
+                        <constraint firstAttribute="width" constant="300" id="ZsI-gY-PGg"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" image="buttonChoiceFilled.png" translatesAutoresizingMaskIntoConstraints="NO" id="fqv-xz-cVg">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Aq8-lH-Jqf"/>
+                        <constraint firstAttribute="height" constant="40" id="xq7-gq-AOo"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" image="buttonChoiceDarkFilled.png" translatesAutoresizingMaskIntoConstraints="NO" id="eHG-0B-S3Y">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="CBr-lL-xnG"/>
+                        <constraint firstAttribute="height" constant="40" id="jPE-qo-H6F"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLN-98-vD7">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Hzi-O6-Xcy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bP1-ot-iaP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0zI-YJ-CYG"/>
+                <constraint firstAttribute="trailing" secondItem="gLN-98-vD7" secondAttribute="trailing" constant="35" id="2YB-hb-3NQ"/>
+                <constraint firstItem="gLN-98-vD7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3Lp-dJ-WKh"/>
+                <constraint firstItem="bP1-ot-iaP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JfF-jm-gq8"/>
+                <constraint firstItem="fqv-xz-cVg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Tiu-Vc-0Qd"/>
+                <constraint firstItem="eHG-0B-S3Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y5y-G2-qbj"/>
+                <constraint firstItem="fqv-xz-cVg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ex1-bu-Lnh"/>
+                <constraint firstItem="eHG-0B-S3Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lMF-NJ-sNN"/>
+                <constraint firstItem="gLN-98-vD7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="wpD-1m-MyT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="27" y="67"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buttonChoice.png" width="300" height="40"/>
+        <image name="buttonChoiceDarkFilled.png" width="300" height="40"/>
+        <image name="buttonChoiceFilled.png" width="300" height="40"/>
+    </resources>
+</document>

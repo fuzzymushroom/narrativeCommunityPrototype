@@ -95,6 +95,10 @@ class GameModel{
         feedChoiceFun.mediaName = "Survey"
         feedChoiceFun.date = "Oct 24 2016"
         feedChoiceFun.imageNames = ["feedChoiceFun"]
+        feedChoiceFun.choices = [
+            (answer: "Humans only!", percentage: CGFloat(0.6)),
+            (answer: "I'll try anything once.", percentage: CGFloat(0.4))
+        ]
         
         let feedChoiceSerious = FeedData()
         feedChoiceSerious.mugshotName = "mugshotChristine"
@@ -113,16 +117,16 @@ class GameModel{
         let feedSceneCapture = FeedData()
         feedSceneCapture.mugshotName = "mugshotCass"
         feedSceneCapture.username = "Pink-Haired Cass"
-        feedSceneCapture.mediaName = "Scene Capture from Old Maid Adventures"
+        feedSceneCapture.mediaName = "Screenshot from Old Maid Adventures"
         feedSceneCapture.date = "Oct 24 2016"
-        feedSceneCapture.imageNames = ["feedSceneCapture", "feedSceneCapture"]
+        feedSceneCapture.imageNames = ["feedSceneCapture"]
         
         let feedShort = FeedData()
         feedShort.mugshotName = "mugshotColonelSanders"
         feedShort.username = "Colonel Sanders"
-        feedShort.mediaName = "Short"
+        feedShort.mediaName = "Capture from The Colonel's Shorts"
         feedShort.date = "Oct 24 2016"
-        feedShort.imageNames = ["feedShort0a", "feedShort0b", "feedShort1a", "feedShort1b", "feedShort2a", "feedShort2b", "feedShort3a", "feedShort3b", "feedShort4a", "feedShort4b"]
+        feedShort.imageNames = ["feedShort0a", "feedShort0b", "feedShort0a", "feedShort0b", "feedShort1a", "feedShort1b", "feedShort1a", "feedShort1b", "feedShort2a", "feedShort2b", "feedShort2a", "feedShort2b", "feedShort3a", "feedShort3b", "feedShort3a", "feedShort3b", "feedShort4a", "feedShort4b", "feedShort4a", "feedShort4b"]
         
         let feedGucci = FeedData()
         feedGucci.mugshotName = "mugshotAngela"

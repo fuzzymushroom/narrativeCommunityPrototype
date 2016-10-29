@@ -6,10 +6,11 @@ class StoryController: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var exitButton: UIButton!
+    @IBOutlet var choice: Choice!
+    
     let frames = [
         "story1",
         "story2",
-        "story3",
         "story4",
         "story5"
     ]
@@ -41,7 +42,8 @@ class StoryController: UIViewController {
         imageView.image = UIImage(named: frames[index])
     }
     func advanceFrame(){
-        if frameIndex == 4 && !didShowComments {
+        
+        if frameIndex == 3 && !didShowComments {
             openComments()
             didShowComments = true
         } else if frameIndex == frames.count - 1 {
@@ -50,6 +52,24 @@ class StoryController: UIViewController {
         } else {
             goToFrame(index: frameIndex + 1)
         }
+        
+        if frameIndex == 1 {
+            choice.isHidden = false
+            _ = choice.addChoice(label: "Confront him", percent: 0.25)
+            _ = choice.addChoice(label: "Confront the woman", percent: 0.15)
+            _ = choice.addChoice(label: "Flee the scene", percent: 0.6)
+        } else if frameIndex == 2 {
+            choice.isHidden = false
+            choice.clearChoices()
+            _ = choice.addChoice(label: "Honesty is best!", percent: 0.2)
+            _ = choice.addChoice(label: "Sometimes ignorances is bliss.", percent: 0.1)
+            _ = choice.addChoice(label: "Make HIM do it.", percent: 0.7)
+        } else {
+            choice.isHidden = true
+        }
+    }
+    func hideChoice(){
+        choice.isHidden = true
     }
     
     //MARK: STORY MENUS
@@ -67,6 +87,7 @@ class StoryController: UIViewController {
     func closeStoryMenu(){
         storyMenu.isHidden = true
     }
+    
     
     //MARK: END OF CHAPTER
     func openEndOfChapter(){

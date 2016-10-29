@@ -15,6 +15,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedItem" customModule="Profile" customModuleProvider="target">
             <connections>
                 <outlet property="actionBar" destination="ll3-JM-raJ" id="qCE-rn-zfD"/>
+                <outlet property="choice" destination="gne-pN-VBO" id="qEm-h4-x9A"/>
                 <outlet property="commentButton" destination="LEc-8M-g3Z" id="dy3-Qu-QdK"/>
                 <outlet property="dateLabel" destination="nt6-Dd-rqb" id="Z9t-gs-xwL"/>
                 <outlet property="header" destination="jOg-go-LDq" id="cgy-f5-NWj"/>
@@ -89,6 +90,13 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6y-K0-7ii" customClass="YTPlayerView">
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gne-pN-VBO" customClass="Choice" customModule="Profile" customModuleProvider="target">
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="62Z-6H-46k"/>
+                        <constraint firstAttribute="height" priority="1" constant="10" id="hCB-ZV-4XK"/>
+                    </constraints>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll3-JM-raJ">
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEc-8M-g3Z">
@@ -146,6 +154,7 @@
                 <constraint firstAttribute="trailing" secondItem="ll3-JM-raJ" secondAttribute="trailing" id="5NG-0y-dbJ"/>
                 <constraint firstAttribute="trailing" secondItem="Cfn-7l-Aie" secondAttribute="trailing" id="BdN-g8-8Kc"/>
                 <constraint firstAttribute="trailing" secondItem="h12-hx-Y97" secondAttribute="trailing" id="D6u-Vd-x5D"/>
+                <constraint firstItem="gne-pN-VBO" firstAttribute="bottom" secondItem="ll3-JM-raJ" secondAttribute="top" constant="-110" id="LYg-bB-IgP"/>
                 <constraint firstItem="h12-hx-Y97" firstAttribute="top" secondItem="jOg-go-LDq" secondAttribute="bottom" id="Smh-me-zdh"/>
                 <constraint firstItem="C6y-K0-7ii" firstAttribute="top" secondItem="h12-hx-Y97" secondAttribute="top" id="WTM-ht-1uc"/>
                 <constraint firstItem="jOg-go-LDq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Yhh-hn-1va"/>
@@ -156,6 +165,7 @@
                 <constraint firstAttribute="trailing" secondItem="jOg-go-LDq" secondAttribute="trailing" id="mcZ-OW-Nbu"/>
                 <constraint firstItem="h12-hx-Y97" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oaG-QM-bn6"/>
                 <constraint firstItem="ll3-JM-raJ" firstAttribute="top" secondItem="Cfn-7l-Aie" secondAttribute="bottom" id="ulO-mf-cvE"/>
+                <constraint firstItem="gne-pN-VBO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wyz-c6-zbs"/>
                 <constraint firstItem="jOg-go-LDq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="y1c-9J-Pus"/>
                 <constraint firstItem="C6y-K0-7ii" firstAttribute="bottom" secondItem="h12-hx-Y97" secondAttribute="bottom" id="z8m-tv-Wda"/>
             </constraints>

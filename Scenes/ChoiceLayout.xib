@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DidactGothic.ttf">
+            <string>DidactGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Choice" customModule="Profile" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="nNa-T2-cSe" id="3Ov-Iu-i0t"/>
+                <outlet property="stackView" destination="nMv-3x-57p" id="eFq-j2-kLX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nMv-3x-57p">
+                    <constraints>
+                        <constraint firstAttribute="height" priority="1" constant="100" id="tvl-if-hiL"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99% of other readers chose the same" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNa-T2-cSe">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="v7j-Va-mO0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DidactGothic" family="Didact Gothic" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nMv-3x-57p" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Oe5-eP-XRj"/>
+                <constraint firstItem="nNa-T2-cSe" firstAttribute="top" secondItem="nMv-3x-57p" secondAttribute="bottom" constant="5" id="WV5-gX-eUH"/>
+                <constraint firstItem="nNa-T2-cSe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gkg-JZ-Q3d"/>
+                <constraint firstAttribute="trailing" secondItem="nNa-T2-cSe" secondAttribute="trailing" id="jRR-1W-9Kz"/>
+                <constraint firstAttribute="trailing" secondItem="nMv-3x-57p" secondAttribute="trailing" id="ngX-ck-hDS"/>
+                <constraint firstItem="nMv-3x-57p" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="slS-Hz-AAb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

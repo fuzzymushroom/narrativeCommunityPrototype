@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoryController" customModule="Profile" customModuleProvider="target">
             <connections>
+                <outlet property="choice" destination="EMF-Hz-Ax4" id="pn2-Vy-6YC"/>
                 <outlet property="exitButton" destination="iu4-5N-2qP" id="boU-Mz-l9L"/>
                 <outlet property="imageView" destination="CTV-Al-aIF" id="XnP-7F-gm3"/>
                 <outlet property="storyMenu" destination="jhw-PT-FHv" id="3sD-xn-AY0"/>
@@ -17,7 +18,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CTV-Al-aIF"/>
@@ -32,9 +33,17 @@
                         <constraint firstAttribute="width" secondItem="jhw-PT-FHv" secondAttribute="height" multiplier="207:116" id="2uw-rS-a9B"/>
                     </constraints>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMF-Hz-Ax4" customClass="Choice" customModule="Profile" customModuleProvider="target">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="1" constant="200" id="Qsh-nU-wTF"/>
+                        <constraint firstAttribute="height" priority="1" constant="100" id="cxP-Sp-Y37"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="EMF-Hz-Ax4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="450" id="110-Vk-50u"/>
                 <constraint firstAttribute="bottom" secondItem="CTV-Al-aIF" secondAttribute="bottom" id="51e-wy-k3T"/>
                 <constraint firstItem="jhw-PT-FHv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Fbl-cD-7TD"/>
                 <constraint firstAttribute="bottom" secondItem="jhw-PT-FHv" secondAttribute="bottom" id="HXO-Nh-eJP"/>
@@ -44,6 +53,7 @@
                 <constraint firstAttribute="trailing" secondItem="CTV-Al-aIF" secondAttribute="trailing" id="aar-KP-S5T"/>
                 <constraint firstAttribute="trailing" secondItem="jhw-PT-FHv" secondAttribute="trailing" id="kSd-8E-iaF"/>
                 <constraint firstItem="iu4-5N-2qP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ruN-iy-bkc"/>
+                <constraint firstItem="EMF-Hz-Ax4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="x3e-eB-phd"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
         </view>

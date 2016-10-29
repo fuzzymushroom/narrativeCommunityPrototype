@@ -49,6 +49,10 @@ class FeedController:UIViewController{
             view.layoutIfNeeded()
             feedItem.showVideo(videoId: videoId)
         }
+        
+        if let choices = feedData.choices {
+            feedItem.showChoices(choices)
+        }
 
         if feedData.imageNames.count > 1 {
             feedItem.enableTap(target: feedItem, action: #selector(FeedItem.nextFrame))
