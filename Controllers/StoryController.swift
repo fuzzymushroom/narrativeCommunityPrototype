@@ -9,10 +9,10 @@ class StoryController: UIViewController {
     @IBOutlet var choice: Choice!
     
     let frames = [
+        "story0",
         "story1",
         "story2",
-        "story4",
-        "story5"
+        "story3"
     ]
     @IBOutlet var storyMenu: UIImageView!
 
@@ -43,27 +43,25 @@ class StoryController: UIViewController {
     }
     func advanceFrame(){
         
-        if frameIndex == 3 && !didShowComments {
-            openComments()
+        if frameIndex == 1 && !didShowComments{
+            openComments(threadId: "peanutGallery")
+            didShowComments = true
+        } else if frameIndex == 3 && !didShowComments {
+            openComments(threadId: "storyChoice")
             didShowComments = true
         } else if frameIndex == frames.count - 1 {
             view.gestureRecognizers?.forEach(view.removeGestureRecognizer)
             openEndOfChapter()
         } else {
+            didShowComments = false
             goToFrame(index: frameIndex + 1)
         }
         
-        if frameIndex == 1 {
+        if frameIndex == 2 {
             choice.isHidden = false
             _ = choice.addChoice(label: "Confront him", percent: 0.25)
             _ = choice.addChoice(label: "Confront the woman", percent: 0.15)
             _ = choice.addChoice(label: "Flee the scene", percent: 0.6)
-        } else if frameIndex == 2 {
-            choice.isHidden = false
-            choice.clearChoices()
-            _ = choice.addChoice(label: "Honesty is best!", percent: 0.2)
-            _ = choice.addChoice(label: "Sometimes ignorances is bliss.", percent: 0.1)
-            _ = choice.addChoice(label: "Make HIM do it.", percent: 0.7)
         } else {
             choice.isHidden = true
         }
@@ -73,9 +71,9 @@ class StoryController: UIViewController {
     }
     
     //MARK: STORY MENUS
-    func openComments(){
+    func openComments(threadId:String){
         let masterController = getParentOfType(type: MasterController.self)!
-        let thread = masterController.gameModel.getCommentThread(id: "story")
+        let thread = masterController.gameModel.getCommentThread(id: threadId)
         let commentsController = CommentsController(thread: thread)
         commentsController.modalPresentationStyle = .overFullScreen
         //commentsController.isModalInPopover = true

@@ -82,17 +82,18 @@ class GameModel{
         feedLink.date = "Oct 24 2016"
         feedLink.imageNames = ["feedLink"]
         
-        let feedUser = FeedData()
-        feedUser.mugshotName = "mugshotChristine"
-        feedUser.username = "Christine@Episode"
-        feedUser.mediaName = "Shoutout"
-        feedUser.date = "Oct 24 2016"
-        feedUser.imageNames = ["feedMessageUser"]
+        
+        let feedInterview = FeedData()
+        feedInterview.mugshotName = "mugshotChristine"
+        feedInterview.username = "Christine@Episode"
+        feedInterview.mediaName = "Interview"
+        feedInterview.date = "Oct 24 2016"
+        feedInterview.imageNames = ["feedInterview0a", "feedInterview0b", "feedInterview0a", "feedInterview0b", "feedInterview1a", "feedInterview1b", "feedInterview1a", "feedInterview1b", "feedInterview2a", "feedInterview2b", "feedInterview2a", "feedInterview2b", "feedInterview3a", "feedInterview3b", "feedInterview3a", "feedInterview3b"]
         
         let feedChoiceFun = FeedData()
         feedChoiceFun.mugshotName = "mugshotColonelSanders"
         feedChoiceFun.username = "ColonelSanders"
-        feedChoiceFun.mediaName = "Survey"
+        feedChoiceFun.mediaName = "Choice"
         feedChoiceFun.date = "Oct 24 2016"
         feedChoiceFun.imageNames = ["feedChoiceFun"]
         feedChoiceFun.choices = [
@@ -103,9 +104,36 @@ class GameModel{
         let feedChoiceSerious = FeedData()
         feedChoiceSerious.mugshotName = "mugshotChristine"
         feedChoiceSerious.username = "Christine@Episode"
-        feedChoiceSerious.mediaName = "Survey"
+        feedChoiceSerious.mediaName = "Choice"
         feedChoiceSerious.date = "Oct 24 2016"
         feedChoiceSerious.imageNames = ["feedChoiceSerious"]
+        feedChoiceSerious.choices = [
+            (answer: "Clueless", percentage: CGFloat(0.45)),
+            (answer: "Smallville", percentage: CGFloat(0.55))
+        ]
+
+        
+        let feedEvent = FeedData()
+        feedEvent.mugshotName = "mugshotChristine"
+        feedEvent.username = "Christine@Episode"
+        feedEvent.mediaName = "Event"
+        feedEvent.date = "Oct 24 2016"
+        feedEvent.imageNames = ["feedEvent"]
+        feedEvent.choices = [
+            (answer: "Harley Quinn costume", percentage: CGFloat(0.75)),
+            (answer: "Sailor Moon dress", percentage: CGFloat(0.25))
+        ]
+        
+        let feedChoiceWriter = FeedData()
+        feedChoiceWriter.mugshotName = "mugshotMarlene"
+        feedChoiceWriter.username = "MarleneTheWriter"
+        feedChoiceWriter.mediaName = "Choice"
+        feedChoiceWriter.date = "Oct 24 2016"
+        feedChoiceWriter.imageNames = ["feedChoiceWriter"]
+        feedChoiceWriter.choices = [
+            (answer: "Ian", percentage: CGFloat(0.9)),
+            (answer: "Aria", percentage: CGFloat(0.1))
+        ]
         
         let feedScreenCapture = FeedData()
         feedScreenCapture.mugshotName = "mugshotCass"
@@ -117,14 +145,14 @@ class GameModel{
         let feedSceneCapture = FeedData()
         feedSceneCapture.mugshotName = "mugshotCass"
         feedSceneCapture.username = "Pink-Haired Cass"
-        feedSceneCapture.mediaName = "Screenshot from Old Maid Adventures"
+        feedSceneCapture.mediaName = "Loving Bad Teaser"
         feedSceneCapture.date = "Oct 24 2016"
-        feedSceneCapture.imageNames = ["feedSceneCapture"]
+        feedSceneCapture.imageNames = ["feedCapture0", "feedCapture1a", "feedCapture1b", "feedCapture1a", "feedCapture1b", "feedCapture2", "feedCapture3a", "feedCapture3b", "feedCapture3a", "feedCapture3b", "feedCapture4"]
         
         let feedShort = FeedData()
         feedShort.mugshotName = "mugshotColonelSanders"
         feedShort.username = "Colonel Sanders"
-        feedShort.mediaName = "Capture from The Colonel's Shorts"
+        feedShort.mediaName = "The Colonel's Shorts"
         feedShort.date = "Oct 24 2016"
         feedShort.imageNames = ["feedShort0a", "feedShort0b", "feedShort0a", "feedShort0b", "feedShort1a", "feedShort1b", "feedShort1a", "feedShort1b", "feedShort2a", "feedShort2b", "feedShort2a", "feedShort2b", "feedShort3a", "feedShort3b", "feedShort3a", "feedShort3b", "feedShort4a", "feedShort4b", "feedShort4a", "feedShort4b"]
         
@@ -133,14 +161,42 @@ class GameModel{
         feedGucci.username = "Angela"
         feedGucci.mediaName = "Profile Update"
         feedGucci.date = "Oct 24 2016"
-        feedGucci.imageNames = ["feedGucci"]
+        feedGucci.imageNames = ["feedGucci", "feedGucci2", "feedGucci", "feedGucci2", "feedGucci", "feedGucci2", "feedGucci", "feedGucci2"]
         
-        let feedDatas = [feedDataVideo, feedRec, feedCollab, feedLink, feedUser, feedChoiceFun, feedChoiceSerious, feedScreenCapture, feedSceneCapture, feedShort, feedGucci]
+        let feedDatas = [feedDataVideo, feedRec, feedCollab, feedLink, feedInterview, feedChoiceFun, feedChoiceSerious, feedEvent, feedChoiceWriter, feedSceneCapture, feedShort, feedGucci]
         return feedDatas
     }
     func getCommentThread(id:String) -> [CommentData] {
         switch(id){
-        case "story":
+        case "peanutGallery":
+            
+            let comment4 = CommentData()
+            comment4.mugshotImageName = "mugshotMax"
+            comment4.username = "Maximoose"
+            comment4.comment = "Everyone knows that's what your Honda is for."
+
+            let comment1 = CommentData()
+            comment1.mugshotImageName = "mugshotCass"
+            comment1.username = "Pink-Haired Cass"
+            comment1.comment = "No shame in PDA!"
+
+            let comment3 = CommentData()
+            comment3.mugshotImageName = "mugshotMarlene"
+            comment3.username = "MarleneTheWriter"
+            comment3.comment = "Believe it sister!"
+
+            let comment2 = CommentData()
+            comment2.mugshotImageName = "mugshotColonelSanders"
+            comment2.username = "Colonel Sanders"
+            comment2.comment = "Why didn't they stay and watch? That's what I would do."
+            
+            let comment5 = CommentData()
+            comment5.mugshotImageName = "mugshotChristine"
+            comment5.username = "Christine"
+            comment5.comment = "That looks more like Emily than Aria"
+            
+            return [comment4, comment1, comment3, comment2, comment5]
+        case "storyChoice":
             let comment1 = CommentData()
             comment1.mugshotImageName = "mugshotCass"
             comment1.username = "Pink-Haired Cass"
