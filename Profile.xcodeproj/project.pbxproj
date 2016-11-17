@@ -85,6 +85,14 @@
 		B04348911D99F18A00C8EE2B /* SpriteKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B043488C1D99F18A00C8EE2B /* SpriteKitUtils.swift */; };
 		B043911A1D9EDC44000CC018 /* UIKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04391191D9EDC44000CC018 /* UIKitUtils.swift */; };
 		B043911C1D9EDC51000CC018 /* MasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B043911B1D9EDC51000CC018 /* MasterController.swift */; };
+		B049EB851DDE329F00E81560 /* appIcon20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B049EB7D1DDE329F00E81560 /* appIcon20@2x.png */; };
+		B049EB861DDE329F00E81560 /* appIcon20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B049EB7E1DDE329F00E81560 /* appIcon20@3x.png */; };
+		B049EB871DDE329F00E81560 /* appIcon29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B049EB7F1DDE329F00E81560 /* appIcon29@2x.png */; };
+		B049EB881DDE329F00E81560 /* appIcon29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B049EB801DDE329F00E81560 /* appIcon29@3x.png */; };
+		B049EB891DDE329F00E81560 /* appIcon40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B049EB811DDE329F00E81560 /* appIcon40@2x.png */; };
+		B049EB8A1DDE329F00E81560 /* appIcon40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B049EB821DDE329F00E81560 /* appIcon40@3x.png */; };
+		B049EB8B1DDE329F00E81560 /* appIcon60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B049EB831DDE329F00E81560 /* appIcon60@2x.png */; };
+		B049EB8C1DDE329F00E81560 /* appIcon60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B049EB841DDE329F00E81560 /* appIcon60@3x.png */; };
 		B04FF3C51DC2B04C0087E4B7 /* Profile-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = B04FF3C41DC2B04C0087E4B7 /* Profile-Bridging-Header.m */; };
 		B05508201DAEBD7200BDD1F2 /* StylizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B055081F1DAEBD7200BDD1F2 /* StylizedButton.swift */; };
 		B05508221DAEC66C00BDD1F2 /* MyShelfLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05508211DAEC66C00BDD1F2 /* MyShelfLayout.xib */; };
@@ -280,6 +288,14 @@
 		B043488C1D99F18A00C8EE2B /* SpriteKitUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteKitUtils.swift; sourceTree = "<group>"; };
 		B04391191D9EDC44000CC018 /* UIKitUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitUtils.swift; sourceTree = "<group>"; };
 		B043911B1D9EDC51000CC018 /* MasterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterController.swift; sourceTree = "<group>"; };
+		B049EB7D1DDE329F00E81560 /* appIcon20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon20@2x.png"; sourceTree = "<group>"; };
+		B049EB7E1DDE329F00E81560 /* appIcon20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon20@3x.png"; sourceTree = "<group>"; };
+		B049EB7F1DDE329F00E81560 /* appIcon29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon29@2x.png"; sourceTree = "<group>"; };
+		B049EB801DDE329F00E81560 /* appIcon29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon29@3x.png"; sourceTree = "<group>"; };
+		B049EB811DDE329F00E81560 /* appIcon40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon40@2x.png"; sourceTree = "<group>"; };
+		B049EB821DDE329F00E81560 /* appIcon40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon40@3x.png"; sourceTree = "<group>"; };
+		B049EB831DDE329F00E81560 /* appIcon60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon60@2x.png"; sourceTree = "<group>"; };
+		B049EB841DDE329F00E81560 /* appIcon60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon60@3x.png"; sourceTree = "<group>"; };
 		B04FF3C31DC2B04C0087E4B7 /* Profile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Profile-Bridging-Header.h"; sourceTree = "<group>"; };
 		B04FF3C41DC2B04C0087E4B7 /* Profile-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Profile-Bridging-Header.m"; sourceTree = "<group>"; };
 		B055081F1DAEBD7200BDD1F2 /* StylizedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylizedButton.swift; sourceTree = "<group>"; };
@@ -559,6 +575,21 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B049EB7C1DDE329F00E81560 /* AppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				B049EB7D1DDE329F00E81560 /* appIcon20@2x.png */,
+				B049EB7E1DDE329F00E81560 /* appIcon20@3x.png */,
+				B049EB7F1DDE329F00E81560 /* appIcon29@2x.png */,
+				B049EB801DDE329F00E81560 /* appIcon29@3x.png */,
+				B049EB811DDE329F00E81560 /* appIcon40@2x.png */,
+				B049EB821DDE329F00E81560 /* appIcon40@3x.png */,
+				B049EB831DDE329F00E81560 /* appIcon60@2x.png */,
+				B049EB841DDE329F00E81560 /* appIcon60@3x.png */,
+			);
+			path = AppIcon;
+			sourceTree = "<group>";
+		};
 		B05508431DAF0A7100BDD1F2 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
@@ -601,6 +632,7 @@
 		B09AE6951D9B19A2001E6EAC /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				B049EB7C1DDE329F00E81560 /* AppIcon */,
 				B09AE6961D9B19A2001E6EAC /* Backgrounds */,
 				B09AE6991D9B1AEC001E6EAC /* Characters */,
 				B05508431DAF0A7100BDD1F2 /* Controls */,
@@ -827,6 +859,7 @@
 			files = (
 				B070AFC11DBEC1BE00EA627F /* navGenres@2x.png in Resources */,
 				B0F739781DB7F2DB00AA2DF9 /* mugshotCass@2x.png in Resources */,
+				B049EB871DDE329F00E81560 /* appIcon29@2x.png in Resources */,
 				B0B124491DB5AE6A00A2BEA1 /* FeedItemLayout.xib in Resources */,
 				B070AFC01DBEC1BE00EA627F /* navFeed@2x.png in Resources */,
 				B09AE6981D9B19A2001E6EAC /* bgCollege.png in Resources */,
@@ -840,6 +873,7 @@
 				B0D02B9C1DC3ED0C00EFE501 /* buttonChoiceDarkFilled@2x.png in Resources */,
 				B0F7397A1DB7F2F600AA2DF9 /* CommentLayout.xib in Resources */,
 				B0B124231DB561DD00A2BEA1 /* colonelSanders@2x.png in Resources */,
+				B049EB8B1DDE329F00E81560 /* appIcon60@2x.png in Resources */,
 				B0D02B901DC3E68A00EFE501 /* ChoiceButtonLayout.xib in Resources */,
 				B0B1243F1DB5A59D00A2BEA1 /* campfire_thumbnail@2x.png in Resources */,
 				B0B124211DB560C200A2BEA1 /* buttonLight@2x.png in Resources */,
@@ -891,6 +925,7 @@
 				B0B124411DB5A59D00A2BEA1 /* guy_thumbnail@2x.png in Resources */,
 				B01F6D0D1DC2767200F78591 /* iconBadge@2x.png in Resources */,
 				B0B124331DB59A5C00A2BEA1 /* BubbleLayout.xib in Resources */,
+				B049EB851DDE329F00E81560 /* appIcon20@2x.png in Resources */,
 				B03789991DAD571A00DCCACC /* DidactGothic.ttf in Resources */,
 				B0F7396D1DB7E2CF00AA2DF9 /* iconHeart@2x.png in Resources */,
 				B0B124421DB5A59D00A2BEA1 /* kawataki_thumbnail@2x.png in Resources */,
@@ -898,6 +933,7 @@
 				B055083B1DAF034A00BDD1F2 /* iconLaurelGray@2x.png in Resources */,
 				B070AFC81DBEC2CE00EA627F /* navProfile@2x.png in Resources */,
 				B070AFBF1DBEC1BE00EA627F /* navFeatured@2x.png in Resources */,
+				B049EB861DDE329F00E81560 /* appIcon20@3x.png in Resources */,
 				B0F7397E1DB7FA5600AA2DF9 /* mugshotColonelSanders@2x.png in Resources */,
 				B05508461DAF0A7100BDD1F2 /* buttonFollow@2x.png in Resources */,
 				B055082E1DAEE60400BDD1F2 /* iconCassName@2x.png in Resources */,
@@ -918,6 +954,8 @@
 				B070AFDF1DBED31600EA627F /* feedSurvey@2x.png in Resources */,
 				B05508301DAEE7A500BDD1F2 /* iconEdit@2x.png in Resources */,
 				B070AFC21DBEC1BE00EA627F /* navHome@2x.png in Resources */,
+				B049EB8A1DDE329F00E81560 /* appIcon40@3x.png in Resources */,
+				B049EB8C1DDE329F00E81560 /* appIcon60@3x.png in Resources */,
 				B0B124251DB5649600A2BEA1 /* buttonLovedIt@2x.png in Resources */,
 				B070AFF51DC01FDD00EA627F /* pll_thumbnail@2x.png in Resources */,
 				B01F6D111DC27DAF00F78591 /* navHeart@2x.png in Resources */,
@@ -935,6 +973,7 @@
 				B09AE6921D9B012B001E6EAC /* LaunchScreen.storyboard in Resources */,
 				B05508491DAF117B00BDD1F2 /* ShelfLayout.xib in Resources */,
 				B0F27EDD1DBA93BE00BD8462 /* Sparkle.sks in Resources */,
+				B049EB891DDE329F00E81560 /* appIcon40@2x.png in Resources */,
 				B070AFBD1DBEC1BE00EA627F /* navCreate@2x.png in Resources */,
 				B01F6D051DC1861500F78591 /* choiceSad@2x.png in Resources */,
 				B0B124451DB5A59D00A2BEA1 /* sundosia_thumbnail@2x.png in Resources */,
@@ -951,6 +990,7 @@
 				B01F6CE71DC1297C00F78591 /* mugshotAngela@2x.png in Resources */,
 				B070AFE01DBED31600EA627F /* feedVideo@2x.png in Resources */,
 				B055083C1DAF034A00BDD1F2 /* iconLaurelPlatinum@2x.png in Resources */,
+				B049EB881DDE329F00E81560 /* appIcon29@3x.png in Resources */,
 				B01F6D031DC1861500F78591 /* choiceHam@2x.png in Resources */,
 				B01F6CE21DC126E100F78591 /* feedChoiceFun@2x.png in Resources */,
 				B000F9FA1DD52BF7001233AB /* feedInterview2b@2x.png in Resources */,
